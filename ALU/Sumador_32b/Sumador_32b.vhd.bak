@@ -1,0 +1,42 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity Sumador_32b is
+port (A: in std_logic_vector(31 downto 0);
+		B: in std_logic_vector(31 downto 0);
+		Cin: in std_LOGIC;
+		S: out std_logic_vector(31 downto 0);
+		Cout: out std_LOGIC);
+end Sumador_CarryLookahead;
+	
+architecture RTL of Sumador_CarryLookahead is
+
+component Sumador_CarryLookahead is
+port (A: in std_logic_vector(3 downto 0);
+		B: in std_logic_vector(3 downto 0);
+		Cin: in std_LOGIC;
+		S: out std_logic_vector(3 downto 0)
+		Cout: out std_LOGIC);
+end component;
+
+signal c0,c1,c2,c3,c4,c5,c6;
+
+begin
+
+elemento_1: Sumador_CarryLookahead port map(A(3 downto 0),B(3 downto 0),Cin,S(3 downto 0),c0);
+elemento_2: Sumador_CarryLookahead port map(A(7 downto 4),B(7 downto 4),C0,S(7 downto 4),c1);
+elemento_3: Sumador_CarryLookahead port map(A(11 downto 8),B(11 downto 8),C1,S(11) downto 8),c2);
+elemento_4: Sumador_CarryLookahead port map(A(15 downto 12),B(15 downto 12),C2,S(15 downto 12),c3);
+elemento_5: Sumador_CarryLookahead port map(A(19 downto 16),B(19 downto 16),C3,S(19 downto 16),c4);
+elemento_6: Sumador_CarryLookahead port map(A(23 downto 20),B(23 downto 20),C4,S(23 downto 20),c5);
+elemento_7: Sumador_CarryLookahead port map(A(27 downto 24),B(27 downto 24),C5,S(27 downto 24),c6);
+elemento_8: Sumador_CarryLookahead port map(A(31 downto 28),B(31 downto 28),C6,S(31 downto 28),Cout);
+
+
+
+
+
+
+end RTL;

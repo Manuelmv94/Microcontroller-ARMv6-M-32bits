@@ -1,0 +1,33 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity Sumador_CarryLookahead is
+port (A: in std_logic_vector(3 downto 0);
+		B: in std_logic_vector(3 downto 0);
+		Cin: in std_LOGIC;
+		S: out std_logic_vector(3 downto 0);
+		Cout: out std_LOGIC);
+end Sumador_CarryLookahead;
+	
+architecture RTL of Sumador_CarryLookahead is
+
+begin
+signal g,p: std_LOGIC_vector(3 downto 0);
+signal c1,c2,c3: std_LOGIC;
+
+g<=A and B;
+P<=A or B;
+
+process (A,B,Cin)
+begin
+S<=g;
+
+
+
+end process;
+
+
+
+end RTL;

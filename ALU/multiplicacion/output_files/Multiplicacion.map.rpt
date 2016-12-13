@@ -1,0 +1,740 @@
+Analysis & Synthesis report for Multiplicacion
+Wed Mar 23 15:32:06 2016
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Port Connectivity Checks: "Iter:elemento_17"
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Mar 23 15:32:06 2016           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; Multiplicacion                                  ;
+; Top-level Entity Name              ; Multiplicacion                                  ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; 3,505                                           ;
+;     Total combinational functions  ; 1,999                                           ;
+;     Dedicated logic registers      ; 2,049                                           ;
+; Total registers                    ; 2049                                            ;
+; Total pins                         ; 129                                             ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2C70F896C6       ;                    ;
+; Top-level entity name                                                      ; Multiplicacion     ; Multiplicacion     ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                        ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                                 ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------+---------+
+; ITER.vhd                         ; yes             ; User VHDL File  ; C:/Users/manuel/Documents/ITESM/VI semestre/Arquitectura de computadoras/Micro ARM 32b/ALU/multiplicacion/ITER.vhd           ;         ;
+; Gen_vectores.vhd                 ; yes             ; User VHDL File  ; C:/Users/manuel/Documents/ITESM/VI semestre/Arquitectura de computadoras/Micro ARM 32b/ALU/multiplicacion/Gen_vectores.vhd   ;         ;
+; Multiplicacion.vhd               ; yes             ; User VHDL File  ; C:/Users/manuel/Documents/ITESM/VI semestre/Arquitectura de computadoras/Micro ARM 32b/ALU/multiplicacion/Multiplicacion.vhd ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 3,505 ;
+;                                             ;       ;
+; Total combinational functions               ; 1999  ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 930   ;
+;     -- 3 input functions                    ; 582   ;
+;     -- <=2 input functions                  ; 487   ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 1504  ;
+;     -- arithmetic mode                      ; 495   ;
+;                                             ;       ;
+; Total registers                             ; 2049  ;
+;     -- Dedicated logic registers            ; 2049  ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 129   ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; CLK   ;
+; Maximum fan-out                             ; 2049  ;
+; Total fan-out                               ; 10694 ;
+; Average fan-out                             ; 2.56  ;
++---------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                               ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------+--------------+
+; Compilation Hierarchy Node   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                     ; Library Name ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------+--------------+
+; |Multiplicacion              ; 1999 (0)          ; 2049 (0)     ; 0           ; 0            ; 0       ; 0         ; 129  ; 0            ; |Multiplicacion                         ; work         ;
+;    |Gen_Vectores:elemento_1| ; 31 (31)           ; 95 (95)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multiplicacion|Gen_Vectores:elemento_1 ; work         ;
+;    |Iter:elemento_10|        ; 129 (129)         ; 126 (126)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multiplicacion|Iter:elemento_10        ; work         ;
+;    |Iter:elemento_11|        ; 129 (129)         ; 126 (126)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multiplicacion|Iter:elemento_11        ; work         ;
+;    |Iter:elemento_12|        ; 129 (129)         ; 126 (126)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multiplicacion|Iter:elemento_12        ; work         ;
+;    |Iter:elemento_13|        ; 129 (129)         ; 126 (126)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multiplicacion|Iter:elemento_13        ; work         ;
+;    |Iter:elemento_14|        ; 129 (129)         ; 126 (126)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multiplicacion|Iter:elemento_14        ; work         ;
+;    |Iter:elemento_15|        ; 129 (129)         ; 126 (126)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multiplicacion|Iter:elemento_15        ; work         ;
+;    |Iter:elemento_16|        ; 129 (129)         ; 126 (126)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multiplicacion|Iter:elemento_16        ; work         ;
+;    |Iter:elemento_17|        ; 129 (129)         ; 64 (64)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multiplicacion|Iter:elemento_17        ; work         ;
+;    |Iter:elemento_2|         ; 33 (33)           ; 126 (126)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multiplicacion|Iter:elemento_2         ; work         ;
+;    |Iter:elemento_3|         ; 129 (129)         ; 126 (126)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multiplicacion|Iter:elemento_3         ; work         ;
+;    |Iter:elemento_4|         ; 129 (129)         ; 126 (126)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multiplicacion|Iter:elemento_4         ; work         ;
+;    |Iter:elemento_5|         ; 129 (129)         ; 126 (126)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multiplicacion|Iter:elemento_5         ; work         ;
+;    |Iter:elemento_6|         ; 129 (129)         ; 126 (126)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multiplicacion|Iter:elemento_6         ; work         ;
+;    |Iter:elemento_7|         ; 129 (129)         ; 126 (126)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multiplicacion|Iter:elemento_7         ; work         ;
+;    |Iter:elemento_8|         ; 129 (129)         ; 126 (126)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multiplicacion|Iter:elemento_8         ; work         ;
+;    |Iter:elemento_9|         ; 129 (129)         ; 126 (126)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multiplicacion|Iter:elemento_9         ; work         ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                    ;
++------------------------------------------+--------------------------------------------+
+; Register name                            ; Reason for Removal                         ;
++------------------------------------------+--------------------------------------------+
+; Gen_Vectores:elemento_1|Pv[0,33..64]     ; Stuck at GND due to stuck port data_in     ;
+; Gen_Vectores:elemento_1|Sv[0..32]        ; Stuck at GND due to stuck port data_in     ;
+; Gen_Vectores:elemento_1|Av[0..32]        ; Stuck at GND due to stuck port data_in     ;
+; Iter:elemento_2|Svn[0..32]               ; Stuck at GND due to stuck port data_in     ;
+; Iter:elemento_2|Avn[0..32]               ; Stuck at GND due to stuck port data_in     ;
+; Iter:elemento_3|Svn[0..32]               ; Stuck at GND due to stuck port data_in     ;
+; Iter:elemento_3|Avn[0..32]               ; Stuck at GND due to stuck port data_in     ;
+; Iter:elemento_4|Svn[0..32]               ; Stuck at GND due to stuck port data_in     ;
+; Iter:elemento_4|Avn[0..32]               ; Stuck at GND due to stuck port data_in     ;
+; Iter:elemento_5|Svn[0..32]               ; Stuck at GND due to stuck port data_in     ;
+; Iter:elemento_5|Avn[0..32]               ; Stuck at GND due to stuck port data_in     ;
+; Iter:elemento_6|Svn[0..32]               ; Stuck at GND due to stuck port data_in     ;
+; Iter:elemento_6|Avn[0..32]               ; Stuck at GND due to stuck port data_in     ;
+; Iter:elemento_7|Svn[0..32]               ; Stuck at GND due to stuck port data_in     ;
+; Iter:elemento_7|Avn[0..32]               ; Stuck at GND due to stuck port data_in     ;
+; Iter:elemento_8|Svn[0..32]               ; Stuck at GND due to stuck port data_in     ;
+; Iter:elemento_8|Avn[0..32]               ; Stuck at GND due to stuck port data_in     ;
+; Iter:elemento_9|Svn[0..32]               ; Stuck at GND due to stuck port data_in     ;
+; Iter:elemento_9|Avn[0..32]               ; Stuck at GND due to stuck port data_in     ;
+; Iter:elemento_10|Svn[0..32]              ; Stuck at GND due to stuck port data_in     ;
+; Iter:elemento_10|Avn[0..32]              ; Stuck at GND due to stuck port data_in     ;
+; Iter:elemento_11|Svn[0..32]              ; Stuck at GND due to stuck port data_in     ;
+; Iter:elemento_11|Avn[0..32]              ; Stuck at GND due to stuck port data_in     ;
+; Iter:elemento_12|Svn[0..32]              ; Stuck at GND due to stuck port data_in     ;
+; Iter:elemento_12|Avn[0..32]              ; Stuck at GND due to stuck port data_in     ;
+; Iter:elemento_13|Svn[0..32]              ; Stuck at GND due to stuck port data_in     ;
+; Iter:elemento_13|Avn[0..32]              ; Stuck at GND due to stuck port data_in     ;
+; Iter:elemento_14|Svn[0..32]              ; Stuck at GND due to stuck port data_in     ;
+; Iter:elemento_14|Avn[0..32]              ; Stuck at GND due to stuck port data_in     ;
+; Iter:elemento_15|Svn[0..32]              ; Stuck at GND due to stuck port data_in     ;
+; Iter:elemento_15|Avn[0..32]              ; Stuck at GND due to stuck port data_in     ;
+; Iter:elemento_16|Svn[0..32]              ; Stuck at GND due to stuck port data_in     ;
+; Iter:elemento_16|Avn[0..32]              ; Stuck at GND due to stuck port data_in     ;
+; Iter:elemento_16|Pvn[63,64]              ; Merged with Iter:elemento_16|Pvn[62]       ;
+; Iter:elemento_15|Pvn[63,64]              ; Merged with Iter:elemento_15|Pvn[62]       ;
+; Iter:elemento_14|Pvn[63,64]              ; Merged with Iter:elemento_14|Pvn[62]       ;
+; Iter:elemento_13|Pvn[63,64]              ; Merged with Iter:elemento_13|Pvn[62]       ;
+; Iter:elemento_12|Pvn[63,64]              ; Merged with Iter:elemento_12|Pvn[62]       ;
+; Iter:elemento_11|Pvn[63,64]              ; Merged with Iter:elemento_11|Pvn[62]       ;
+; Iter:elemento_10|Pvn[63,64]              ; Merged with Iter:elemento_10|Pvn[62]       ;
+; Iter:elemento_9|Pvn[63,64]               ; Merged with Iter:elemento_9|Pvn[62]        ;
+; Iter:elemento_8|Pvn[63,64]               ; Merged with Iter:elemento_8|Pvn[62]        ;
+; Iter:elemento_7|Pvn[63,64]               ; Merged with Iter:elemento_7|Pvn[62]        ;
+; Iter:elemento_6|Pvn[63,64]               ; Merged with Iter:elemento_6|Pvn[62]        ;
+; Iter:elemento_5|Pvn[63,64]               ; Merged with Iter:elemento_5|Pvn[62]        ;
+; Iter:elemento_4|Pvn[63,64]               ; Merged with Iter:elemento_4|Pvn[62]        ;
+; Iter:elemento_3|Pvn[63,64]               ; Merged with Iter:elemento_3|Pvn[62]        ;
+; Iter:elemento_2|Pvn[63,64]               ; Merged with Iter:elemento_2|Pvn[62]        ;
+; Gen_Vectores:elemento_1|Av[33]           ; Merged with Gen_Vectores:elemento_1|Sv[33] ;
+; Iter:elemento_2|Avn[33]                  ; Merged with Iter:elemento_2|Svn[33]        ;
+; Iter:elemento_3|Avn[33]                  ; Merged with Iter:elemento_3|Svn[33]        ;
+; Iter:elemento_4|Avn[33]                  ; Merged with Iter:elemento_4|Svn[33]        ;
+; Iter:elemento_5|Avn[33]                  ; Merged with Iter:elemento_5|Svn[33]        ;
+; Iter:elemento_6|Avn[33]                  ; Merged with Iter:elemento_6|Svn[33]        ;
+; Iter:elemento_7|Avn[33]                  ; Merged with Iter:elemento_7|Svn[33]        ;
+; Iter:elemento_8|Avn[33]                  ; Merged with Iter:elemento_8|Svn[33]        ;
+; Iter:elemento_9|Avn[33]                  ; Merged with Iter:elemento_9|Svn[33]        ;
+; Iter:elemento_10|Avn[33]                 ; Merged with Iter:elemento_10|Svn[33]       ;
+; Iter:elemento_11|Avn[33]                 ; Merged with Iter:elemento_11|Svn[33]       ;
+; Iter:elemento_12|Avn[33]                 ; Merged with Iter:elemento_12|Svn[33]       ;
+; Iter:elemento_13|Avn[33]                 ; Merged with Iter:elemento_13|Svn[33]       ;
+; Iter:elemento_14|Avn[33]                 ; Merged with Iter:elemento_14|Svn[33]       ;
+; Iter:elemento_15|Avn[33]                 ; Merged with Iter:elemento_15|Svn[33]       ;
+; Iter:elemento_16|Avn[33]                 ; Merged with Iter:elemento_16|Svn[33]       ;
+; Total Number of Removed Registers = 1135 ;                                            ;
++------------------------------------------+--------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                ;
++--------------------------------+---------------------------+-------------------------------------------------------------------------------+
+; Register name                  ; Reason for Removal        ; Registers Removed due to This Register                                        ;
++--------------------------------+---------------------------+-------------------------------------------------------------------------------+
+; Gen_Vectores:elemento_1|Sv[0]  ; Stuck at GND              ; Iter:elemento_2|Svn[0], Iter:elemento_3|Svn[0], Iter:elemento_4|Svn[0],       ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[0], Iter:elemento_6|Svn[0], Iter:elemento_7|Svn[0],       ;
+;                                ;                           ; Iter:elemento_8|Svn[0], Iter:elemento_9|Svn[0], Iter:elemento_10|Svn[0],      ;
+;                                ;                           ; Iter:elemento_11|Svn[0], Iter:elemento_12|Svn[0], Iter:elemento_13|Svn[0],    ;
+;                                ;                           ; Iter:elemento_14|Svn[0], Iter:elemento_15|Svn[0], Iter:elemento_16|Svn[0]     ;
+; Gen_Vectores:elemento_1|Sv[1]  ; Stuck at GND              ; Iter:elemento_2|Svn[1], Iter:elemento_3|Svn[1], Iter:elemento_4|Svn[1],       ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[1], Iter:elemento_6|Svn[1], Iter:elemento_7|Svn[1],       ;
+;                                ;                           ; Iter:elemento_8|Svn[1], Iter:elemento_9|Svn[1], Iter:elemento_10|Svn[1],      ;
+;                                ;                           ; Iter:elemento_11|Svn[1], Iter:elemento_12|Svn[1], Iter:elemento_13|Svn[1],    ;
+;                                ;                           ; Iter:elemento_14|Svn[1], Iter:elemento_15|Svn[1], Iter:elemento_16|Svn[1]     ;
+; Gen_Vectores:elemento_1|Sv[2]  ; Stuck at GND              ; Iter:elemento_2|Svn[2], Iter:elemento_3|Svn[2], Iter:elemento_4|Svn[2],       ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[2], Iter:elemento_6|Svn[2], Iter:elemento_7|Svn[2],       ;
+;                                ;                           ; Iter:elemento_8|Svn[2], Iter:elemento_9|Svn[2], Iter:elemento_10|Svn[2],      ;
+;                                ;                           ; Iter:elemento_11|Svn[2], Iter:elemento_12|Svn[2], Iter:elemento_13|Svn[2],    ;
+;                                ;                           ; Iter:elemento_14|Svn[2], Iter:elemento_15|Svn[2], Iter:elemento_16|Svn[2]     ;
+; Gen_Vectores:elemento_1|Sv[3]  ; Stuck at GND              ; Iter:elemento_2|Svn[3], Iter:elemento_3|Svn[3], Iter:elemento_4|Svn[3],       ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[3], Iter:elemento_6|Svn[3], Iter:elemento_7|Svn[3],       ;
+;                                ;                           ; Iter:elemento_8|Svn[3], Iter:elemento_9|Svn[3], Iter:elemento_10|Svn[3],      ;
+;                                ;                           ; Iter:elemento_11|Svn[3], Iter:elemento_12|Svn[3], Iter:elemento_13|Svn[3],    ;
+;                                ;                           ; Iter:elemento_14|Svn[3], Iter:elemento_15|Svn[3], Iter:elemento_16|Svn[3]     ;
+; Gen_Vectores:elemento_1|Sv[4]  ; Stuck at GND              ; Iter:elemento_2|Svn[4], Iter:elemento_3|Svn[4], Iter:elemento_4|Svn[4],       ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[4], Iter:elemento_6|Svn[4], Iter:elemento_7|Svn[4],       ;
+;                                ;                           ; Iter:elemento_8|Svn[4], Iter:elemento_9|Svn[4], Iter:elemento_10|Svn[4],      ;
+;                                ;                           ; Iter:elemento_11|Svn[4], Iter:elemento_12|Svn[4], Iter:elemento_13|Svn[4],    ;
+;                                ;                           ; Iter:elemento_14|Svn[4], Iter:elemento_15|Svn[4], Iter:elemento_16|Svn[4]     ;
+; Gen_Vectores:elemento_1|Sv[5]  ; Stuck at GND              ; Iter:elemento_2|Svn[5], Iter:elemento_3|Svn[5], Iter:elemento_4|Svn[5],       ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[5], Iter:elemento_6|Svn[5], Iter:elemento_7|Svn[5],       ;
+;                                ;                           ; Iter:elemento_8|Svn[5], Iter:elemento_9|Svn[5], Iter:elemento_10|Svn[5],      ;
+;                                ;                           ; Iter:elemento_11|Svn[5], Iter:elemento_12|Svn[5], Iter:elemento_13|Svn[5],    ;
+;                                ;                           ; Iter:elemento_14|Svn[5], Iter:elemento_15|Svn[5], Iter:elemento_16|Svn[5]     ;
+; Gen_Vectores:elemento_1|Sv[6]  ; Stuck at GND              ; Iter:elemento_2|Svn[6], Iter:elemento_3|Svn[6], Iter:elemento_4|Svn[6],       ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[6], Iter:elemento_6|Svn[6], Iter:elemento_7|Svn[6],       ;
+;                                ;                           ; Iter:elemento_8|Svn[6], Iter:elemento_9|Svn[6], Iter:elemento_10|Svn[6],      ;
+;                                ;                           ; Iter:elemento_11|Svn[6], Iter:elemento_12|Svn[6], Iter:elemento_13|Svn[6],    ;
+;                                ;                           ; Iter:elemento_14|Svn[6], Iter:elemento_15|Svn[6], Iter:elemento_16|Svn[6]     ;
+; Gen_Vectores:elemento_1|Sv[7]  ; Stuck at GND              ; Iter:elemento_2|Svn[7], Iter:elemento_3|Svn[7], Iter:elemento_4|Svn[7],       ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[7], Iter:elemento_6|Svn[7], Iter:elemento_7|Svn[7],       ;
+;                                ;                           ; Iter:elemento_8|Svn[7], Iter:elemento_9|Svn[7], Iter:elemento_10|Svn[7],      ;
+;                                ;                           ; Iter:elemento_11|Svn[7], Iter:elemento_12|Svn[7], Iter:elemento_13|Svn[7],    ;
+;                                ;                           ; Iter:elemento_14|Svn[7], Iter:elemento_15|Svn[7], Iter:elemento_16|Svn[7]     ;
+; Gen_Vectores:elemento_1|Sv[8]  ; Stuck at GND              ; Iter:elemento_2|Svn[8], Iter:elemento_3|Svn[8], Iter:elemento_4|Svn[8],       ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[8], Iter:elemento_6|Svn[8], Iter:elemento_7|Svn[8],       ;
+;                                ;                           ; Iter:elemento_8|Svn[8], Iter:elemento_9|Svn[8], Iter:elemento_10|Svn[8],      ;
+;                                ;                           ; Iter:elemento_11|Svn[8], Iter:elemento_12|Svn[8], Iter:elemento_13|Svn[8],    ;
+;                                ;                           ; Iter:elemento_14|Svn[8], Iter:elemento_15|Svn[8], Iter:elemento_16|Svn[8]     ;
+; Gen_Vectores:elemento_1|Sv[9]  ; Stuck at GND              ; Iter:elemento_2|Svn[9], Iter:elemento_3|Svn[9], Iter:elemento_4|Svn[9],       ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[9], Iter:elemento_6|Svn[9], Iter:elemento_7|Svn[9],       ;
+;                                ;                           ; Iter:elemento_8|Svn[9], Iter:elemento_9|Svn[9], Iter:elemento_10|Svn[9],      ;
+;                                ;                           ; Iter:elemento_11|Svn[9], Iter:elemento_12|Svn[9], Iter:elemento_13|Svn[9],    ;
+;                                ;                           ; Iter:elemento_14|Svn[9], Iter:elemento_15|Svn[9], Iter:elemento_16|Svn[9]     ;
+; Gen_Vectores:elemento_1|Sv[10] ; Stuck at GND              ; Iter:elemento_2|Svn[10], Iter:elemento_3|Svn[10], Iter:elemento_4|Svn[10],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[10], Iter:elemento_6|Svn[10], Iter:elemento_7|Svn[10],    ;
+;                                ;                           ; Iter:elemento_8|Svn[10], Iter:elemento_9|Svn[10], Iter:elemento_10|Svn[10],   ;
+;                                ;                           ; Iter:elemento_11|Svn[10], Iter:elemento_12|Svn[10], Iter:elemento_13|Svn[10], ;
+;                                ;                           ; Iter:elemento_14|Svn[10], Iter:elemento_15|Svn[10], Iter:elemento_16|Svn[10]  ;
+; Gen_Vectores:elemento_1|Sv[11] ; Stuck at GND              ; Iter:elemento_2|Svn[11], Iter:elemento_3|Svn[11], Iter:elemento_4|Svn[11],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[11], Iter:elemento_6|Svn[11], Iter:elemento_7|Svn[11],    ;
+;                                ;                           ; Iter:elemento_8|Svn[11], Iter:elemento_9|Svn[11], Iter:elemento_10|Svn[11],   ;
+;                                ;                           ; Iter:elemento_11|Svn[11], Iter:elemento_12|Svn[11], Iter:elemento_13|Svn[11], ;
+;                                ;                           ; Iter:elemento_14|Svn[11], Iter:elemento_15|Svn[11], Iter:elemento_16|Svn[11]  ;
+; Gen_Vectores:elemento_1|Sv[12] ; Stuck at GND              ; Iter:elemento_2|Svn[12], Iter:elemento_3|Svn[12], Iter:elemento_4|Svn[12],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[12], Iter:elemento_6|Svn[12], Iter:elemento_7|Svn[12],    ;
+;                                ;                           ; Iter:elemento_8|Svn[12], Iter:elemento_9|Svn[12], Iter:elemento_10|Svn[12],   ;
+;                                ;                           ; Iter:elemento_11|Svn[12], Iter:elemento_12|Svn[12], Iter:elemento_13|Svn[12], ;
+;                                ;                           ; Iter:elemento_14|Svn[12], Iter:elemento_15|Svn[12], Iter:elemento_16|Svn[12]  ;
+; Gen_Vectores:elemento_1|Sv[13] ; Stuck at GND              ; Iter:elemento_2|Svn[13], Iter:elemento_3|Svn[13], Iter:elemento_4|Svn[13],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[13], Iter:elemento_6|Svn[13], Iter:elemento_7|Svn[13],    ;
+;                                ;                           ; Iter:elemento_8|Svn[13], Iter:elemento_9|Svn[13], Iter:elemento_10|Svn[13],   ;
+;                                ;                           ; Iter:elemento_11|Svn[13], Iter:elemento_12|Svn[13], Iter:elemento_13|Svn[13], ;
+;                                ;                           ; Iter:elemento_14|Svn[13], Iter:elemento_15|Svn[13], Iter:elemento_16|Svn[13]  ;
+; Gen_Vectores:elemento_1|Sv[14] ; Stuck at GND              ; Iter:elemento_2|Svn[14], Iter:elemento_3|Svn[14], Iter:elemento_4|Svn[14],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[14], Iter:elemento_6|Svn[14], Iter:elemento_7|Svn[14],    ;
+;                                ;                           ; Iter:elemento_8|Svn[14], Iter:elemento_9|Svn[14], Iter:elemento_10|Svn[14],   ;
+;                                ;                           ; Iter:elemento_11|Svn[14], Iter:elemento_12|Svn[14], Iter:elemento_13|Svn[14], ;
+;                                ;                           ; Iter:elemento_14|Svn[14], Iter:elemento_15|Svn[14], Iter:elemento_16|Svn[14]  ;
+; Gen_Vectores:elemento_1|Sv[15] ; Stuck at GND              ; Iter:elemento_2|Svn[15], Iter:elemento_3|Svn[15], Iter:elemento_4|Svn[15],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[15], Iter:elemento_6|Svn[15], Iter:elemento_7|Svn[15],    ;
+;                                ;                           ; Iter:elemento_8|Svn[15], Iter:elemento_9|Svn[15], Iter:elemento_10|Svn[15],   ;
+;                                ;                           ; Iter:elemento_11|Svn[15], Iter:elemento_12|Svn[15], Iter:elemento_13|Svn[15], ;
+;                                ;                           ; Iter:elemento_14|Svn[15], Iter:elemento_15|Svn[15], Iter:elemento_16|Svn[15]  ;
+; Gen_Vectores:elemento_1|Sv[16] ; Stuck at GND              ; Iter:elemento_2|Svn[16], Iter:elemento_3|Svn[16], Iter:elemento_4|Svn[16],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[16], Iter:elemento_6|Svn[16], Iter:elemento_7|Svn[16],    ;
+;                                ;                           ; Iter:elemento_8|Svn[16], Iter:elemento_9|Svn[16], Iter:elemento_10|Svn[16],   ;
+;                                ;                           ; Iter:elemento_11|Svn[16], Iter:elemento_12|Svn[16], Iter:elemento_13|Svn[16], ;
+;                                ;                           ; Iter:elemento_14|Svn[16], Iter:elemento_15|Svn[16], Iter:elemento_16|Svn[16]  ;
+; Gen_Vectores:elemento_1|Sv[17] ; Stuck at GND              ; Iter:elemento_2|Svn[17], Iter:elemento_3|Svn[17], Iter:elemento_4|Svn[17],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[17], Iter:elemento_6|Svn[17], Iter:elemento_7|Svn[17],    ;
+;                                ;                           ; Iter:elemento_8|Svn[17], Iter:elemento_9|Svn[17], Iter:elemento_10|Svn[17],   ;
+;                                ;                           ; Iter:elemento_11|Svn[17], Iter:elemento_12|Svn[17], Iter:elemento_13|Svn[17], ;
+;                                ;                           ; Iter:elemento_14|Svn[17], Iter:elemento_15|Svn[17], Iter:elemento_16|Svn[17]  ;
+; Gen_Vectores:elemento_1|Sv[18] ; Stuck at GND              ; Iter:elemento_2|Svn[18], Iter:elemento_3|Svn[18], Iter:elemento_4|Svn[18],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[18], Iter:elemento_6|Svn[18], Iter:elemento_7|Svn[18],    ;
+;                                ;                           ; Iter:elemento_8|Svn[18], Iter:elemento_9|Svn[18], Iter:elemento_10|Svn[18],   ;
+;                                ;                           ; Iter:elemento_11|Svn[18], Iter:elemento_12|Svn[18], Iter:elemento_13|Svn[18], ;
+;                                ;                           ; Iter:elemento_14|Svn[18], Iter:elemento_15|Svn[18], Iter:elemento_16|Svn[18]  ;
+; Gen_Vectores:elemento_1|Sv[19] ; Stuck at GND              ; Iter:elemento_2|Svn[19], Iter:elemento_3|Svn[19], Iter:elemento_4|Svn[19],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[19], Iter:elemento_6|Svn[19], Iter:elemento_7|Svn[19],    ;
+;                                ;                           ; Iter:elemento_8|Svn[19], Iter:elemento_9|Svn[19], Iter:elemento_10|Svn[19],   ;
+;                                ;                           ; Iter:elemento_11|Svn[19], Iter:elemento_12|Svn[19], Iter:elemento_13|Svn[19], ;
+;                                ;                           ; Iter:elemento_14|Svn[19], Iter:elemento_15|Svn[19], Iter:elemento_16|Svn[19]  ;
+; Gen_Vectores:elemento_1|Sv[20] ; Stuck at GND              ; Iter:elemento_2|Svn[20], Iter:elemento_3|Svn[20], Iter:elemento_4|Svn[20],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[20], Iter:elemento_6|Svn[20], Iter:elemento_7|Svn[20],    ;
+;                                ;                           ; Iter:elemento_8|Svn[20], Iter:elemento_9|Svn[20], Iter:elemento_10|Svn[20],   ;
+;                                ;                           ; Iter:elemento_11|Svn[20], Iter:elemento_12|Svn[20], Iter:elemento_13|Svn[20], ;
+;                                ;                           ; Iter:elemento_14|Svn[20], Iter:elemento_15|Svn[20], Iter:elemento_16|Svn[20]  ;
+; Gen_Vectores:elemento_1|Sv[21] ; Stuck at GND              ; Iter:elemento_2|Svn[21], Iter:elemento_3|Svn[21], Iter:elemento_4|Svn[21],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[21], Iter:elemento_6|Svn[21], Iter:elemento_7|Svn[21],    ;
+;                                ;                           ; Iter:elemento_8|Svn[21], Iter:elemento_9|Svn[21], Iter:elemento_10|Svn[21],   ;
+;                                ;                           ; Iter:elemento_11|Svn[21], Iter:elemento_12|Svn[21], Iter:elemento_13|Svn[21], ;
+;                                ;                           ; Iter:elemento_14|Svn[21], Iter:elemento_15|Svn[21], Iter:elemento_16|Svn[21]  ;
+; Gen_Vectores:elemento_1|Sv[22] ; Stuck at GND              ; Iter:elemento_2|Svn[22], Iter:elemento_3|Svn[22], Iter:elemento_4|Svn[22],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[22], Iter:elemento_6|Svn[22], Iter:elemento_7|Svn[22],    ;
+;                                ;                           ; Iter:elemento_8|Svn[22], Iter:elemento_9|Svn[22], Iter:elemento_10|Svn[22],   ;
+;                                ;                           ; Iter:elemento_11|Svn[22], Iter:elemento_12|Svn[22], Iter:elemento_13|Svn[22], ;
+;                                ;                           ; Iter:elemento_14|Svn[22], Iter:elemento_15|Svn[22], Iter:elemento_16|Svn[22]  ;
+; Gen_Vectores:elemento_1|Sv[23] ; Stuck at GND              ; Iter:elemento_2|Svn[23], Iter:elemento_3|Svn[23], Iter:elemento_4|Svn[23],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[23], Iter:elemento_6|Svn[23], Iter:elemento_7|Svn[23],    ;
+;                                ;                           ; Iter:elemento_8|Svn[23], Iter:elemento_9|Svn[23], Iter:elemento_10|Svn[23],   ;
+;                                ;                           ; Iter:elemento_11|Svn[23], Iter:elemento_12|Svn[23], Iter:elemento_13|Svn[23], ;
+;                                ;                           ; Iter:elemento_14|Svn[23], Iter:elemento_15|Svn[23], Iter:elemento_16|Svn[23]  ;
+; Gen_Vectores:elemento_1|Sv[24] ; Stuck at GND              ; Iter:elemento_2|Svn[24], Iter:elemento_3|Svn[24], Iter:elemento_4|Svn[24],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[24], Iter:elemento_6|Svn[24], Iter:elemento_7|Svn[24],    ;
+;                                ;                           ; Iter:elemento_8|Svn[24], Iter:elemento_9|Svn[24], Iter:elemento_10|Svn[24],   ;
+;                                ;                           ; Iter:elemento_11|Svn[24], Iter:elemento_12|Svn[24], Iter:elemento_13|Svn[24], ;
+;                                ;                           ; Iter:elemento_14|Svn[24], Iter:elemento_15|Svn[24], Iter:elemento_16|Svn[24]  ;
+; Gen_Vectores:elemento_1|Sv[25] ; Stuck at GND              ; Iter:elemento_2|Svn[25], Iter:elemento_3|Svn[25], Iter:elemento_4|Svn[25],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[25], Iter:elemento_6|Svn[25], Iter:elemento_7|Svn[25],    ;
+;                                ;                           ; Iter:elemento_8|Svn[25], Iter:elemento_9|Svn[25], Iter:elemento_10|Svn[25],   ;
+;                                ;                           ; Iter:elemento_11|Svn[25], Iter:elemento_12|Svn[25], Iter:elemento_13|Svn[25], ;
+;                                ;                           ; Iter:elemento_14|Svn[25], Iter:elemento_15|Svn[25], Iter:elemento_16|Svn[25]  ;
+; Gen_Vectores:elemento_1|Sv[26] ; Stuck at GND              ; Iter:elemento_2|Svn[26], Iter:elemento_3|Svn[26], Iter:elemento_4|Svn[26],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[26], Iter:elemento_6|Svn[26], Iter:elemento_7|Svn[26],    ;
+;                                ;                           ; Iter:elemento_8|Svn[26], Iter:elemento_9|Svn[26], Iter:elemento_10|Svn[26],   ;
+;                                ;                           ; Iter:elemento_11|Svn[26], Iter:elemento_12|Svn[26], Iter:elemento_13|Svn[26], ;
+;                                ;                           ; Iter:elemento_14|Svn[26], Iter:elemento_15|Svn[26], Iter:elemento_16|Svn[26]  ;
+; Gen_Vectores:elemento_1|Sv[27] ; Stuck at GND              ; Iter:elemento_2|Svn[27], Iter:elemento_3|Svn[27], Iter:elemento_4|Svn[27],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[27], Iter:elemento_6|Svn[27], Iter:elemento_7|Svn[27],    ;
+;                                ;                           ; Iter:elemento_8|Svn[27], Iter:elemento_9|Svn[27], Iter:elemento_10|Svn[27],   ;
+;                                ;                           ; Iter:elemento_11|Svn[27], Iter:elemento_12|Svn[27], Iter:elemento_13|Svn[27], ;
+;                                ;                           ; Iter:elemento_14|Svn[27], Iter:elemento_15|Svn[27], Iter:elemento_16|Svn[27]  ;
+; Gen_Vectores:elemento_1|Sv[28] ; Stuck at GND              ; Iter:elemento_2|Svn[28], Iter:elemento_3|Svn[28], Iter:elemento_4|Svn[28],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[28], Iter:elemento_6|Svn[28], Iter:elemento_7|Svn[28],    ;
+;                                ;                           ; Iter:elemento_8|Svn[28], Iter:elemento_9|Svn[28], Iter:elemento_10|Svn[28],   ;
+;                                ;                           ; Iter:elemento_11|Svn[28], Iter:elemento_12|Svn[28], Iter:elemento_13|Svn[28], ;
+;                                ;                           ; Iter:elemento_14|Svn[28], Iter:elemento_15|Svn[28], Iter:elemento_16|Svn[28]  ;
+; Gen_Vectores:elemento_1|Sv[29] ; Stuck at GND              ; Iter:elemento_2|Svn[29], Iter:elemento_3|Svn[29], Iter:elemento_4|Svn[29],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[29], Iter:elemento_6|Svn[29], Iter:elemento_7|Svn[29],    ;
+;                                ;                           ; Iter:elemento_8|Svn[29], Iter:elemento_9|Svn[29], Iter:elemento_10|Svn[29],   ;
+;                                ;                           ; Iter:elemento_11|Svn[29], Iter:elemento_12|Svn[29], Iter:elemento_13|Svn[29], ;
+;                                ;                           ; Iter:elemento_14|Svn[29], Iter:elemento_15|Svn[29], Iter:elemento_16|Svn[29]  ;
+; Gen_Vectores:elemento_1|Sv[30] ; Stuck at GND              ; Iter:elemento_2|Svn[30], Iter:elemento_3|Svn[30], Iter:elemento_4|Svn[30],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[30], Iter:elemento_6|Svn[30], Iter:elemento_7|Svn[30],    ;
+;                                ;                           ; Iter:elemento_8|Svn[30], Iter:elemento_9|Svn[30], Iter:elemento_10|Svn[30],   ;
+;                                ;                           ; Iter:elemento_11|Svn[30], Iter:elemento_12|Svn[30], Iter:elemento_13|Svn[30], ;
+;                                ;                           ; Iter:elemento_14|Svn[30], Iter:elemento_15|Svn[30], Iter:elemento_16|Svn[30]  ;
+; Gen_Vectores:elemento_1|Sv[31] ; Stuck at GND              ; Iter:elemento_2|Svn[31], Iter:elemento_3|Svn[31], Iter:elemento_4|Svn[31],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[31], Iter:elemento_6|Svn[31], Iter:elemento_7|Svn[31],    ;
+;                                ;                           ; Iter:elemento_8|Svn[31], Iter:elemento_9|Svn[31], Iter:elemento_10|Svn[31],   ;
+;                                ;                           ; Iter:elemento_11|Svn[31], Iter:elemento_12|Svn[31], Iter:elemento_13|Svn[31], ;
+;                                ;                           ; Iter:elemento_14|Svn[31], Iter:elemento_15|Svn[31], Iter:elemento_16|Svn[31]  ;
+; Gen_Vectores:elemento_1|Sv[32] ; Stuck at GND              ; Iter:elemento_2|Svn[32], Iter:elemento_3|Svn[32], Iter:elemento_4|Svn[32],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Svn[32], Iter:elemento_6|Svn[32], Iter:elemento_7|Svn[32],    ;
+;                                ;                           ; Iter:elemento_8|Svn[32], Iter:elemento_9|Svn[32], Iter:elemento_10|Svn[32],   ;
+;                                ;                           ; Iter:elemento_11|Svn[32], Iter:elemento_12|Svn[32], Iter:elemento_13|Svn[32], ;
+;                                ;                           ; Iter:elemento_14|Svn[32], Iter:elemento_15|Svn[32], Iter:elemento_16|Svn[32]  ;
+; Gen_Vectores:elemento_1|Av[0]  ; Stuck at GND              ; Iter:elemento_2|Avn[0], Iter:elemento_3|Avn[0], Iter:elemento_4|Avn[0],       ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[0], Iter:elemento_6|Avn[0], Iter:elemento_7|Avn[0],       ;
+;                                ;                           ; Iter:elemento_8|Avn[0], Iter:elemento_9|Avn[0], Iter:elemento_10|Avn[0],      ;
+;                                ;                           ; Iter:elemento_11|Avn[0], Iter:elemento_12|Avn[0], Iter:elemento_13|Avn[0],    ;
+;                                ;                           ; Iter:elemento_14|Avn[0], Iter:elemento_15|Avn[0], Iter:elemento_16|Avn[0]     ;
+; Gen_Vectores:elemento_1|Av[1]  ; Stuck at GND              ; Iter:elemento_2|Avn[1], Iter:elemento_3|Avn[1], Iter:elemento_4|Avn[1],       ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[1], Iter:elemento_6|Avn[1], Iter:elemento_7|Avn[1],       ;
+;                                ;                           ; Iter:elemento_8|Avn[1], Iter:elemento_9|Avn[1], Iter:elemento_10|Avn[1],      ;
+;                                ;                           ; Iter:elemento_11|Avn[1], Iter:elemento_12|Avn[1], Iter:elemento_13|Avn[1],    ;
+;                                ;                           ; Iter:elemento_14|Avn[1], Iter:elemento_15|Avn[1], Iter:elemento_16|Avn[1]     ;
+; Gen_Vectores:elemento_1|Av[2]  ; Stuck at GND              ; Iter:elemento_2|Avn[2], Iter:elemento_3|Avn[2], Iter:elemento_4|Avn[2],       ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[2], Iter:elemento_6|Avn[2], Iter:elemento_7|Avn[2],       ;
+;                                ;                           ; Iter:elemento_8|Avn[2], Iter:elemento_9|Avn[2], Iter:elemento_10|Avn[2],      ;
+;                                ;                           ; Iter:elemento_11|Avn[2], Iter:elemento_12|Avn[2], Iter:elemento_13|Avn[2],    ;
+;                                ;                           ; Iter:elemento_14|Avn[2], Iter:elemento_15|Avn[2], Iter:elemento_16|Avn[2]     ;
+; Gen_Vectores:elemento_1|Av[3]  ; Stuck at GND              ; Iter:elemento_2|Avn[3], Iter:elemento_3|Avn[3], Iter:elemento_4|Avn[3],       ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[3], Iter:elemento_6|Avn[3], Iter:elemento_7|Avn[3],       ;
+;                                ;                           ; Iter:elemento_8|Avn[3], Iter:elemento_9|Avn[3], Iter:elemento_10|Avn[3],      ;
+;                                ;                           ; Iter:elemento_11|Avn[3], Iter:elemento_12|Avn[3], Iter:elemento_13|Avn[3],    ;
+;                                ;                           ; Iter:elemento_14|Avn[3], Iter:elemento_15|Avn[3], Iter:elemento_16|Avn[3]     ;
+; Gen_Vectores:elemento_1|Av[4]  ; Stuck at GND              ; Iter:elemento_2|Avn[4], Iter:elemento_3|Avn[4], Iter:elemento_4|Avn[4],       ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[4], Iter:elemento_6|Avn[4], Iter:elemento_7|Avn[4],       ;
+;                                ;                           ; Iter:elemento_8|Avn[4], Iter:elemento_9|Avn[4], Iter:elemento_10|Avn[4],      ;
+;                                ;                           ; Iter:elemento_11|Avn[4], Iter:elemento_12|Avn[4], Iter:elemento_13|Avn[4],    ;
+;                                ;                           ; Iter:elemento_14|Avn[4], Iter:elemento_15|Avn[4], Iter:elemento_16|Avn[4]     ;
+; Gen_Vectores:elemento_1|Av[5]  ; Stuck at GND              ; Iter:elemento_2|Avn[5], Iter:elemento_3|Avn[5], Iter:elemento_4|Avn[5],       ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[5], Iter:elemento_6|Avn[5], Iter:elemento_7|Avn[5],       ;
+;                                ;                           ; Iter:elemento_8|Avn[5], Iter:elemento_9|Avn[5], Iter:elemento_10|Avn[5],      ;
+;                                ;                           ; Iter:elemento_11|Avn[5], Iter:elemento_12|Avn[5], Iter:elemento_13|Avn[5],    ;
+;                                ;                           ; Iter:elemento_14|Avn[5], Iter:elemento_15|Avn[5], Iter:elemento_16|Avn[5]     ;
+; Gen_Vectores:elemento_1|Av[6]  ; Stuck at GND              ; Iter:elemento_2|Avn[6], Iter:elemento_3|Avn[6], Iter:elemento_4|Avn[6],       ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[6], Iter:elemento_6|Avn[6], Iter:elemento_7|Avn[6],       ;
+;                                ;                           ; Iter:elemento_8|Avn[6], Iter:elemento_9|Avn[6], Iter:elemento_10|Avn[6],      ;
+;                                ;                           ; Iter:elemento_11|Avn[6], Iter:elemento_12|Avn[6], Iter:elemento_13|Avn[6],    ;
+;                                ;                           ; Iter:elemento_14|Avn[6], Iter:elemento_15|Avn[6], Iter:elemento_16|Avn[6]     ;
+; Gen_Vectores:elemento_1|Av[7]  ; Stuck at GND              ; Iter:elemento_2|Avn[7], Iter:elemento_3|Avn[7], Iter:elemento_4|Avn[7],       ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[7], Iter:elemento_6|Avn[7], Iter:elemento_7|Avn[7],       ;
+;                                ;                           ; Iter:elemento_8|Avn[7], Iter:elemento_9|Avn[7], Iter:elemento_10|Avn[7],      ;
+;                                ;                           ; Iter:elemento_11|Avn[7], Iter:elemento_12|Avn[7], Iter:elemento_13|Avn[7],    ;
+;                                ;                           ; Iter:elemento_14|Avn[7], Iter:elemento_15|Avn[7], Iter:elemento_16|Avn[7]     ;
+; Gen_Vectores:elemento_1|Av[8]  ; Stuck at GND              ; Iter:elemento_2|Avn[8], Iter:elemento_3|Avn[8], Iter:elemento_4|Avn[8],       ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[8], Iter:elemento_6|Avn[8], Iter:elemento_7|Avn[8],       ;
+;                                ;                           ; Iter:elemento_8|Avn[8], Iter:elemento_9|Avn[8], Iter:elemento_10|Avn[8],      ;
+;                                ;                           ; Iter:elemento_11|Avn[8], Iter:elemento_12|Avn[8], Iter:elemento_13|Avn[8],    ;
+;                                ;                           ; Iter:elemento_14|Avn[8], Iter:elemento_15|Avn[8], Iter:elemento_16|Avn[8]     ;
+; Gen_Vectores:elemento_1|Av[9]  ; Stuck at GND              ; Iter:elemento_2|Avn[9], Iter:elemento_3|Avn[9], Iter:elemento_4|Avn[9],       ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[9], Iter:elemento_6|Avn[9], Iter:elemento_7|Avn[9],       ;
+;                                ;                           ; Iter:elemento_8|Avn[9], Iter:elemento_9|Avn[9], Iter:elemento_10|Avn[9],      ;
+;                                ;                           ; Iter:elemento_11|Avn[9], Iter:elemento_12|Avn[9], Iter:elemento_13|Avn[9],    ;
+;                                ;                           ; Iter:elemento_14|Avn[9], Iter:elemento_15|Avn[9], Iter:elemento_16|Avn[9]     ;
+; Gen_Vectores:elemento_1|Av[10] ; Stuck at GND              ; Iter:elemento_2|Avn[10], Iter:elemento_3|Avn[10], Iter:elemento_4|Avn[10],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[10], Iter:elemento_6|Avn[10], Iter:elemento_7|Avn[10],    ;
+;                                ;                           ; Iter:elemento_8|Avn[10], Iter:elemento_9|Avn[10], Iter:elemento_10|Avn[10],   ;
+;                                ;                           ; Iter:elemento_11|Avn[10], Iter:elemento_12|Avn[10], Iter:elemento_13|Avn[10], ;
+;                                ;                           ; Iter:elemento_14|Avn[10], Iter:elemento_15|Avn[10], Iter:elemento_16|Avn[10]  ;
+; Gen_Vectores:elemento_1|Av[11] ; Stuck at GND              ; Iter:elemento_2|Avn[11], Iter:elemento_3|Avn[11], Iter:elemento_4|Avn[11],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[11], Iter:elemento_6|Avn[11], Iter:elemento_7|Avn[11],    ;
+;                                ;                           ; Iter:elemento_8|Avn[11], Iter:elemento_9|Avn[11], Iter:elemento_10|Avn[11],   ;
+;                                ;                           ; Iter:elemento_11|Avn[11], Iter:elemento_12|Avn[11], Iter:elemento_13|Avn[11], ;
+;                                ;                           ; Iter:elemento_14|Avn[11], Iter:elemento_15|Avn[11], Iter:elemento_16|Avn[11]  ;
+; Gen_Vectores:elemento_1|Av[12] ; Stuck at GND              ; Iter:elemento_2|Avn[12], Iter:elemento_3|Avn[12], Iter:elemento_4|Avn[12],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[12], Iter:elemento_6|Avn[12], Iter:elemento_7|Avn[12],    ;
+;                                ;                           ; Iter:elemento_8|Avn[12], Iter:elemento_9|Avn[12], Iter:elemento_10|Avn[12],   ;
+;                                ;                           ; Iter:elemento_11|Avn[12], Iter:elemento_12|Avn[12], Iter:elemento_13|Avn[12], ;
+;                                ;                           ; Iter:elemento_14|Avn[12], Iter:elemento_15|Avn[12], Iter:elemento_16|Avn[12]  ;
+; Gen_Vectores:elemento_1|Av[13] ; Stuck at GND              ; Iter:elemento_2|Avn[13], Iter:elemento_3|Avn[13], Iter:elemento_4|Avn[13],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[13], Iter:elemento_6|Avn[13], Iter:elemento_7|Avn[13],    ;
+;                                ;                           ; Iter:elemento_8|Avn[13], Iter:elemento_9|Avn[13], Iter:elemento_10|Avn[13],   ;
+;                                ;                           ; Iter:elemento_11|Avn[13], Iter:elemento_12|Avn[13], Iter:elemento_13|Avn[13], ;
+;                                ;                           ; Iter:elemento_14|Avn[13], Iter:elemento_15|Avn[13], Iter:elemento_16|Avn[13]  ;
+; Gen_Vectores:elemento_1|Av[14] ; Stuck at GND              ; Iter:elemento_2|Avn[14], Iter:elemento_3|Avn[14], Iter:elemento_4|Avn[14],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[14], Iter:elemento_6|Avn[14], Iter:elemento_7|Avn[14],    ;
+;                                ;                           ; Iter:elemento_8|Avn[14], Iter:elemento_9|Avn[14], Iter:elemento_10|Avn[14],   ;
+;                                ;                           ; Iter:elemento_11|Avn[14], Iter:elemento_12|Avn[14], Iter:elemento_13|Avn[14], ;
+;                                ;                           ; Iter:elemento_14|Avn[14], Iter:elemento_15|Avn[14], Iter:elemento_16|Avn[14]  ;
+; Gen_Vectores:elemento_1|Av[15] ; Stuck at GND              ; Iter:elemento_2|Avn[15], Iter:elemento_3|Avn[15], Iter:elemento_4|Avn[15],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[15], Iter:elemento_6|Avn[15], Iter:elemento_7|Avn[15],    ;
+;                                ;                           ; Iter:elemento_8|Avn[15], Iter:elemento_9|Avn[15], Iter:elemento_10|Avn[15],   ;
+;                                ;                           ; Iter:elemento_11|Avn[15], Iter:elemento_12|Avn[15], Iter:elemento_13|Avn[15], ;
+;                                ;                           ; Iter:elemento_14|Avn[15], Iter:elemento_15|Avn[15], Iter:elemento_16|Avn[15]  ;
+; Gen_Vectores:elemento_1|Av[16] ; Stuck at GND              ; Iter:elemento_2|Avn[16], Iter:elemento_3|Avn[16], Iter:elemento_4|Avn[16],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[16], Iter:elemento_6|Avn[16], Iter:elemento_7|Avn[16],    ;
+;                                ;                           ; Iter:elemento_8|Avn[16], Iter:elemento_9|Avn[16], Iter:elemento_10|Avn[16],   ;
+;                                ;                           ; Iter:elemento_11|Avn[16], Iter:elemento_12|Avn[16], Iter:elemento_13|Avn[16], ;
+;                                ;                           ; Iter:elemento_14|Avn[16], Iter:elemento_15|Avn[16], Iter:elemento_16|Avn[16]  ;
+; Gen_Vectores:elemento_1|Av[17] ; Stuck at GND              ; Iter:elemento_2|Avn[17], Iter:elemento_3|Avn[17], Iter:elemento_4|Avn[17],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[17], Iter:elemento_6|Avn[17], Iter:elemento_7|Avn[17],    ;
+;                                ;                           ; Iter:elemento_8|Avn[17], Iter:elemento_9|Avn[17], Iter:elemento_10|Avn[17],   ;
+;                                ;                           ; Iter:elemento_11|Avn[17], Iter:elemento_12|Avn[17], Iter:elemento_13|Avn[17], ;
+;                                ;                           ; Iter:elemento_14|Avn[17], Iter:elemento_15|Avn[17], Iter:elemento_16|Avn[17]  ;
+; Gen_Vectores:elemento_1|Av[18] ; Stuck at GND              ; Iter:elemento_2|Avn[18], Iter:elemento_3|Avn[18], Iter:elemento_4|Avn[18],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[18], Iter:elemento_6|Avn[18], Iter:elemento_7|Avn[18],    ;
+;                                ;                           ; Iter:elemento_8|Avn[18], Iter:elemento_9|Avn[18], Iter:elemento_10|Avn[18],   ;
+;                                ;                           ; Iter:elemento_11|Avn[18], Iter:elemento_12|Avn[18], Iter:elemento_13|Avn[18], ;
+;                                ;                           ; Iter:elemento_14|Avn[18], Iter:elemento_15|Avn[18], Iter:elemento_16|Avn[18]  ;
+; Gen_Vectores:elemento_1|Av[19] ; Stuck at GND              ; Iter:elemento_2|Avn[19], Iter:elemento_3|Avn[19], Iter:elemento_4|Avn[19],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[19], Iter:elemento_6|Avn[19], Iter:elemento_7|Avn[19],    ;
+;                                ;                           ; Iter:elemento_8|Avn[19], Iter:elemento_9|Avn[19], Iter:elemento_10|Avn[19],   ;
+;                                ;                           ; Iter:elemento_11|Avn[19], Iter:elemento_12|Avn[19], Iter:elemento_13|Avn[19], ;
+;                                ;                           ; Iter:elemento_14|Avn[19], Iter:elemento_15|Avn[19], Iter:elemento_16|Avn[19]  ;
+; Gen_Vectores:elemento_1|Av[20] ; Stuck at GND              ; Iter:elemento_2|Avn[20], Iter:elemento_3|Avn[20], Iter:elemento_4|Avn[20],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[20], Iter:elemento_6|Avn[20], Iter:elemento_7|Avn[20],    ;
+;                                ;                           ; Iter:elemento_8|Avn[20], Iter:elemento_9|Avn[20], Iter:elemento_10|Avn[20],   ;
+;                                ;                           ; Iter:elemento_11|Avn[20], Iter:elemento_12|Avn[20], Iter:elemento_13|Avn[20], ;
+;                                ;                           ; Iter:elemento_14|Avn[20], Iter:elemento_15|Avn[20], Iter:elemento_16|Avn[20]  ;
+; Gen_Vectores:elemento_1|Av[21] ; Stuck at GND              ; Iter:elemento_2|Avn[21], Iter:elemento_3|Avn[21], Iter:elemento_4|Avn[21],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[21], Iter:elemento_6|Avn[21], Iter:elemento_7|Avn[21],    ;
+;                                ;                           ; Iter:elemento_8|Avn[21], Iter:elemento_9|Avn[21], Iter:elemento_10|Avn[21],   ;
+;                                ;                           ; Iter:elemento_11|Avn[21], Iter:elemento_12|Avn[21], Iter:elemento_13|Avn[21], ;
+;                                ;                           ; Iter:elemento_14|Avn[21], Iter:elemento_15|Avn[21], Iter:elemento_16|Avn[21]  ;
+; Gen_Vectores:elemento_1|Av[22] ; Stuck at GND              ; Iter:elemento_2|Avn[22], Iter:elemento_3|Avn[22], Iter:elemento_4|Avn[22],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[22], Iter:elemento_6|Avn[22], Iter:elemento_7|Avn[22],    ;
+;                                ;                           ; Iter:elemento_8|Avn[22], Iter:elemento_9|Avn[22], Iter:elemento_10|Avn[22],   ;
+;                                ;                           ; Iter:elemento_11|Avn[22], Iter:elemento_12|Avn[22], Iter:elemento_13|Avn[22], ;
+;                                ;                           ; Iter:elemento_14|Avn[22], Iter:elemento_15|Avn[22], Iter:elemento_16|Avn[22]  ;
+; Gen_Vectores:elemento_1|Av[23] ; Stuck at GND              ; Iter:elemento_2|Avn[23], Iter:elemento_3|Avn[23], Iter:elemento_4|Avn[23],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[23], Iter:elemento_6|Avn[23], Iter:elemento_7|Avn[23],    ;
+;                                ;                           ; Iter:elemento_8|Avn[23], Iter:elemento_9|Avn[23], Iter:elemento_10|Avn[23],   ;
+;                                ;                           ; Iter:elemento_11|Avn[23], Iter:elemento_12|Avn[23], Iter:elemento_13|Avn[23], ;
+;                                ;                           ; Iter:elemento_14|Avn[23], Iter:elemento_15|Avn[23], Iter:elemento_16|Avn[23]  ;
+; Gen_Vectores:elemento_1|Av[24] ; Stuck at GND              ; Iter:elemento_2|Avn[24], Iter:elemento_3|Avn[24], Iter:elemento_4|Avn[24],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[24], Iter:elemento_6|Avn[24], Iter:elemento_7|Avn[24],    ;
+;                                ;                           ; Iter:elemento_8|Avn[24], Iter:elemento_9|Avn[24], Iter:elemento_10|Avn[24],   ;
+;                                ;                           ; Iter:elemento_11|Avn[24], Iter:elemento_12|Avn[24], Iter:elemento_13|Avn[24], ;
+;                                ;                           ; Iter:elemento_14|Avn[24], Iter:elemento_15|Avn[24], Iter:elemento_16|Avn[24]  ;
+; Gen_Vectores:elemento_1|Av[25] ; Stuck at GND              ; Iter:elemento_2|Avn[25], Iter:elemento_3|Avn[25], Iter:elemento_4|Avn[25],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[25], Iter:elemento_6|Avn[25], Iter:elemento_7|Avn[25],    ;
+;                                ;                           ; Iter:elemento_8|Avn[25], Iter:elemento_9|Avn[25], Iter:elemento_10|Avn[25],   ;
+;                                ;                           ; Iter:elemento_11|Avn[25], Iter:elemento_12|Avn[25], Iter:elemento_13|Avn[25], ;
+;                                ;                           ; Iter:elemento_14|Avn[25], Iter:elemento_15|Avn[25], Iter:elemento_16|Avn[25]  ;
+; Gen_Vectores:elemento_1|Av[26] ; Stuck at GND              ; Iter:elemento_2|Avn[26], Iter:elemento_3|Avn[26], Iter:elemento_4|Avn[26],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[26], Iter:elemento_6|Avn[26], Iter:elemento_7|Avn[26],    ;
+;                                ;                           ; Iter:elemento_8|Avn[26], Iter:elemento_9|Avn[26], Iter:elemento_10|Avn[26],   ;
+;                                ;                           ; Iter:elemento_11|Avn[26], Iter:elemento_12|Avn[26], Iter:elemento_13|Avn[26], ;
+;                                ;                           ; Iter:elemento_14|Avn[26], Iter:elemento_15|Avn[26], Iter:elemento_16|Avn[26]  ;
+; Gen_Vectores:elemento_1|Av[27] ; Stuck at GND              ; Iter:elemento_2|Avn[27], Iter:elemento_3|Avn[27], Iter:elemento_4|Avn[27],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[27], Iter:elemento_6|Avn[27], Iter:elemento_7|Avn[27],    ;
+;                                ;                           ; Iter:elemento_8|Avn[27], Iter:elemento_9|Avn[27], Iter:elemento_10|Avn[27],   ;
+;                                ;                           ; Iter:elemento_11|Avn[27], Iter:elemento_12|Avn[27], Iter:elemento_13|Avn[27], ;
+;                                ;                           ; Iter:elemento_14|Avn[27], Iter:elemento_15|Avn[27], Iter:elemento_16|Avn[27]  ;
+; Gen_Vectores:elemento_1|Av[28] ; Stuck at GND              ; Iter:elemento_2|Avn[28], Iter:elemento_3|Avn[28], Iter:elemento_4|Avn[28],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[28], Iter:elemento_6|Avn[28], Iter:elemento_7|Avn[28],    ;
+;                                ;                           ; Iter:elemento_8|Avn[28], Iter:elemento_9|Avn[28], Iter:elemento_10|Avn[28],   ;
+;                                ;                           ; Iter:elemento_11|Avn[28], Iter:elemento_12|Avn[28], Iter:elemento_13|Avn[28], ;
+;                                ;                           ; Iter:elemento_14|Avn[28], Iter:elemento_15|Avn[28], Iter:elemento_16|Avn[28]  ;
+; Gen_Vectores:elemento_1|Av[29] ; Stuck at GND              ; Iter:elemento_2|Avn[29], Iter:elemento_3|Avn[29], Iter:elemento_4|Avn[29],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[29], Iter:elemento_6|Avn[29], Iter:elemento_7|Avn[29],    ;
+;                                ;                           ; Iter:elemento_8|Avn[29], Iter:elemento_9|Avn[29], Iter:elemento_10|Avn[29],   ;
+;                                ;                           ; Iter:elemento_11|Avn[29], Iter:elemento_12|Avn[29], Iter:elemento_13|Avn[29], ;
+;                                ;                           ; Iter:elemento_14|Avn[29], Iter:elemento_15|Avn[29], Iter:elemento_16|Avn[29]  ;
+; Gen_Vectores:elemento_1|Av[30] ; Stuck at GND              ; Iter:elemento_2|Avn[30], Iter:elemento_3|Avn[30], Iter:elemento_4|Avn[30],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[30], Iter:elemento_6|Avn[30], Iter:elemento_7|Avn[30],    ;
+;                                ;                           ; Iter:elemento_8|Avn[30], Iter:elemento_9|Avn[30], Iter:elemento_10|Avn[30],   ;
+;                                ;                           ; Iter:elemento_11|Avn[30], Iter:elemento_12|Avn[30], Iter:elemento_13|Avn[30], ;
+;                                ;                           ; Iter:elemento_14|Avn[30], Iter:elemento_15|Avn[30], Iter:elemento_16|Avn[30]  ;
+; Gen_Vectores:elemento_1|Av[31] ; Stuck at GND              ; Iter:elemento_2|Avn[31], Iter:elemento_3|Avn[31], Iter:elemento_4|Avn[31],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[31], Iter:elemento_6|Avn[31], Iter:elemento_7|Avn[31],    ;
+;                                ;                           ; Iter:elemento_8|Avn[31], Iter:elemento_9|Avn[31], Iter:elemento_10|Avn[31],   ;
+;                                ;                           ; Iter:elemento_11|Avn[31], Iter:elemento_12|Avn[31], Iter:elemento_13|Avn[31], ;
+;                                ;                           ; Iter:elemento_14|Avn[31], Iter:elemento_15|Avn[31], Iter:elemento_16|Avn[31]  ;
+; Gen_Vectores:elemento_1|Av[32] ; Stuck at GND              ; Iter:elemento_2|Avn[32], Iter:elemento_3|Avn[32], Iter:elemento_4|Avn[32],    ;
+;                                ; due to stuck port data_in ; Iter:elemento_5|Avn[32], Iter:elemento_6|Avn[32], Iter:elemento_7|Avn[32],    ;
+;                                ;                           ; Iter:elemento_8|Avn[32], Iter:elemento_9|Avn[32], Iter:elemento_10|Avn[32],   ;
+;                                ;                           ; Iter:elemento_11|Avn[32], Iter:elemento_12|Avn[32], Iter:elemento_13|Avn[32], ;
+;                                ;                           ; Iter:elemento_14|Avn[32], Iter:elemento_15|Avn[32], Iter:elemento_16|Avn[32]  ;
++--------------------------------+---------------------------+-------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 2049  ;
+; Number of registers using Synchronous Clear  ; 31    ;
+; Number of registers using Synchronous Load   ; 31    ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
+; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; Yes        ; |Multiplicacion|Iter:elemento_2|Pvn[61] ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |Multiplicacion|Iter:elemento_17|Mux1   ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |Multiplicacion|Iter:elemento_16|Mux0   ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |Multiplicacion|Iter:elemento_15|Mux1   ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |Multiplicacion|Iter:elemento_14|Mux0   ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |Multiplicacion|Iter:elemento_13|Mux1   ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |Multiplicacion|Iter:elemento_12|Mux0   ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |Multiplicacion|Iter:elemento_11|Mux1   ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |Multiplicacion|Iter:elemento_10|Mux1   ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |Multiplicacion|Iter:elemento_9|Mux1    ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |Multiplicacion|Iter:elemento_8|Mux1    ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |Multiplicacion|Iter:elemento_7|Mux0    ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |Multiplicacion|Iter:elemento_6|Mux1    ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |Multiplicacion|Iter:elemento_5|Mux0    ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |Multiplicacion|Iter:elemento_4|Mux1    ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |Multiplicacion|Iter:elemento_3|Mux0    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Iter:elemento_17"                                                                     ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; avn    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; svn    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pvn[0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:02     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Mar 23 15:32:00 2016
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Multiplicacion -c Multiplicacion
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file iter.vhd
+    Info (12022): Found design unit 1: Iter-RTL
+    Info (12023): Found entity 1: Iter
+Info (12021): Found 2 design units, including 1 entities, in source file gen_vectores.vhd
+    Info (12022): Found design unit 1: Gen_Vectores-RTL
+    Info (12023): Found entity 1: Gen_Vectores
+Info (12021): Found 2 design units, including 1 entities, in source file multiplicacion.vhd
+    Info (12022): Found design unit 1: Multiplicacion-RTL
+    Info (12023): Found entity 1: Multiplicacion
+Info (12127): Elaborating entity "Multiplicacion" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at Multiplicacion.vhd(60): object "Av17" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at Multiplicacion.vhd(60): object "Sv17" assigned a value but never read
+Info (12128): Elaborating entity "Gen_Vectores" for hierarchy "Gen_Vectores:elemento_1"
+Info (12128): Elaborating entity "Iter" for hierarchy "Iter:elemento_2"
+Warning (10492): VHDL Process Statement warning at ITER.vhd(43): signal "Av" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ITER.vhd(44): signal "Av" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ITER.vhd(45): signal "Av" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ITER.vhd(46): signal "Sv" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ITER.vhd(47): signal "Sv" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ITER.vhd(48): signal "Sv" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 3635 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 65 input pins
+    Info (21059): Implemented 64 output pins
+    Info (21061): Implemented 3506 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 9 warnings
+    Info: Peak virtual memory: 533 megabytes
+    Info: Processing ended: Wed Mar 23 15:32:06 2016
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:06
+
+

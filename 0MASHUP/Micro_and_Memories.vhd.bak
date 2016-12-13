@@ -1,0 +1,23 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity Micro_and_Memories is
+	port ( 	CLK: in std_logic;
+				
+end Micro_and_Memories;
+
+
+architecture RTL of Micro_and_Memories is
+	
+	
+
+begin
+
+elemento_ALU: ALU port map(CLK,Rn,MUX,SEL,NZCV,FLAGS,CarryEn,NZCV,zteMP_1);
+elemento_RegistersBank: RegistersBank port map(CLK,WE,RE,RdAdd,RnAdd,Rmadd,int_BUS,PCINC,PC,Rn,Rm);
+elemento_UC: ControlUnit port map(CLK,Word,FLAGS,SEL,WE,RE,RdAdd,RnAdd,RmAdd,WR,MUX_SEL,read_rom,ARLOAD,zloAD_1,zloAD_2,zloAD_3,IMM,PCINC,CarryEn);
+
+
+	
+end RTL;
+

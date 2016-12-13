@@ -1,0 +1,22 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use ieee.numeric_std.all;
+
+entity ControlUnit is
+port (CLK: in std_logic;
+		Word: in std_logic_vector(15 downto 0);
+				
+		PC: out std_logic_vector(31 downto 0);
+		Rdn: out std_logic_vector(31 downto 0);
+		Rm: out std_logic_vector(31 downto 0)
+		);
+end ControlUnit;
+	
+architecture RTL of ControlUnit is
+
+
+begin
+
+
+
+end RTL;

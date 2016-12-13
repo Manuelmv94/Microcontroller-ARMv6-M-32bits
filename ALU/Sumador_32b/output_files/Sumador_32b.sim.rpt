@@ -1,0 +1,746 @@
+Simulator report for Sumador_32b
+Sat Apr 02 19:31:52 2016
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 100.0 us     ;
+; Simulation Netlist Size     ; 545 nodes    ;
+; Simulation Coverage         ;      91.19 % ;
+; Total Number of Transitions ; 3413         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                                                                  ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                                                                                ; Default Value ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                                                                             ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                                                                   ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                                                                    ;               ;
+; Vector input source                                                                        ; C:/Users/manuel/Documents/ITESM/VI semestre/Arquitectura de computadoras/Micro ARM 32b/ALU/Sumador_32b/Sumador_32b.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                                                                     ; On            ;
+; Check outputs                                                                              ; Off                                                                                                                    ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                                                                     ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                                                                     ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                                                                     ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                                                                     ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                                                                    ; Off           ;
+; Detect glitches                                                                            ; Off                                                                                                                    ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                                                                    ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                                                                    ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                                                                    ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                                                                    ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                                                                     ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                                                                             ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                                                                    ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                                                                    ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                                                                   ; Auto          ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      91.19 % ;
+; Total nodes checked                                 ; 545          ;
+; Total output ports checked                          ; 545          ;
+; Total output ports with complete 1/0-value coverage ; 497          ;
+; Total output ports with no 1/0-value coverage       ; 39           ;
+; Total output ports with no 1-value coverage         ; 40           ;
+; Total output ports with no 0-value coverage         ; 47           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                      ;
++-------------------------------------------------------+-------------------------------------------------------+------------------+
+; Node Name                                             ; Output Port Name                                      ; Output Port Type ;
++-------------------------------------------------------+-------------------------------------------------------+------------------+
+; |Sumador_32b|Btemp~0                                  ; |Sumador_32b|Btemp~0                                  ; out              ;
+; |Sumador_32b|Btemp~1                                  ; |Sumador_32b|Btemp~1                                  ; out              ;
+; |Sumador_32b|Btemp~2                                  ; |Sumador_32b|Btemp~2                                  ; out              ;
+; |Sumador_32b|Btemp~3                                  ; |Sumador_32b|Btemp~3                                  ; out              ;
+; |Sumador_32b|Btemp~4                                  ; |Sumador_32b|Btemp~4                                  ; out              ;
+; |Sumador_32b|Btemp~5                                  ; |Sumador_32b|Btemp~5                                  ; out              ;
+; |Sumador_32b|Btemp~6                                  ; |Sumador_32b|Btemp~6                                  ; out              ;
+; |Sumador_32b|Btemp~7                                  ; |Sumador_32b|Btemp~7                                  ; out              ;
+; |Sumador_32b|Btemp~8                                  ; |Sumador_32b|Btemp~8                                  ; out              ;
+; |Sumador_32b|Btemp~9                                  ; |Sumador_32b|Btemp~9                                  ; out              ;
+; |Sumador_32b|Btemp~10                                 ; |Sumador_32b|Btemp~10                                 ; out              ;
+; |Sumador_32b|Btemp~11                                 ; |Sumador_32b|Btemp~11                                 ; out              ;
+; |Sumador_32b|Btemp~12                                 ; |Sumador_32b|Btemp~12                                 ; out              ;
+; |Sumador_32b|Btemp~13                                 ; |Sumador_32b|Btemp~13                                 ; out              ;
+; |Sumador_32b|Btemp~14                                 ; |Sumador_32b|Btemp~14                                 ; out              ;
+; |Sumador_32b|Btemp~15                                 ; |Sumador_32b|Btemp~15                                 ; out              ;
+; |Sumador_32b|Btemp~16                                 ; |Sumador_32b|Btemp~16                                 ; out              ;
+; |Sumador_32b|Btemp~17                                 ; |Sumador_32b|Btemp~17                                 ; out              ;
+; |Sumador_32b|Btemp~18                                 ; |Sumador_32b|Btemp~18                                 ; out              ;
+; |Sumador_32b|Btemp~19                                 ; |Sumador_32b|Btemp~19                                 ; out              ;
+; |Sumador_32b|Btemp~20                                 ; |Sumador_32b|Btemp~20                                 ; out              ;
+; |Sumador_32b|Btemp~21                                 ; |Sumador_32b|Btemp~21                                 ; out              ;
+; |Sumador_32b|Btemp~22                                 ; |Sumador_32b|Btemp~22                                 ; out              ;
+; |Sumador_32b|Btemp~23                                 ; |Sumador_32b|Btemp~23                                 ; out              ;
+; |Sumador_32b|Btemp~24                                 ; |Sumador_32b|Btemp~24                                 ; out              ;
+; |Sumador_32b|Btemp~25                                 ; |Sumador_32b|Btemp~25                                 ; out              ;
+; |Sumador_32b|Btemp~26                                 ; |Sumador_32b|Btemp~26                                 ; out              ;
+; |Sumador_32b|Btemp~27                                 ; |Sumador_32b|Btemp~27                                 ; out              ;
+; |Sumador_32b|Btemp~28                                 ; |Sumador_32b|Btemp~28                                 ; out              ;
+; |Sumador_32b|Btemp~29                                 ; |Sumador_32b|Btemp~29                                 ; out              ;
+; |Sumador_32b|Btemp~30                                 ; |Sumador_32b|Btemp~30                                 ; out              ;
+; |Sumador_32b|Btemp[0]                                 ; |Sumador_32b|Btemp[0]                                 ; regout           ;
+; |Sumador_32b|Btemp[1]                                 ; |Sumador_32b|Btemp[1]                                 ; regout           ;
+; |Sumador_32b|Btemp[2]                                 ; |Sumador_32b|Btemp[2]                                 ; regout           ;
+; |Sumador_32b|Btemp[3]                                 ; |Sumador_32b|Btemp[3]                                 ; regout           ;
+; |Sumador_32b|Btemp[4]                                 ; |Sumador_32b|Btemp[4]                                 ; regout           ;
+; |Sumador_32b|Btemp[5]                                 ; |Sumador_32b|Btemp[5]                                 ; regout           ;
+; |Sumador_32b|Btemp[6]                                 ; |Sumador_32b|Btemp[6]                                 ; regout           ;
+; |Sumador_32b|Btemp[7]                                 ; |Sumador_32b|Btemp[7]                                 ; regout           ;
+; |Sumador_32b|Btemp[8]                                 ; |Sumador_32b|Btemp[8]                                 ; regout           ;
+; |Sumador_32b|Btemp[9]                                 ; |Sumador_32b|Btemp[9]                                 ; regout           ;
+; |Sumador_32b|Btemp[10]                                ; |Sumador_32b|Btemp[10]                                ; regout           ;
+; |Sumador_32b|Btemp[11]                                ; |Sumador_32b|Btemp[11]                                ; regout           ;
+; |Sumador_32b|Btemp[13]                                ; |Sumador_32b|Btemp[13]                                ; regout           ;
+; |Sumador_32b|Btemp[14]                                ; |Sumador_32b|Btemp[14]                                ; regout           ;
+; |Sumador_32b|Btemp[15]                                ; |Sumador_32b|Btemp[15]                                ; regout           ;
+; |Sumador_32b|Btemp[16]                                ; |Sumador_32b|Btemp[16]                                ; regout           ;
+; |Sumador_32b|Btemp[17]                                ; |Sumador_32b|Btemp[17]                                ; regout           ;
+; |Sumador_32b|Btemp[18]                                ; |Sumador_32b|Btemp[18]                                ; regout           ;
+; |Sumador_32b|Btemp[19]                                ; |Sumador_32b|Btemp[19]                                ; regout           ;
+; |Sumador_32b|Btemp[20]                                ; |Sumador_32b|Btemp[20]                                ; regout           ;
+; |Sumador_32b|Btemp[21]                                ; |Sumador_32b|Btemp[21]                                ; regout           ;
+; |Sumador_32b|Btemp[22]                                ; |Sumador_32b|Btemp[22]                                ; regout           ;
+; |Sumador_32b|Btemp[23]                                ; |Sumador_32b|Btemp[23]                                ; regout           ;
+; |Sumador_32b|Btemp[24]                                ; |Sumador_32b|Btemp[24]                                ; regout           ;
+; |Sumador_32b|Btemp[25]                                ; |Sumador_32b|Btemp[25]                                ; regout           ;
+; |Sumador_32b|Btemp[26]                                ; |Sumador_32b|Btemp[26]                                ; regout           ;
+; |Sumador_32b|Btemp[27]                                ; |Sumador_32b|Btemp[27]                                ; regout           ;
+; |Sumador_32b|Btemp[28]                                ; |Sumador_32b|Btemp[28]                                ; regout           ;
+; |Sumador_32b|Btemp[29]                                ; |Sumador_32b|Btemp[29]                                ; regout           ;
+; |Sumador_32b|Btemp[31]                                ; |Sumador_32b|Btemp[31]                                ; regout           ;
+; |Sumador_32b|CinTemp                                  ; |Sumador_32b|CinTemp                                  ; regout           ;
+; |Sumador_32b|Atemp[0]                                 ; |Sumador_32b|Atemp[0]                                 ; regout           ;
+; |Sumador_32b|Atemp[1]                                 ; |Sumador_32b|Atemp[1]                                 ; regout           ;
+; |Sumador_32b|Atemp[2]                                 ; |Sumador_32b|Atemp[2]                                 ; regout           ;
+; |Sumador_32b|Atemp[3]                                 ; |Sumador_32b|Atemp[3]                                 ; regout           ;
+; |Sumador_32b|Atemp[4]                                 ; |Sumador_32b|Atemp[4]                                 ; regout           ;
+; |Sumador_32b|Atemp[5]                                 ; |Sumador_32b|Atemp[5]                                 ; regout           ;
+; |Sumador_32b|Atemp[6]                                 ; |Sumador_32b|Atemp[6]                                 ; regout           ;
+; |Sumador_32b|Atemp[7]                                 ; |Sumador_32b|Atemp[7]                                 ; regout           ;
+; |Sumador_32b|Atemp[8]                                 ; |Sumador_32b|Atemp[8]                                 ; regout           ;
+; |Sumador_32b|Atemp[9]                                 ; |Sumador_32b|Atemp[9]                                 ; regout           ;
+; |Sumador_32b|Atemp[10]                                ; |Sumador_32b|Atemp[10]                                ; regout           ;
+; |Sumador_32b|Atemp[11]                                ; |Sumador_32b|Atemp[11]                                ; regout           ;
+; |Sumador_32b|Atemp[12]                                ; |Sumador_32b|Atemp[12]                                ; regout           ;
+; |Sumador_32b|Atemp[13]                                ; |Sumador_32b|Atemp[13]                                ; regout           ;
+; |Sumador_32b|Atemp[14]                                ; |Sumador_32b|Atemp[14]                                ; regout           ;
+; |Sumador_32b|Atemp[15]                                ; |Sumador_32b|Atemp[15]                                ; regout           ;
+; |Sumador_32b|Atemp[16]                                ; |Sumador_32b|Atemp[16]                                ; regout           ;
+; |Sumador_32b|Atemp[17]                                ; |Sumador_32b|Atemp[17]                                ; regout           ;
+; |Sumador_32b|Atemp[18]                                ; |Sumador_32b|Atemp[18]                                ; regout           ;
+; |Sumador_32b|Atemp[19]                                ; |Sumador_32b|Atemp[19]                                ; regout           ;
+; |Sumador_32b|Atemp[20]                                ; |Sumador_32b|Atemp[20]                                ; regout           ;
+; |Sumador_32b|Atemp[21]                                ; |Sumador_32b|Atemp[21]                                ; regout           ;
+; |Sumador_32b|Atemp[22]                                ; |Sumador_32b|Atemp[22]                                ; regout           ;
+; |Sumador_32b|Atemp[23]                                ; |Sumador_32b|Atemp[23]                                ; regout           ;
+; |Sumador_32b|Atemp[24]                                ; |Sumador_32b|Atemp[24]                                ; regout           ;
+; |Sumador_32b|Atemp[25]                                ; |Sumador_32b|Atemp[25]                                ; regout           ;
+; |Sumador_32b|Atemp[26]                                ; |Sumador_32b|Atemp[26]                                ; regout           ;
+; |Sumador_32b|Atemp[27]                                ; |Sumador_32b|Atemp[27]                                ; regout           ;
+; |Sumador_32b|Atemp[28]                                ; |Sumador_32b|Atemp[28]                                ; regout           ;
+; |Sumador_32b|Atemp[29]                                ; |Sumador_32b|Atemp[29]                                ; regout           ;
+; |Sumador_32b|Atemp[30]                                ; |Sumador_32b|Atemp[30]                                ; regout           ;
+; |Sumador_32b|Atemp[31]                                ; |Sumador_32b|Atemp[31]                                ; regout           ;
+; |Sumador_32b|CLK                                      ; |Sumador_32b|CLK                                      ; out              ;
+; |Sumador_32b|A[0]                                     ; |Sumador_32b|A[0]                                     ; out              ;
+; |Sumador_32b|A[1]                                     ; |Sumador_32b|A[1]                                     ; out              ;
+; |Sumador_32b|A[2]                                     ; |Sumador_32b|A[2]                                     ; out              ;
+; |Sumador_32b|A[3]                                     ; |Sumador_32b|A[3]                                     ; out              ;
+; |Sumador_32b|A[4]                                     ; |Sumador_32b|A[4]                                     ; out              ;
+; |Sumador_32b|A[5]                                     ; |Sumador_32b|A[5]                                     ; out              ;
+; |Sumador_32b|A[6]                                     ; |Sumador_32b|A[6]                                     ; out              ;
+; |Sumador_32b|A[7]                                     ; |Sumador_32b|A[7]                                     ; out              ;
+; |Sumador_32b|A[8]                                     ; |Sumador_32b|A[8]                                     ; out              ;
+; |Sumador_32b|A[9]                                     ; |Sumador_32b|A[9]                                     ; out              ;
+; |Sumador_32b|A[10]                                    ; |Sumador_32b|A[10]                                    ; out              ;
+; |Sumador_32b|A[11]                                    ; |Sumador_32b|A[11]                                    ; out              ;
+; |Sumador_32b|A[12]                                    ; |Sumador_32b|A[12]                                    ; out              ;
+; |Sumador_32b|A[13]                                    ; |Sumador_32b|A[13]                                    ; out              ;
+; |Sumador_32b|A[14]                                    ; |Sumador_32b|A[14]                                    ; out              ;
+; |Sumador_32b|A[15]                                    ; |Sumador_32b|A[15]                                    ; out              ;
+; |Sumador_32b|A[16]                                    ; |Sumador_32b|A[16]                                    ; out              ;
+; |Sumador_32b|A[17]                                    ; |Sumador_32b|A[17]                                    ; out              ;
+; |Sumador_32b|A[18]                                    ; |Sumador_32b|A[18]                                    ; out              ;
+; |Sumador_32b|A[19]                                    ; |Sumador_32b|A[19]                                    ; out              ;
+; |Sumador_32b|A[20]                                    ; |Sumador_32b|A[20]                                    ; out              ;
+; |Sumador_32b|A[21]                                    ; |Sumador_32b|A[21]                                    ; out              ;
+; |Sumador_32b|A[22]                                    ; |Sumador_32b|A[22]                                    ; out              ;
+; |Sumador_32b|A[23]                                    ; |Sumador_32b|A[23]                                    ; out              ;
+; |Sumador_32b|A[24]                                    ; |Sumador_32b|A[24]                                    ; out              ;
+; |Sumador_32b|A[25]                                    ; |Sumador_32b|A[25]                                    ; out              ;
+; |Sumador_32b|A[26]                                    ; |Sumador_32b|A[26]                                    ; out              ;
+; |Sumador_32b|A[28]                                    ; |Sumador_32b|A[28]                                    ; out              ;
+; |Sumador_32b|A[29]                                    ; |Sumador_32b|A[29]                                    ; out              ;
+; |Sumador_32b|A[30]                                    ; |Sumador_32b|A[30]                                    ; out              ;
+; |Sumador_32b|A[31]                                    ; |Sumador_32b|A[31]                                    ; out              ;
+; |Sumador_32b|B[0]                                     ; |Sumador_32b|B[0]                                     ; out              ;
+; |Sumador_32b|B[1]                                     ; |Sumador_32b|B[1]                                     ; out              ;
+; |Sumador_32b|B[2]                                     ; |Sumador_32b|B[2]                                     ; out              ;
+; |Sumador_32b|B[3]                                     ; |Sumador_32b|B[3]                                     ; out              ;
+; |Sumador_32b|B[4]                                     ; |Sumador_32b|B[4]                                     ; out              ;
+; |Sumador_32b|B[5]                                     ; |Sumador_32b|B[5]                                     ; out              ;
+; |Sumador_32b|B[6]                                     ; |Sumador_32b|B[6]                                     ; out              ;
+; |Sumador_32b|B[7]                                     ; |Sumador_32b|B[7]                                     ; out              ;
+; |Sumador_32b|B[8]                                     ; |Sumador_32b|B[8]                                     ; out              ;
+; |Sumador_32b|B[9]                                     ; |Sumador_32b|B[9]                                     ; out              ;
+; |Sumador_32b|B[10]                                    ; |Sumador_32b|B[10]                                    ; out              ;
+; |Sumador_32b|B[11]                                    ; |Sumador_32b|B[11]                                    ; out              ;
+; |Sumador_32b|B[12]                                    ; |Sumador_32b|B[12]                                    ; out              ;
+; |Sumador_32b|B[13]                                    ; |Sumador_32b|B[13]                                    ; out              ;
+; |Sumador_32b|B[14]                                    ; |Sumador_32b|B[14]                                    ; out              ;
+; |Sumador_32b|B[15]                                    ; |Sumador_32b|B[15]                                    ; out              ;
+; |Sumador_32b|B[16]                                    ; |Sumador_32b|B[16]                                    ; out              ;
+; |Sumador_32b|B[17]                                    ; |Sumador_32b|B[17]                                    ; out              ;
+; |Sumador_32b|B[18]                                    ; |Sumador_32b|B[18]                                    ; out              ;
+; |Sumador_32b|B[19]                                    ; |Sumador_32b|B[19]                                    ; out              ;
+; |Sumador_32b|B[20]                                    ; |Sumador_32b|B[20]                                    ; out              ;
+; |Sumador_32b|B[21]                                    ; |Sumador_32b|B[21]                                    ; out              ;
+; |Sumador_32b|B[22]                                    ; |Sumador_32b|B[22]                                    ; out              ;
+; |Sumador_32b|B[23]                                    ; |Sumador_32b|B[23]                                    ; out              ;
+; |Sumador_32b|B[24]                                    ; |Sumador_32b|B[24]                                    ; out              ;
+; |Sumador_32b|B[25]                                    ; |Sumador_32b|B[25]                                    ; out              ;
+; |Sumador_32b|B[26]                                    ; |Sumador_32b|B[26]                                    ; out              ;
+; |Sumador_32b|B[27]                                    ; |Sumador_32b|B[27]                                    ; out              ;
+; |Sumador_32b|B[28]                                    ; |Sumador_32b|B[28]                                    ; out              ;
+; |Sumador_32b|B[29]                                    ; |Sumador_32b|B[29]                                    ; out              ;
+; |Sumador_32b|B[30]                                    ; |Sumador_32b|B[30]                                    ; out              ;
+; |Sumador_32b|B[31]                                    ; |Sumador_32b|B[31]                                    ; out              ;
+; |Sumador_32b|Cin                                      ; |Sumador_32b|Cin                                      ; out              ;
+; |Sumador_32b|SEL                                      ; |Sumador_32b|SEL                                      ; out              ;
+; |Sumador_32b|S[0]                                     ; |Sumador_32b|S[0]                                     ; pin_out          ;
+; |Sumador_32b|S[1]                                     ; |Sumador_32b|S[1]                                     ; pin_out          ;
+; |Sumador_32b|S[2]                                     ; |Sumador_32b|S[2]                                     ; pin_out          ;
+; |Sumador_32b|S[3]                                     ; |Sumador_32b|S[3]                                     ; pin_out          ;
+; |Sumador_32b|S[4]                                     ; |Sumador_32b|S[4]                                     ; pin_out          ;
+; |Sumador_32b|S[5]                                     ; |Sumador_32b|S[5]                                     ; pin_out          ;
+; |Sumador_32b|S[6]                                     ; |Sumador_32b|S[6]                                     ; pin_out          ;
+; |Sumador_32b|S[7]                                     ; |Sumador_32b|S[7]                                     ; pin_out          ;
+; |Sumador_32b|S[8]                                     ; |Sumador_32b|S[8]                                     ; pin_out          ;
+; |Sumador_32b|S[9]                                     ; |Sumador_32b|S[9]                                     ; pin_out          ;
+; |Sumador_32b|S[10]                                    ; |Sumador_32b|S[10]                                    ; pin_out          ;
+; |Sumador_32b|S[11]                                    ; |Sumador_32b|S[11]                                    ; pin_out          ;
+; |Sumador_32b|S[12]                                    ; |Sumador_32b|S[12]                                    ; pin_out          ;
+; |Sumador_32b|S[13]                                    ; |Sumador_32b|S[13]                                    ; pin_out          ;
+; |Sumador_32b|S[14]                                    ; |Sumador_32b|S[14]                                    ; pin_out          ;
+; |Sumador_32b|S[15]                                    ; |Sumador_32b|S[15]                                    ; pin_out          ;
+; |Sumador_32b|S[16]                                    ; |Sumador_32b|S[16]                                    ; pin_out          ;
+; |Sumador_32b|S[17]                                    ; |Sumador_32b|S[17]                                    ; pin_out          ;
+; |Sumador_32b|S[18]                                    ; |Sumador_32b|S[18]                                    ; pin_out          ;
+; |Sumador_32b|S[19]                                    ; |Sumador_32b|S[19]                                    ; pin_out          ;
+; |Sumador_32b|S[20]                                    ; |Sumador_32b|S[20]                                    ; pin_out          ;
+; |Sumador_32b|S[21]                                    ; |Sumador_32b|S[21]                                    ; pin_out          ;
+; |Sumador_32b|S[22]                                    ; |Sumador_32b|S[22]                                    ; pin_out          ;
+; |Sumador_32b|S[23]                                    ; |Sumador_32b|S[23]                                    ; pin_out          ;
+; |Sumador_32b|S[24]                                    ; |Sumador_32b|S[24]                                    ; pin_out          ;
+; |Sumador_32b|S[25]                                    ; |Sumador_32b|S[25]                                    ; pin_out          ;
+; |Sumador_32b|S[26]                                    ; |Sumador_32b|S[26]                                    ; pin_out          ;
+; |Sumador_32b|S[27]                                    ; |Sumador_32b|S[27]                                    ; pin_out          ;
+; |Sumador_32b|S[28]                                    ; |Sumador_32b|S[28]                                    ; pin_out          ;
+; |Sumador_32b|S[29]                                    ; |Sumador_32b|S[29]                                    ; pin_out          ;
+; |Sumador_32b|S[30]                                    ; |Sumador_32b|S[30]                                    ; pin_out          ;
+; |Sumador_32b|S[31]                                    ; |Sumador_32b|S[31]                                    ; pin_out          ;
+; |Sumador_32b|Cout                                     ; |Sumador_32b|Cout                                     ; pin_out          ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|g[0]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|g[0]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|g[1]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|g[1]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|g[3]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|g[3]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|p[0]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|p[0]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|p[1]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|p[1]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|p[2]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|p[2]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|p[3]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|p[3]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|c1     ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|c1     ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|c2~0   ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|c2~0   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|c2     ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|c2     ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|c3~0   ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|c3~0   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|c3~1   ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|c3~1   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|c3~2   ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|c3~2   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|c3~3   ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|c3~3   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|c3~4   ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|c3~4   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|c3~5   ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|c3~5   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|c3~6   ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|c3~6   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|c3~7   ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|c3~7   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|c3     ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|c3     ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|Cout~1 ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|Cout~1 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|Cout~2 ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|Cout~2 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|Cout~3 ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|Cout~3 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|Cout~4 ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|Cout~4 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|Cout~5 ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|Cout~5 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|Cout~6 ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|Cout~6 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|Cout   ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|Cout   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|S~0    ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|S~0    ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|S[0]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|S[0]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|S~2    ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|S~2    ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|S[1]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|S[1]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|S~4    ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|S~4    ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|S[2]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|S[2]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|S~6    ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|S~6    ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|S[3]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|S[3]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|g[0]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|g[0]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|g[1]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|g[1]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|g[2]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|g[2]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|g[3]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|g[3]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|p[0]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|p[0]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|p[1]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|p[1]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|p[2]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|p[2]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|c1     ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|c1     ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|c2~0   ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|c2~0   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|c2     ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|c2     ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|c3~0   ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|c3~0   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|c3~1   ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|c3~1   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|c3~2   ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|c3~2   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|c3~3   ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|c3~3   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|c3~4   ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|c3~4   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|c3~5   ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|c3~5   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|c3~6   ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|c3~6   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|c3~7   ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|c3~7   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|c3     ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|c3     ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|Cout~0 ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|Cout~0 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|Cout~1 ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|Cout~1 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|Cout~2 ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|Cout~2 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|Cout~3 ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|Cout~3 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|Cout~4 ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|Cout~4 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|Cout~5 ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|Cout~5 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|Cout~6 ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|Cout~6 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|Cout   ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|Cout   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|S~0    ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|S~0    ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|S[0]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|S[0]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|S~2    ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|S~2    ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|S[1]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|S[1]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|S~4    ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|S~4    ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|S[2]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|S[2]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|S~6    ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|S~6    ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|S[3]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|S[3]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|g[0]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|g[0]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|g[1]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|g[1]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|g[2]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|g[2]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|g[3]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|g[3]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|p[0]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|p[0]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|p[1]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|p[1]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|p[2]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|p[2]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|p[3]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|p[3]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|c1     ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|c1     ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|c2~0   ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|c2~0   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|c2     ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|c2     ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|c3~0   ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|c3~0   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|c3~1   ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|c3~1   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|c3~2   ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|c3~2   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|c3~3   ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|c3~3   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|c3~4   ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|c3~4   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|c3~5   ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|c3~5   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|c3~6   ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|c3~6   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|c3~7   ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|c3~7   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|c3     ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|c3     ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|Cout~0 ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|Cout~0 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|Cout~1 ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|Cout~1 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|Cout~2 ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|Cout~2 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|Cout~3 ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|Cout~3 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|Cout~4 ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|Cout~4 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|Cout~5 ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|Cout~5 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|Cout~6 ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|Cout~6 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|Cout   ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|Cout   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|S~0    ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|S~0    ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|S[0]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|S[0]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|S~2    ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|S~2    ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|S[1]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|S[1]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|S~4    ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|S~4    ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|S[2]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|S[2]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|S~6    ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|S~6    ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_6|S[3]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_6|S[3]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|g[0]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|g[0]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|g[1]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|g[1]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|g[2]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|g[2]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|g[3]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|g[3]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|p[0]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|p[0]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|p[1]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|p[1]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|p[2]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|p[2]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|p[3]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|p[3]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|c1     ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|c1     ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|c2~0   ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|c2~0   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|c2     ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|c2     ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|c3~0   ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|c3~0   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|c3~1   ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|c3~1   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|c3~2   ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|c3~2   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|c3~3   ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|c3~3   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|c3~4   ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|c3~4   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|c3~5   ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|c3~5   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|c3~6   ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|c3~6   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|c3~7   ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|c3~7   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|c3     ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|c3     ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|Cout~0 ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|Cout~0 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|Cout~1 ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|Cout~1 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|Cout~2 ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|Cout~2 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|Cout~3 ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|Cout~3 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|Cout~4 ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|Cout~4 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|Cout~5 ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|Cout~5 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|Cout~6 ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|Cout~6 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|Cout   ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|Cout   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|S~0    ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|S~0    ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|S[0]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|S[0]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|S~2    ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|S~2    ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|S[1]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|S[1]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|S~4    ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|S~4    ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|S[2]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|S[2]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|S~6    ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|S~6    ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_5|S[3]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_5|S[3]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|g[0]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|g[0]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|g[1]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|g[1]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|g[2]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|g[2]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|g[3]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|g[3]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|p[1]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|p[1]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|p[2]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|p[2]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|p[3]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|p[3]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|c1     ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|c1     ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|c2~0   ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|c2~0   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|c2     ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|c2     ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|c3~0   ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|c3~0   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|c3~1   ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|c3~1   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|c3~2   ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|c3~2   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|c3~3   ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|c3~3   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|c3~4   ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|c3~4   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|c3~5   ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|c3~5   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|c3~6   ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|c3~6   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|c3~7   ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|c3~7   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|c3     ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|c3     ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|Cout~0 ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|Cout~0 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|Cout~1 ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|Cout~1 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|Cout~2 ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|Cout~2 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|Cout~3 ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|Cout~3 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|Cout~4 ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|Cout~4 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|Cout~5 ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|Cout~5 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|Cout~6 ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|Cout~6 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|Cout   ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|Cout   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|S~0    ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|S~0    ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|S[0]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|S[0]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|S~2    ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|S~2    ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|S[1]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|S[1]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|S~4    ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|S~4    ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|S[2]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|S[2]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|S~6    ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|S~6    ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|S[3]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|S[3]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|g[0]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|g[0]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|g[2]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|g[2]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|g[3]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|g[3]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|p[0]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|p[0]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|p[1]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|p[1]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|p[2]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|p[2]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|p[3]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|p[3]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|c1     ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|c1     ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|c2~0   ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|c2~0   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|c2     ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|c2     ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|c3~1   ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|c3~1   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|c3~2   ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|c3~2   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|c3~3   ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|c3~3   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|c3~4   ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|c3~4   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|c3~5   ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|c3~5   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|c3~6   ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|c3~6   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|c3~7   ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|c3~7   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|c3     ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|c3     ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|Cout~0 ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|Cout~0 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|Cout~1 ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|Cout~1 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|Cout~3 ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|Cout~3 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|Cout~4 ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|Cout~4 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|Cout~5 ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|Cout~5 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|Cout~6 ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|Cout~6 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|Cout   ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|Cout   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|S~0    ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|S~0    ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|S[0]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|S[0]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|S~2    ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|S~2    ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|S[1]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|S[1]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|S~4    ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|S~4    ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|S[2]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|S[2]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|S~6    ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|S~6    ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|S[3]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|S[3]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|g[0]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|g[0]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|g[1]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|g[1]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|g[3]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|g[3]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|p[0]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|p[0]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|p[1]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|p[1]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|p[2]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|p[2]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|p[3]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|p[3]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|c1     ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|c1     ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|c2~0   ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|c2~0   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|c2     ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|c2     ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|c3~0   ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|c3~0   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|c3~1   ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|c3~1   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|c3~4   ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|c3~4   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|c3~5   ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|c3~5   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|c3~6   ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|c3~6   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|c3~7   ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|c3~7   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|c3     ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|c3     ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|Cout~2 ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|Cout~2 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|Cout~3 ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|Cout~3 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|Cout~5 ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|Cout~5 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|Cout~6 ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|Cout~6 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|Cout   ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|Cout   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|S~0    ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|S~0    ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|S[0]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|S[0]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|S~2    ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|S~2    ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|S[1]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|S[1]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|S~4    ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|S~4    ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|S[2]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|S[2]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|S~6    ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|S~6    ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|S[3]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|S[3]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|g[1]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|g[1]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|g[2]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|g[2]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|g[3]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|g[3]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|p[0]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|p[0]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|p[1]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|p[1]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|p[2]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|p[2]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|p[3]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|p[3]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|c1     ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|c1     ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|c2~0   ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|c2~0   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|c2     ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|c2     ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|c3~1   ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|c3~1   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|c3~4   ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|c3~4   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|c3~5   ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|c3~5   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|c3~6   ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|c3~6   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|c3~7   ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|c3~7   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|c3     ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|c3     ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|Cout~0 ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|Cout~0 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|Cout~1 ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|Cout~1 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|Cout~3 ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|Cout~3 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|Cout~5 ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|Cout~5 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|Cout~6 ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|Cout~6 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|Cout   ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|Cout   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|S~0    ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|S~0    ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|S[0]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|S[0]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|S~2    ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|S~2    ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|S[1]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|S[1]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|S~4    ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|S~4    ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|S[2]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|S[2]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|S~6    ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|S~6    ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|S[3]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|S[3]   ; out0             ;
+; |Sumador_32b|Add0~0                                   ; |Sumador_32b|Add0~0                                   ; out0             ;
+; |Sumador_32b|Add0~1                                   ; |Sumador_32b|Add0~1                                   ; out0             ;
+; |Sumador_32b|Add0~2                                   ; |Sumador_32b|Add0~2                                   ; out0             ;
+; |Sumador_32b|Add0~3                                   ; |Sumador_32b|Add0~3                                   ; out0             ;
+; |Sumador_32b|Add0~4                                   ; |Sumador_32b|Add0~4                                   ; out0             ;
+; |Sumador_32b|Add0~5                                   ; |Sumador_32b|Add0~5                                   ; out0             ;
+; |Sumador_32b|Add0~6                                   ; |Sumador_32b|Add0~6                                   ; out0             ;
+; |Sumador_32b|Add0~7                                   ; |Sumador_32b|Add0~7                                   ; out0             ;
+; |Sumador_32b|Add0~8                                   ; |Sumador_32b|Add0~8                                   ; out0             ;
+; |Sumador_32b|Add0~10                                  ; |Sumador_32b|Add0~10                                  ; out0             ;
+; |Sumador_32b|Add0~12                                  ; |Sumador_32b|Add0~12                                  ; out0             ;
+; |Sumador_32b|Add0~14                                  ; |Sumador_32b|Add0~14                                  ; out0             ;
+; |Sumador_32b|Add0~16                                  ; |Sumador_32b|Add0~16                                  ; out0             ;
+; |Sumador_32b|Add0~18                                  ; |Sumador_32b|Add0~18                                  ; out0             ;
+; |Sumador_32b|Add0~20                                  ; |Sumador_32b|Add0~20                                  ; out0             ;
+; |Sumador_32b|Add0~22                                  ; |Sumador_32b|Add0~22                                  ; out0             ;
+; |Sumador_32b|Add0~24                                  ; |Sumador_32b|Add0~24                                  ; out0             ;
+; |Sumador_32b|Add0~26                                  ; |Sumador_32b|Add0~26                                  ; out0             ;
+; |Sumador_32b|Add0~28                                  ; |Sumador_32b|Add0~28                                  ; out0             ;
+; |Sumador_32b|Add0~30                                  ; |Sumador_32b|Add0~30                                  ; out0             ;
+; |Sumador_32b|Add0~32                                  ; |Sumador_32b|Add0~32                                  ; out0             ;
+; |Sumador_32b|Add0~34                                  ; |Sumador_32b|Add0~34                                  ; out0             ;
+; |Sumador_32b|Add0~36                                  ; |Sumador_32b|Add0~36                                  ; out0             ;
+; |Sumador_32b|Add0~38                                  ; |Sumador_32b|Add0~38                                  ; out0             ;
+; |Sumador_32b|Add0~40                                  ; |Sumador_32b|Add0~40                                  ; out0             ;
+; |Sumador_32b|Add0~42                                  ; |Sumador_32b|Add0~42                                  ; out0             ;
+; |Sumador_32b|Add0~44                                  ; |Sumador_32b|Add0~44                                  ; out0             ;
+; |Sumador_32b|Add0~46                                  ; |Sumador_32b|Add0~46                                  ; out0             ;
+; |Sumador_32b|Add0~48                                  ; |Sumador_32b|Add0~48                                  ; out0             ;
+; |Sumador_32b|Add0~50                                  ; |Sumador_32b|Add0~50                                  ; out0             ;
+; |Sumador_32b|Add0~52                                  ; |Sumador_32b|Add0~52                                  ; out0             ;
+; |Sumador_32b|Add0~54                                  ; |Sumador_32b|Add0~54                                  ; out0             ;
+; |Sumador_32b|Add0~56                                  ; |Sumador_32b|Add0~56                                  ; out0             ;
+; |Sumador_32b|Add0~58                                  ; |Sumador_32b|Add0~58                                  ; out0             ;
+; |Sumador_32b|Add0~60                                  ; |Sumador_32b|Add0~60                                  ; out0             ;
++-------------------------------------------------------+-------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                         ;
++-------------------------------------------------------+-------------------------------------------------------+------------------+
+; Node Name                                             ; Output Port Name                                      ; Output Port Type ;
++-------------------------------------------------------+-------------------------------------------------------+------------------+
+; |Sumador_32b|A[27]                                    ; |Sumador_32b|A[27]                                    ; out              ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|g[2]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|g[2]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|Cout~0 ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|Cout~0 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|g[1]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|g[1]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|c3~0   ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|c3~0   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|Cout~2 ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|Cout~2 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|c3~2   ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|c3~2   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|c3~3   ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|c3~3   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|Cout~4 ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|Cout~4 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|g[0]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|g[0]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|c3~0   ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|c3~0   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|c3~2   ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|c3~2   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|c3~3   ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|c3~3   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|Cout~2 ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|Cout~2 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|Cout~4 ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|Cout~4 ; out0             ;
+; |Sumador_32b|Add0~11                                  ; |Sumador_32b|Add0~11                                  ; out0             ;
+; |Sumador_32b|Add0~13                                  ; |Sumador_32b|Add0~13                                  ; out0             ;
+; |Sumador_32b|Add0~15                                  ; |Sumador_32b|Add0~15                                  ; out0             ;
+; |Sumador_32b|Add0~17                                  ; |Sumador_32b|Add0~17                                  ; out0             ;
+; |Sumador_32b|Add0~19                                  ; |Sumador_32b|Add0~19                                  ; out0             ;
+; |Sumador_32b|Add0~21                                  ; |Sumador_32b|Add0~21                                  ; out0             ;
+; |Sumador_32b|Add0~23                                  ; |Sumador_32b|Add0~23                                  ; out0             ;
+; |Sumador_32b|Add0~25                                  ; |Sumador_32b|Add0~25                                  ; out0             ;
+; |Sumador_32b|Add0~27                                  ; |Sumador_32b|Add0~27                                  ; out0             ;
+; |Sumador_32b|Add0~29                                  ; |Sumador_32b|Add0~29                                  ; out0             ;
+; |Sumador_32b|Add0~31                                  ; |Sumador_32b|Add0~31                                  ; out0             ;
+; |Sumador_32b|Add0~33                                  ; |Sumador_32b|Add0~33                                  ; out0             ;
+; |Sumador_32b|Add0~35                                  ; |Sumador_32b|Add0~35                                  ; out0             ;
+; |Sumador_32b|Add0~37                                  ; |Sumador_32b|Add0~37                                  ; out0             ;
+; |Sumador_32b|Add0~39                                  ; |Sumador_32b|Add0~39                                  ; out0             ;
+; |Sumador_32b|Add0~41                                  ; |Sumador_32b|Add0~41                                  ; out0             ;
+; |Sumador_32b|Add0~43                                  ; |Sumador_32b|Add0~43                                  ; out0             ;
+; |Sumador_32b|Add0~45                                  ; |Sumador_32b|Add0~45                                  ; out0             ;
+; |Sumador_32b|Add0~47                                  ; |Sumador_32b|Add0~47                                  ; out0             ;
+; |Sumador_32b|Add0~49                                  ; |Sumador_32b|Add0~49                                  ; out0             ;
+; |Sumador_32b|Add0~51                                  ; |Sumador_32b|Add0~51                                  ; out0             ;
+; |Sumador_32b|Add0~53                                  ; |Sumador_32b|Add0~53                                  ; out0             ;
+; |Sumador_32b|Add0~55                                  ; |Sumador_32b|Add0~55                                  ; out0             ;
+; |Sumador_32b|Add0~57                                  ; |Sumador_32b|Add0~57                                  ; out0             ;
+; |Sumador_32b|Add0~59                                  ; |Sumador_32b|Add0~59                                  ; out0             ;
++-------------------------------------------------------+-------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                         ;
++-------------------------------------------------------+-------------------------------------------------------+------------------+
+; Node Name                                             ; Output Port Name                                      ; Output Port Type ;
++-------------------------------------------------------+-------------------------------------------------------+------------------+
+; |Sumador_32b|Btemp[12]                                ; |Sumador_32b|Btemp[12]                                ; regout           ;
+; |Sumador_32b|Btemp[30]                                ; |Sumador_32b|Btemp[30]                                ; regout           ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|g[2]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|g[2]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_8|Cout~0 ; |Sumador_32b|Sumador_CarryLookahead:elemento_8|Cout~0 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_7|p[3]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_7|p[3]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_4|p[0]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_4|p[0]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|g[1]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|g[1]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|c3~0   ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|c3~0   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_3|Cout~2 ; |Sumador_32b|Sumador_CarryLookahead:elemento_3|Cout~2 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|g[2]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|g[2]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|c3~2   ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|c3~2   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|c3~3   ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|c3~3   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|Cout~0 ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|Cout~0 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|Cout~1 ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|Cout~1 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_2|Cout~4 ; |Sumador_32b|Sumador_CarryLookahead:elemento_2|Cout~4 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|g[0]   ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|g[0]   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|c3~0   ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|c3~0   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|c3~2   ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|c3~2   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|c3~3   ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|c3~3   ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|Cout~2 ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|Cout~2 ; out0             ;
+; |Sumador_32b|Sumador_CarryLookahead:elemento_1|Cout~4 ; |Sumador_32b|Sumador_CarryLookahead:elemento_1|Cout~4 ; out0             ;
+; |Sumador_32b|Add0~9                                   ; |Sumador_32b|Add0~9                                   ; out0             ;
+; |Sumador_32b|Add0~11                                  ; |Sumador_32b|Add0~11                                  ; out0             ;
+; |Sumador_32b|Add0~13                                  ; |Sumador_32b|Add0~13                                  ; out0             ;
+; |Sumador_32b|Add0~15                                  ; |Sumador_32b|Add0~15                                  ; out0             ;
+; |Sumador_32b|Add0~17                                  ; |Sumador_32b|Add0~17                                  ; out0             ;
+; |Sumador_32b|Add0~19                                  ; |Sumador_32b|Add0~19                                  ; out0             ;
+; |Sumador_32b|Add0~21                                  ; |Sumador_32b|Add0~21                                  ; out0             ;
+; |Sumador_32b|Add0~23                                  ; |Sumador_32b|Add0~23                                  ; out0             ;
+; |Sumador_32b|Add0~25                                  ; |Sumador_32b|Add0~25                                  ; out0             ;
+; |Sumador_32b|Add0~27                                  ; |Sumador_32b|Add0~27                                  ; out0             ;
+; |Sumador_32b|Add0~29                                  ; |Sumador_32b|Add0~29                                  ; out0             ;
+; |Sumador_32b|Add0~31                                  ; |Sumador_32b|Add0~31                                  ; out0             ;
+; |Sumador_32b|Add0~33                                  ; |Sumador_32b|Add0~33                                  ; out0             ;
+; |Sumador_32b|Add0~35                                  ; |Sumador_32b|Add0~35                                  ; out0             ;
+; |Sumador_32b|Add0~37                                  ; |Sumador_32b|Add0~37                                  ; out0             ;
+; |Sumador_32b|Add0~39                                  ; |Sumador_32b|Add0~39                                  ; out0             ;
+; |Sumador_32b|Add0~41                                  ; |Sumador_32b|Add0~41                                  ; out0             ;
+; |Sumador_32b|Add0~43                                  ; |Sumador_32b|Add0~43                                  ; out0             ;
+; |Sumador_32b|Add0~45                                  ; |Sumador_32b|Add0~45                                  ; out0             ;
+; |Sumador_32b|Add0~47                                  ; |Sumador_32b|Add0~47                                  ; out0             ;
+; |Sumador_32b|Add0~49                                  ; |Sumador_32b|Add0~49                                  ; out0             ;
+; |Sumador_32b|Add0~51                                  ; |Sumador_32b|Add0~51                                  ; out0             ;
+; |Sumador_32b|Add0~53                                  ; |Sumador_32b|Add0~53                                  ; out0             ;
+; |Sumador_32b|Add0~55                                  ; |Sumador_32b|Add0~55                                  ; out0             ;
+; |Sumador_32b|Add0~57                                  ; |Sumador_32b|Add0~57                                  ; out0             ;
+; |Sumador_32b|Add0~59                                  ; |Sumador_32b|Add0~59                                  ; out0             ;
++-------------------------------------------------------+-------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sat Apr 02 19:31:51 2016
+Info: Command: quartus_sim --simulation_results_format=VWF Sumador_32b -c Sumador_32b
+Info (324025): Using vector source file "C:/Users/manuel/Documents/ITESM/VI semestre/Arquitectura de computadoras/Micro ARM 32b/ALU/Sumador_32b/Sumador_32b.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      91.19 %
+Info (328052): Number of transitions in simulation is 3413
+Info (324045): Vector file Sumador_32b.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 329 megabytes
+    Info: Processing ended: Sat Apr 02 19:31:52 2016
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

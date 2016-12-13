@@ -1,0 +1,74 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity Micro_ARM is
+	port ( 	CLK: in std_logic;
+				Word: in std_logic_vector(15 downto 0);
+	
+				Address: out std_LOGIC_vector(31 downto 0);
+end Micro_ARM;
+
+
+architecture RTL of Micro_ARM is
+	
+	
+COMponent ALU is
+	port ( 	CLK: in std_logic;
+				Rdn,Rm: in STD_LOGIC_vector(31 downto 0);
+				SEL: in std_LOGIC_vector(4 downto 0);
+				NZCVin: in std_LOGIC_vector(3 downto 0);
+				
+				NZCVout: out std_LOGIC_vector(3 downto 0);
+				Rd: out STD_LOGIC_vector(31 downto 0) );
+end component;
+
+component RegistersBank is
+port (CLK: in std_logic;
+		WE: in std_logic;
+		RE: in std_logic;
+		RdnAdd: in std_logic_vector(3 downto 0);
+		RmAdd: in std_logic_vector(3 downto 0);
+		DATAin: std_logic_vector(31 downto 0);
+		
+		Rdn: out std_logic_vector(31 downto 0);
+		Rm: out std_logic_vector(31 downto 0)
+		);
+end component;
+
+entity RAM_BLOCK is
+port (Clk : in std_logic;
+        address : in std_logic_vector(31 downto 0);
+        we : in std_logic;
+        data : inout std_logic_vector(31 downto 0)
+     );
+end RAM_BLOCK;
+
+--BUS
+signal int_BUS: STD_LOGIC_vector(31 downto 0);
+--ALU
+signal Rdn: STD_LOGIC_vector(31 downto 0);
+signal Rm: STD_LOGIC_vector(31 downto 0);
+signal NZCV: STD_LOGIC_vector(3 downto 0);--Banderas
+signal ALUtoBUS: STD_LOGIC_vector(31 downto 0);
+--Banco de registros
+
+
+--senales de control
+signal SEL: STD_LOGIC_vector(4 downto 0);--ALU
+signal WE:std_logic;--banco de registros
+signal RE:std_logic;--banco de registros
+signal RdnAdd: std_logic_vector(3 downto 0);--banco de registros
+signal RmAdd: std_logic_vector(3 downto 0);--banco de registros
+signal WR: std_logic; --RAM
+
+begin
+
+elemento_ALU: ALU port map(CLK,Rdn,Rm,SEL,NZCV,NZCV,ALUtoBUS);
+elemento_RegistersBank: RegistersBank port map(CLK,WE,RE,RdnAdd,Rmadd,int_BUS,Rdn,Rm);
+elemento_RAM: Iter port map(CLK,int_BUS,WR,int_BUS);
+
+
+
+	
+end RTL;
+

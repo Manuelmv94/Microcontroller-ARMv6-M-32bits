@@ -1,0 +1,44 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity ALU is
+	port ( 	CLK: in std_logic;
+				Rdn,Rm: in STD_LOGIC_vector(31 downto 0);
+				SEL: in std_LOGIC_vector(4 downto 0);
+				NZCVin: out std_LOGIC_vector(3 downto 0);
+				
+				NZCVout: out std_LOGIC_vector(3 downto 0);
+				Rd: out STD_LOGIC_vector(31 downto 0) );
+end ALU;
+
+
+architecture RTL of ALU is
+	
+	
+component Gen_Vectores IS
+port ( 	CLK: in std_logic;
+			A,B: in STD_LOGIC_vector(31 downto 0);
+			Av,Sv,Pv: out STD_LOGIC_vector(64 downto 0) );
+end component;
+
+component Iter IS
+port ( 	CLK: in std_logic;
+			Av,Sv,Pv: in STD_LOGIC_vector(64 downto 0);
+			Avn,Svn,Pvn: out STD_LOGIC_vector(64 downto 0) );
+end component;
+
+signal Av1: STD_LOGIC_vector(64 downto 0);
+	
+begin
+
+elemento_1: Gen_Vectores port map(CLK,A,B,Av1,Sv1,Pv1);
+elemento_2: Iter port map(CLK,Av1,Sv1,Pv1,Av2,Sv2,Pv2);
+elemento_3: Iter port map(CLK,Av2,Sv2,Pv2,Av3,Sv3,Pv3);
+elemento_4: Iter port map(CLK,Av3,Sv3,Pv3,Av4,Sv4,Pv4);
+elemento_5: Iter port map(CLK,Av4,Sv4,Pv4,Av5,Sv5,Pv5);
+
+
+Res<=Pv17(64 downto 1);
+	
+end RTL;
+

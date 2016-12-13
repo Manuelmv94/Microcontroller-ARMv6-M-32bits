@@ -1,0 +1,432 @@
+Simulator report for Extension
+Mon Mar 21 18:45:38 2016
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 100.0 us     ;
+; Simulation Netlist Size     ; 288 nodes    ;
+; Simulation Coverage         ;     100.00 % ;
+; Total Number of Transitions ; 1952         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                                                              ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                                                                            ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                                                                         ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                                                               ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                                                                ;               ;
+; Vector input source                                                                        ; C:/Users/manuel/Documents/ITESM/VI semestre/Arquitectura de computadoras/Micro ARM 32b/ALU/Extension/Extension.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                                                                 ; On            ;
+; Check outputs                                                                              ; Off                                                                                                                ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                                                                 ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                                                                 ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                                                                 ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                                                                 ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                                                                ; Off           ;
+; Detect glitches                                                                            ; Off                                                                                                                ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                                                                ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                                                                ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                                                                ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                                                                ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                                                                 ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                                                                         ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                                                                ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                                                                ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                                                               ; Auto          ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;     100.00 % ;
+; Total nodes checked                                 ; 288          ;
+; Total output ports checked                          ; 272          ;
+; Total output ports with complete 1/0-value coverage ; 272          ;
+; Total output ports with no 1/0-value coverage       ; 0            ;
+; Total output ports with no 1-value coverage         ; 0            ;
+; Total output ports with no 0-value coverage         ; 0            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                          ;
++-----------------------------------------------------------------+-----------------------------------------------------------------+------------------+
+; Node Name                                                       ; Output Port Name                                                ; Output Port Type ;
++-----------------------------------------------------------------+-----------------------------------------------------------------+------------------+
+; |Extension|S[15]~reg0                                           ; |Extension|S[15]~reg0                                           ; regout           ;
+; |Extension|S[14]~reg0                                           ; |Extension|S[14]~reg0                                           ; regout           ;
+; |Extension|S[13]~reg0                                           ; |Extension|S[13]~reg0                                           ; regout           ;
+; |Extension|S[12]~reg0                                           ; |Extension|S[12]~reg0                                           ; regout           ;
+; |Extension|S[11]~reg0                                           ; |Extension|S[11]~reg0                                           ; regout           ;
+; |Extension|S[10]~reg0                                           ; |Extension|S[10]~reg0                                           ; regout           ;
+; |Extension|S[9]~reg0                                            ; |Extension|S[9]~reg0                                            ; regout           ;
+; |Extension|S[8]~reg0                                            ; |Extension|S[8]~reg0                                            ; regout           ;
+; |Extension|S[7]~reg0                                            ; |Extension|S[7]~reg0                                            ; regout           ;
+; |Extension|S[6]~reg0                                            ; |Extension|S[6]~reg0                                            ; regout           ;
+; |Extension|S[5]~reg0                                            ; |Extension|S[5]~reg0                                            ; regout           ;
+; |Extension|S[4]~reg0                                            ; |Extension|S[4]~reg0                                            ; regout           ;
+; |Extension|S[3]~reg0                                            ; |Extension|S[3]~reg0                                            ; regout           ;
+; |Extension|S[2]~reg0                                            ; |Extension|S[2]~reg0                                            ; regout           ;
+; |Extension|S[1]~reg0                                            ; |Extension|S[1]~reg0                                            ; regout           ;
+; |Extension|S[0]~reg0                                            ; |Extension|S[0]~reg0                                            ; regout           ;
+; |Extension|S[16]~reg0                                           ; |Extension|S[16]~reg0                                           ; regout           ;
+; |Extension|S[17]~reg0                                           ; |Extension|S[17]~reg0                                           ; regout           ;
+; |Extension|S[18]~reg0                                           ; |Extension|S[18]~reg0                                           ; regout           ;
+; |Extension|S[19]~reg0                                           ; |Extension|S[19]~reg0                                           ; regout           ;
+; |Extension|S[20]~reg0                                           ; |Extension|S[20]~reg0                                           ; regout           ;
+; |Extension|S[21]~reg0                                           ; |Extension|S[21]~reg0                                           ; regout           ;
+; |Extension|S[22]~reg0                                           ; |Extension|S[22]~reg0                                           ; regout           ;
+; |Extension|S[23]~reg0                                           ; |Extension|S[23]~reg0                                           ; regout           ;
+; |Extension|S[24]~reg0                                           ; |Extension|S[24]~reg0                                           ; regout           ;
+; |Extension|S[25]~reg0                                           ; |Extension|S[25]~reg0                                           ; regout           ;
+; |Extension|S[26]~reg0                                           ; |Extension|S[26]~reg0                                           ; regout           ;
+; |Extension|S[27]~reg0                                           ; |Extension|S[27]~reg0                                           ; regout           ;
+; |Extension|S[28]~reg0                                           ; |Extension|S[28]~reg0                                           ; regout           ;
+; |Extension|S[29]~reg0                                           ; |Extension|S[29]~reg0                                           ; regout           ;
+; |Extension|S[30]~reg0                                           ; |Extension|S[30]~reg0                                           ; regout           ;
+; |Extension|S[31]~reg0                                           ; |Extension|S[31]~reg0                                           ; regout           ;
+; |Extension|CLK                                                  ; |Extension|CLK                                                  ; out              ;
+; |Extension|A[0]                                                 ; |Extension|A[0]                                                 ; out              ;
+; |Extension|A[1]                                                 ; |Extension|A[1]                                                 ; out              ;
+; |Extension|A[2]                                                 ; |Extension|A[2]                                                 ; out              ;
+; |Extension|A[3]                                                 ; |Extension|A[3]                                                 ; out              ;
+; |Extension|A[4]                                                 ; |Extension|A[4]                                                 ; out              ;
+; |Extension|A[5]                                                 ; |Extension|A[5]                                                 ; out              ;
+; |Extension|A[6]                                                 ; |Extension|A[6]                                                 ; out              ;
+; |Extension|A[7]                                                 ; |Extension|A[7]                                                 ; out              ;
+; |Extension|A[8]                                                 ; |Extension|A[8]                                                 ; out              ;
+; |Extension|A[9]                                                 ; |Extension|A[9]                                                 ; out              ;
+; |Extension|A[10]                                                ; |Extension|A[10]                                                ; out              ;
+; |Extension|A[11]                                                ; |Extension|A[11]                                                ; out              ;
+; |Extension|A[12]                                                ; |Extension|A[12]                                                ; out              ;
+; |Extension|A[13]                                                ; |Extension|A[13]                                                ; out              ;
+; |Extension|A[14]                                                ; |Extension|A[14]                                                ; out              ;
+; |Extension|A[15]                                                ; |Extension|A[15]                                                ; out              ;
+; |Extension|SEL[0]                                               ; |Extension|SEL[0]                                               ; out              ;
+; |Extension|SEL[1]                                               ; |Extension|SEL[1]                                               ; out              ;
+; |Extension|S[0]                                                 ; |Extension|S[0]                                                 ; pin_out          ;
+; |Extension|S[1]                                                 ; |Extension|S[1]                                                 ; pin_out          ;
+; |Extension|S[2]                                                 ; |Extension|S[2]                                                 ; pin_out          ;
+; |Extension|S[3]                                                 ; |Extension|S[3]                                                 ; pin_out          ;
+; |Extension|S[4]                                                 ; |Extension|S[4]                                                 ; pin_out          ;
+; |Extension|S[5]                                                 ; |Extension|S[5]                                                 ; pin_out          ;
+; |Extension|S[6]                                                 ; |Extension|S[6]                                                 ; pin_out          ;
+; |Extension|S[7]                                                 ; |Extension|S[7]                                                 ; pin_out          ;
+; |Extension|S[8]                                                 ; |Extension|S[8]                                                 ; pin_out          ;
+; |Extension|S[9]                                                 ; |Extension|S[9]                                                 ; pin_out          ;
+; |Extension|S[10]                                                ; |Extension|S[10]                                                ; pin_out          ;
+; |Extension|S[11]                                                ; |Extension|S[11]                                                ; pin_out          ;
+; |Extension|S[12]                                                ; |Extension|S[12]                                                ; pin_out          ;
+; |Extension|S[13]                                                ; |Extension|S[13]                                                ; pin_out          ;
+; |Extension|S[14]                                                ; |Extension|S[14]                                                ; pin_out          ;
+; |Extension|S[15]                                                ; |Extension|S[15]                                                ; pin_out          ;
+; |Extension|S[16]                                                ; |Extension|S[16]                                                ; pin_out          ;
+; |Extension|S[17]                                                ; |Extension|S[17]                                                ; pin_out          ;
+; |Extension|S[18]                                                ; |Extension|S[18]                                                ; pin_out          ;
+; |Extension|S[19]                                                ; |Extension|S[19]                                                ; pin_out          ;
+; |Extension|S[20]                                                ; |Extension|S[20]                                                ; pin_out          ;
+; |Extension|S[21]                                                ; |Extension|S[21]                                                ; pin_out          ;
+; |Extension|S[22]                                                ; |Extension|S[22]                                                ; pin_out          ;
+; |Extension|S[23]                                                ; |Extension|S[23]                                                ; pin_out          ;
+; |Extension|S[24]                                                ; |Extension|S[24]                                                ; pin_out          ;
+; |Extension|S[25]                                                ; |Extension|S[25]                                                ; pin_out          ;
+; |Extension|S[26]                                                ; |Extension|S[26]                                                ; pin_out          ;
+; |Extension|S[27]                                                ; |Extension|S[27]                                                ; pin_out          ;
+; |Extension|S[28]                                                ; |Extension|S[28]                                                ; pin_out          ;
+; |Extension|S[29]                                                ; |Extension|S[29]                                                ; pin_out          ;
+; |Extension|S[30]                                                ; |Extension|S[30]                                                ; pin_out          ;
+; |Extension|S[31]                                                ; |Extension|S[31]                                                ; pin_out          ;
+; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~0              ; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~0              ; out0             ;
+; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~1              ; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~1              ; out0             ;
+; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~2              ; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~2              ; out0             ;
+; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~3              ; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~3              ; out0             ;
+; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~4              ; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~4              ; out0             ;
+; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~5              ; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~5              ; out0             ;
+; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~6              ; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~6              ; out0             ;
+; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~7              ; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~7              ; out0             ;
+; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~8              ; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~8              ; out0             ;
+; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|result_node[0]~0 ; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~9              ; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~9              ; out0             ;
+; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~10             ; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~10             ; out0             ;
+; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~11             ; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~11             ; out0             ;
+; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~12             ; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~12             ; out0             ;
+; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~13             ; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~13             ; out0             ;
+; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~14             ; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~14             ; out0             ;
+; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~15             ; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~15             ; out0             ;
+; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~16             ; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~16             ; out0             ;
+; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~17             ; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|_~17             ; out0             ;
+; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|result_node[0]~1 ; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|result_node[0]   ; |Extension|lpm_mux:Mux8|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~0              ; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~0              ; out0             ;
+; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~1              ; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~1              ; out0             ;
+; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~2              ; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~2              ; out0             ;
+; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~3              ; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~3              ; out0             ;
+; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~4              ; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~4              ; out0             ;
+; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~5              ; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~5              ; out0             ;
+; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~6              ; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~6              ; out0             ;
+; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~7              ; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~7              ; out0             ;
+; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~8              ; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~8              ; out0             ;
+; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|result_node[0]~0 ; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~9              ; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~9              ; out0             ;
+; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~10             ; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~10             ; out0             ;
+; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~11             ; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~11             ; out0             ;
+; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~12             ; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~12             ; out0             ;
+; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~13             ; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~13             ; out0             ;
+; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~14             ; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~14             ; out0             ;
+; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~15             ; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~15             ; out0             ;
+; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~16             ; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~16             ; out0             ;
+; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~17             ; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|_~17             ; out0             ;
+; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|result_node[0]~1 ; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|result_node[0]   ; |Extension|lpm_mux:Mux7|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~0              ; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~0              ; out0             ;
+; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~1              ; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~1              ; out0             ;
+; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~2              ; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~2              ; out0             ;
+; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~3              ; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~3              ; out0             ;
+; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~4              ; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~4              ; out0             ;
+; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~5              ; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~5              ; out0             ;
+; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~6              ; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~6              ; out0             ;
+; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~7              ; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~7              ; out0             ;
+; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~8              ; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~8              ; out0             ;
+; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|result_node[0]~0 ; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~9              ; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~9              ; out0             ;
+; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~10             ; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~10             ; out0             ;
+; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~11             ; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~11             ; out0             ;
+; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~12             ; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~12             ; out0             ;
+; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~13             ; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~13             ; out0             ;
+; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~14             ; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~14             ; out0             ;
+; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~15             ; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~15             ; out0             ;
+; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~16             ; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~16             ; out0             ;
+; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~17             ; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|_~17             ; out0             ;
+; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|result_node[0]~1 ; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|result_node[0]   ; |Extension|lpm_mux:Mux6|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~0              ; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~0              ; out0             ;
+; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~1              ; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~1              ; out0             ;
+; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~2              ; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~2              ; out0             ;
+; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~3              ; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~3              ; out0             ;
+; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~4              ; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~4              ; out0             ;
+; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~5              ; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~5              ; out0             ;
+; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~6              ; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~6              ; out0             ;
+; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~7              ; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~7              ; out0             ;
+; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~8              ; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~8              ; out0             ;
+; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|result_node[0]~0 ; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~9              ; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~9              ; out0             ;
+; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~10             ; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~10             ; out0             ;
+; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~11             ; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~11             ; out0             ;
+; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~12             ; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~12             ; out0             ;
+; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~13             ; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~13             ; out0             ;
+; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~14             ; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~14             ; out0             ;
+; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~15             ; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~15             ; out0             ;
+; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~16             ; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~16             ; out0             ;
+; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~17             ; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|_~17             ; out0             ;
+; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|result_node[0]~1 ; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|result_node[0]   ; |Extension|lpm_mux:Mux5|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~0              ; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~0              ; out0             ;
+; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~1              ; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~1              ; out0             ;
+; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~2              ; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~2              ; out0             ;
+; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~3              ; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~3              ; out0             ;
+; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~4              ; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~4              ; out0             ;
+; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~5              ; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~5              ; out0             ;
+; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~6              ; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~6              ; out0             ;
+; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~7              ; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~7              ; out0             ;
+; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~8              ; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~8              ; out0             ;
+; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|result_node[0]~0 ; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~9              ; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~9              ; out0             ;
+; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~10             ; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~10             ; out0             ;
+; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~11             ; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~11             ; out0             ;
+; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~12             ; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~12             ; out0             ;
+; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~13             ; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~13             ; out0             ;
+; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~14             ; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~14             ; out0             ;
+; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~15             ; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~15             ; out0             ;
+; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~16             ; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~16             ; out0             ;
+; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~17             ; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|_~17             ; out0             ;
+; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|result_node[0]~1 ; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|result_node[0]   ; |Extension|lpm_mux:Mux4|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~0              ; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~0              ; out0             ;
+; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~1              ; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~1              ; out0             ;
+; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~2              ; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~2              ; out0             ;
+; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~3              ; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~3              ; out0             ;
+; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~4              ; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~4              ; out0             ;
+; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~5              ; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~5              ; out0             ;
+; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~6              ; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~6              ; out0             ;
+; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~7              ; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~7              ; out0             ;
+; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~8              ; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~8              ; out0             ;
+; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|result_node[0]~0 ; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~9              ; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~9              ; out0             ;
+; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~10             ; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~10             ; out0             ;
+; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~11             ; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~11             ; out0             ;
+; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~12             ; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~12             ; out0             ;
+; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~13             ; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~13             ; out0             ;
+; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~14             ; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~14             ; out0             ;
+; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~15             ; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~15             ; out0             ;
+; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~16             ; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~16             ; out0             ;
+; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~17             ; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|_~17             ; out0             ;
+; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|result_node[0]~1 ; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|result_node[0]   ; |Extension|lpm_mux:Mux3|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~0              ; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~0              ; out0             ;
+; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~1              ; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~1              ; out0             ;
+; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~2              ; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~2              ; out0             ;
+; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~3              ; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~3              ; out0             ;
+; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~4              ; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~4              ; out0             ;
+; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~5              ; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~5              ; out0             ;
+; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~6              ; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~6              ; out0             ;
+; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~7              ; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~7              ; out0             ;
+; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~8              ; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~8              ; out0             ;
+; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|result_node[0]~0 ; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~9              ; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~9              ; out0             ;
+; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~10             ; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~10             ; out0             ;
+; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~11             ; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~11             ; out0             ;
+; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~12             ; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~12             ; out0             ;
+; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~13             ; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~13             ; out0             ;
+; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~14             ; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~14             ; out0             ;
+; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~15             ; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~15             ; out0             ;
+; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~16             ; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~16             ; out0             ;
+; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~17             ; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|_~17             ; out0             ;
+; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|result_node[0]~1 ; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|result_node[0]   ; |Extension|lpm_mux:Mux2|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~0              ; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~0              ; out0             ;
+; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~1              ; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~1              ; out0             ;
+; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~2              ; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~2              ; out0             ;
+; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~3              ; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~3              ; out0             ;
+; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~4              ; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~4              ; out0             ;
+; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~5              ; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~5              ; out0             ;
+; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~6              ; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~6              ; out0             ;
+; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~7              ; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~7              ; out0             ;
+; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~8              ; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~8              ; out0             ;
+; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|result_node[0]~0 ; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~9              ; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~9              ; out0             ;
+; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~10             ; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~10             ; out0             ;
+; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~11             ; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~11             ; out0             ;
+; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~12             ; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~12             ; out0             ;
+; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~13             ; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~13             ; out0             ;
+; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~14             ; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~14             ; out0             ;
+; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~15             ; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~15             ; out0             ;
+; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~16             ; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~16             ; out0             ;
+; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~17             ; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|_~17             ; out0             ;
+; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|result_node[0]~1 ; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|result_node[0]   ; |Extension|lpm_mux:Mux1|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~0              ; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~0              ; out0             ;
+; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~1              ; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~1              ; out0             ;
+; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~2              ; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~2              ; out0             ;
+; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~3              ; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~3              ; out0             ;
+; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~4              ; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~4              ; out0             ;
+; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~5              ; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~5              ; out0             ;
+; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~6              ; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~6              ; out0             ;
+; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~7              ; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~7              ; out0             ;
+; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~8              ; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~8              ; out0             ;
+; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|result_node[0]~0 ; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~9              ; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~9              ; out0             ;
+; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~10             ; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~10             ; out0             ;
+; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~11             ; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~11             ; out0             ;
+; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~12             ; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~12             ; out0             ;
+; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~13             ; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~13             ; out0             ;
+; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~14             ; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~14             ; out0             ;
+; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~15             ; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~15             ; out0             ;
+; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~16             ; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~16             ; out0             ;
+; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~17             ; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|_~17             ; out0             ;
+; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|result_node[0]~1 ; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|result_node[0]   ; |Extension|lpm_mux:Mux0|mux_umc:auto_generated|result_node[0]   ; out0             ;
++-----------------------------------------------------------------+-----------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-------------------------------------------------+
+; Missing 1-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-------------------------------------------------+
+; Missing 0-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Mar 21 18:45:37 2016
+Info: Command: quartus_sim --simulation_results_format=VWF Extension -c Extension
+Info (324025): Using vector source file "C:/Users/manuel/Documents/ITESM/VI semestre/Arquitectura de computadoras/Micro ARM 32b/ALU/Extension/Extension.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is     100.00 %
+Info (328052): Number of transitions in simulation is 1952
+Info (324045): Vector file Extension.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 329 megabytes
+    Info: Processing ended: Mon Mar 21 18:45:38 2016
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

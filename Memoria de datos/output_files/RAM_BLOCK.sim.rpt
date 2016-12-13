@@ -1,0 +1,373 @@
+Simulator report for RAM_BLOCK
+Fri Apr 08 17:15:09 2016
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ALTSYNCRAM
+  6. Coverage Summary
+  7. Complete 1/0-Value Coverage
+  8. Missing 1-Value Coverage
+  9. Missing 0-Value Coverage
+ 10. Simulator INI Usage
+ 11. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 100.0 us     ;
+; Simulation Netlist Size     ; 194 nodes    ;
+; Simulation Coverage         ;      82.09 % ;
+; Total Number of Transitions ; 1560         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                                                                 ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                                                                               ; Default Value ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                                                                            ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                                                                  ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                                                                   ;               ;
+; Vector input source                                                                        ; C:/Users/manuel/Documents/ITESM/VI semestre/Arquitectura de computadoras/Micro ARM 32b/Memoria de datos/RAM_BLOCK.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                                                                    ; On            ;
+; Check outputs                                                                              ; Off                                                                                                                   ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                                                                    ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                                                                    ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                                                                    ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                                                                    ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                                                                   ; Off           ;
+; Detect glitches                                                                            ; Off                                                                                                                   ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                                                                   ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                                                                   ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                                                                   ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                                                                   ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                                                                    ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                                                                            ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                                                                   ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                                                                   ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                                                                  ; Auto          ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++---------------------------------------------------------------------------+
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ALTSYNCRAM ;
++---------------------------------------------------------------------------+
+Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      82.09 % ;
+; Total nodes checked                                 ; 194          ;
+; Total output ports checked                          ; 201          ;
+; Total output ports with complete 1/0-value coverage ; 165          ;
+; Total output ports with no 1/0-value coverage       ; 3            ;
+; Total output ports with no 1-value coverage         ; 4            ;
+; Total output ports with no 0-value coverage         ; 35           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                    ;
++------------------------------------------------------------------------------+------------------------------------------------------------------------------+------------------+
+; Node Name                                                                    ; Output Port Name                                                             ; Output Port Type ;
++------------------------------------------------------------------------------+------------------------------------------------------------------------------+------------------+
+; |RAM_BLOCK|data[2]~0                                                         ; |RAM_BLOCK|data[2]~0                                                         ; out              ;
+; |RAM_BLOCK|data[1]~1                                                         ; |RAM_BLOCK|data[1]~1                                                         ; out              ;
+; |RAM_BLOCK|data[0]~2                                                         ; |RAM_BLOCK|data[0]~2                                                         ; out              ;
+; |RAM_BLOCK|data[3]~3                                                         ; |RAM_BLOCK|data[3]~3                                                         ; out              ;
+; |RAM_BLOCK|data[4]~4                                                         ; |RAM_BLOCK|data[4]~4                                                         ; out              ;
+; |RAM_BLOCK|data[5]~5                                                         ; |RAM_BLOCK|data[5]~5                                                         ; out              ;
+; |RAM_BLOCK|data[6]~6                                                         ; |RAM_BLOCK|data[6]~6                                                         ; out              ;
+; |RAM_BLOCK|data[7]~7                                                         ; |RAM_BLOCK|data[7]~7                                                         ; out              ;
+; |RAM_BLOCK|data[8]~8                                                         ; |RAM_BLOCK|data[8]~8                                                         ; out              ;
+; |RAM_BLOCK|data[9]~9                                                         ; |RAM_BLOCK|data[9]~9                                                         ; out              ;
+; |RAM_BLOCK|data[10]~10                                                       ; |RAM_BLOCK|data[10]~10                                                       ; out              ;
+; |RAM_BLOCK|data[11]~11                                                       ; |RAM_BLOCK|data[11]~11                                                       ; out              ;
+; |RAM_BLOCK|data[12]~12                                                       ; |RAM_BLOCK|data[12]~12                                                       ; out              ;
+; |RAM_BLOCK|data[13]~13                                                       ; |RAM_BLOCK|data[13]~13                                                       ; out              ;
+; |RAM_BLOCK|data[14]~14                                                       ; |RAM_BLOCK|data[14]~14                                                       ; out              ;
+; |RAM_BLOCK|data[15]~15                                                       ; |RAM_BLOCK|data[15]~15                                                       ; out              ;
+; |RAM_BLOCK|data[16]~16                                                       ; |RAM_BLOCK|data[16]~16                                                       ; out              ;
+; |RAM_BLOCK|data[17]~17                                                       ; |RAM_BLOCK|data[17]~17                                                       ; out              ;
+; |RAM_BLOCK|data[18]~18                                                       ; |RAM_BLOCK|data[18]~18                                                       ; out              ;
+; |RAM_BLOCK|data[19]~19                                                       ; |RAM_BLOCK|data[19]~19                                                       ; out              ;
+; |RAM_BLOCK|data[20]~20                                                       ; |RAM_BLOCK|data[20]~20                                                       ; out              ;
+; |RAM_BLOCK|data[21]~21                                                       ; |RAM_BLOCK|data[21]~21                                                       ; out              ;
+; |RAM_BLOCK|data[22]~22                                                       ; |RAM_BLOCK|data[22]~22                                                       ; out              ;
+; |RAM_BLOCK|data[23]~23                                                       ; |RAM_BLOCK|data[23]~23                                                       ; out              ;
+; |RAM_BLOCK|data[24]~24                                                       ; |RAM_BLOCK|data[24]~24                                                       ; out              ;
+; |RAM_BLOCK|data[25]~25                                                       ; |RAM_BLOCK|data[25]~25                                                       ; out              ;
+; |RAM_BLOCK|data[26]~26                                                       ; |RAM_BLOCK|data[26]~26                                                       ; out              ;
+; |RAM_BLOCK|data[27]~27                                                       ; |RAM_BLOCK|data[27]~27                                                       ; out              ;
+; |RAM_BLOCK|data[28]~28                                                       ; |RAM_BLOCK|data[28]~28                                                       ; out              ;
+; |RAM_BLOCK|data[29]~29                                                       ; |RAM_BLOCK|data[29]~29                                                       ; out              ;
+; |RAM_BLOCK|data[30]~30                                                       ; |RAM_BLOCK|data[30]~30                                                       ; out              ;
+; |RAM_BLOCK|data[31]~31                                                       ; |RAM_BLOCK|data[31]~31                                                       ; out              ;
+; |RAM_BLOCK|Clk                                                               ; |RAM_BLOCK|Clk                                                               ; out              ;
+; |RAM_BLOCK|address[0]                                                        ; |RAM_BLOCK|address[0]                                                        ; out              ;
+; |RAM_BLOCK|address[1]                                                        ; |RAM_BLOCK|address[1]                                                        ; out              ;
+; |RAM_BLOCK|address[2]                                                        ; |RAM_BLOCK|address[2]                                                        ; out              ;
+; |RAM_BLOCK|address[3]                                                        ; |RAM_BLOCK|address[3]                                                        ; out              ;
+; |RAM_BLOCK|data[0]                                                           ; |RAM_BLOCK|data[0]                                                           ; out              ;
+; |RAM_BLOCK|data[0]                                                           ; |RAM_BLOCK|data[0]~result                                                    ; pin_out          ;
+; |RAM_BLOCK|data[1]                                                           ; |RAM_BLOCK|data[1]                                                           ; out              ;
+; |RAM_BLOCK|data[1]                                                           ; |RAM_BLOCK|data[1]~result                                                    ; pin_out          ;
+; |RAM_BLOCK|data[2]                                                           ; |RAM_BLOCK|data[2]                                                           ; out              ;
+; |RAM_BLOCK|data[2]                                                           ; |RAM_BLOCK|data[2]~result                                                    ; pin_out          ;
+; |RAM_BLOCK|data[3]                                                           ; |RAM_BLOCK|data[3]                                                           ; out              ;
+; |RAM_BLOCK|data[3]                                                           ; |RAM_BLOCK|data[3]~result                                                    ; pin_out          ;
+; |RAM_BLOCK|data[4]                                                           ; |RAM_BLOCK|data[4]                                                           ; out              ;
+; |RAM_BLOCK|data[4]                                                           ; |RAM_BLOCK|data[4]~result                                                    ; pin_out          ;
+; |RAM_BLOCK|data[5]                                                           ; |RAM_BLOCK|data[5]                                                           ; out              ;
+; |RAM_BLOCK|data[5]                                                           ; |RAM_BLOCK|data[5]~result                                                    ; pin_out          ;
+; |RAM_BLOCK|data[6]                                                           ; |RAM_BLOCK|data[6]                                                           ; out              ;
+; |RAM_BLOCK|data[6]                                                           ; |RAM_BLOCK|data[6]~result                                                    ; pin_out          ;
+; |RAM_BLOCK|data[7]                                                           ; |RAM_BLOCK|data[7]                                                           ; out              ;
+; |RAM_BLOCK|data[7]                                                           ; |RAM_BLOCK|data[7]~result                                                    ; pin_out          ;
+; |RAM_BLOCK|data[8]                                                           ; |RAM_BLOCK|data[8]                                                           ; out              ;
+; |RAM_BLOCK|data[8]                                                           ; |RAM_BLOCK|data[8]~result                                                    ; pin_out          ;
+; |RAM_BLOCK|data[9]                                                           ; |RAM_BLOCK|data[9]                                                           ; out              ;
+; |RAM_BLOCK|data[9]                                                           ; |RAM_BLOCK|data[9]~result                                                    ; pin_out          ;
+; |RAM_BLOCK|data[10]                                                          ; |RAM_BLOCK|data[10]                                                          ; out              ;
+; |RAM_BLOCK|data[10]                                                          ; |RAM_BLOCK|data[10]~result                                                   ; pin_out          ;
+; |RAM_BLOCK|data[11]                                                          ; |RAM_BLOCK|data[11]                                                          ; out              ;
+; |RAM_BLOCK|data[11]                                                          ; |RAM_BLOCK|data[11]~result                                                   ; pin_out          ;
+; |RAM_BLOCK|data[12]                                                          ; |RAM_BLOCK|data[12]                                                          ; out              ;
+; |RAM_BLOCK|data[12]                                                          ; |RAM_BLOCK|data[12]~result                                                   ; pin_out          ;
+; |RAM_BLOCK|data[13]                                                          ; |RAM_BLOCK|data[13]                                                          ; out              ;
+; |RAM_BLOCK|data[13]                                                          ; |RAM_BLOCK|data[13]~result                                                   ; pin_out          ;
+; |RAM_BLOCK|data[14]                                                          ; |RAM_BLOCK|data[14]                                                          ; out              ;
+; |RAM_BLOCK|data[14]                                                          ; |RAM_BLOCK|data[14]~result                                                   ; pin_out          ;
+; |RAM_BLOCK|data[15]                                                          ; |RAM_BLOCK|data[15]                                                          ; out              ;
+; |RAM_BLOCK|data[15]                                                          ; |RAM_BLOCK|data[15]~result                                                   ; pin_out          ;
+; |RAM_BLOCK|data[16]                                                          ; |RAM_BLOCK|data[16]                                                          ; out              ;
+; |RAM_BLOCK|data[16]                                                          ; |RAM_BLOCK|data[16]~result                                                   ; pin_out          ;
+; |RAM_BLOCK|data[17]                                                          ; |RAM_BLOCK|data[17]                                                          ; out              ;
+; |RAM_BLOCK|data[17]                                                          ; |RAM_BLOCK|data[17]~result                                                   ; pin_out          ;
+; |RAM_BLOCK|data[18]                                                          ; |RAM_BLOCK|data[18]                                                          ; out              ;
+; |RAM_BLOCK|data[18]                                                          ; |RAM_BLOCK|data[18]~result                                                   ; pin_out          ;
+; |RAM_BLOCK|data[19]                                                          ; |RAM_BLOCK|data[19]                                                          ; out              ;
+; |RAM_BLOCK|data[19]                                                          ; |RAM_BLOCK|data[19]~result                                                   ; pin_out          ;
+; |RAM_BLOCK|data[20]                                                          ; |RAM_BLOCK|data[20]                                                          ; out              ;
+; |RAM_BLOCK|data[20]                                                          ; |RAM_BLOCK|data[20]~result                                                   ; pin_out          ;
+; |RAM_BLOCK|data[21]                                                          ; |RAM_BLOCK|data[21]                                                          ; out              ;
+; |RAM_BLOCK|data[21]                                                          ; |RAM_BLOCK|data[21]~result                                                   ; pin_out          ;
+; |RAM_BLOCK|data[22]                                                          ; |RAM_BLOCK|data[22]                                                          ; out              ;
+; |RAM_BLOCK|data[22]                                                          ; |RAM_BLOCK|data[22]~result                                                   ; pin_out          ;
+; |RAM_BLOCK|data[23]                                                          ; |RAM_BLOCK|data[23]                                                          ; out              ;
+; |RAM_BLOCK|data[23]                                                          ; |RAM_BLOCK|data[23]~result                                                   ; pin_out          ;
+; |RAM_BLOCK|data[24]                                                          ; |RAM_BLOCK|data[24]                                                          ; out              ;
+; |RAM_BLOCK|data[24]                                                          ; |RAM_BLOCK|data[24]~result                                                   ; pin_out          ;
+; |RAM_BLOCK|data[25]                                                          ; |RAM_BLOCK|data[25]                                                          ; out              ;
+; |RAM_BLOCK|data[25]                                                          ; |RAM_BLOCK|data[25]~result                                                   ; pin_out          ;
+; |RAM_BLOCK|data[26]                                                          ; |RAM_BLOCK|data[26]                                                          ; out              ;
+; |RAM_BLOCK|data[26]                                                          ; |RAM_BLOCK|data[26]~result                                                   ; pin_out          ;
+; |RAM_BLOCK|data[27]                                                          ; |RAM_BLOCK|data[27]                                                          ; out              ;
+; |RAM_BLOCK|data[27]                                                          ; |RAM_BLOCK|data[27]~result                                                   ; pin_out          ;
+; |RAM_BLOCK|data[28]                                                          ; |RAM_BLOCK|data[28]                                                          ; out              ;
+; |RAM_BLOCK|data[28]                                                          ; |RAM_BLOCK|data[28]~result                                                   ; pin_out          ;
+; |RAM_BLOCK|data[29]                                                          ; |RAM_BLOCK|data[29]                                                          ; out              ;
+; |RAM_BLOCK|data[29]                                                          ; |RAM_BLOCK|data[29]~result                                                   ; pin_out          ;
+; |RAM_BLOCK|data[30]                                                          ; |RAM_BLOCK|data[30]                                                          ; out              ;
+; |RAM_BLOCK|data[30]                                                          ; |RAM_BLOCK|data[30]~result                                                   ; pin_out          ;
+; |RAM_BLOCK|data[31]                                                          ; |RAM_BLOCK|data[31]                                                          ; out              ;
+; |RAM_BLOCK|data[31]                                                          ; |RAM_BLOCK|data[31]~result                                                   ; pin_out          ;
+; |RAM_BLOCK|data[31]~32                                                       ; |RAM_BLOCK|data[31]~32                                                       ; out0             ;
+; |RAM_BLOCK|data[30]~33                                                       ; |RAM_BLOCK|data[30]~33                                                       ; out0             ;
+; |RAM_BLOCK|data[29]~34                                                       ; |RAM_BLOCK|data[29]~34                                                       ; out0             ;
+; |RAM_BLOCK|data[28]~35                                                       ; |RAM_BLOCK|data[28]~35                                                       ; out0             ;
+; |RAM_BLOCK|data[27]~36                                                       ; |RAM_BLOCK|data[27]~36                                                       ; out0             ;
+; |RAM_BLOCK|data[26]~37                                                       ; |RAM_BLOCK|data[26]~37                                                       ; out0             ;
+; |RAM_BLOCK|data[25]~38                                                       ; |RAM_BLOCK|data[25]~38                                                       ; out0             ;
+; |RAM_BLOCK|data[24]~39                                                       ; |RAM_BLOCK|data[24]~39                                                       ; out0             ;
+; |RAM_BLOCK|data[23]~40                                                       ; |RAM_BLOCK|data[23]~40                                                       ; out0             ;
+; |RAM_BLOCK|data[22]~41                                                       ; |RAM_BLOCK|data[22]~41                                                       ; out0             ;
+; |RAM_BLOCK|data[21]~42                                                       ; |RAM_BLOCK|data[21]~42                                                       ; out0             ;
+; |RAM_BLOCK|data[20]~43                                                       ; |RAM_BLOCK|data[20]~43                                                       ; out0             ;
+; |RAM_BLOCK|data[19]~44                                                       ; |RAM_BLOCK|data[19]~44                                                       ; out0             ;
+; |RAM_BLOCK|data[18]~45                                                       ; |RAM_BLOCK|data[18]~45                                                       ; out0             ;
+; |RAM_BLOCK|data[17]~46                                                       ; |RAM_BLOCK|data[17]~46                                                       ; out0             ;
+; |RAM_BLOCK|data[16]~47                                                       ; |RAM_BLOCK|data[16]~47                                                       ; out0             ;
+; |RAM_BLOCK|data[15]~48                                                       ; |RAM_BLOCK|data[15]~48                                                       ; out0             ;
+; |RAM_BLOCK|data[14]~49                                                       ; |RAM_BLOCK|data[14]~49                                                       ; out0             ;
+; |RAM_BLOCK|data[13]~50                                                       ; |RAM_BLOCK|data[13]~50                                                       ; out0             ;
+; |RAM_BLOCK|data[12]~51                                                       ; |RAM_BLOCK|data[12]~51                                                       ; out0             ;
+; |RAM_BLOCK|data[11]~52                                                       ; |RAM_BLOCK|data[11]~52                                                       ; out0             ;
+; |RAM_BLOCK|data[10]~53                                                       ; |RAM_BLOCK|data[10]~53                                                       ; out0             ;
+; |RAM_BLOCK|data[9]~54                                                        ; |RAM_BLOCK|data[9]~54                                                        ; out0             ;
+; |RAM_BLOCK|data[8]~55                                                        ; |RAM_BLOCK|data[8]~55                                                        ; out0             ;
+; |RAM_BLOCK|data[7]~56                                                        ; |RAM_BLOCK|data[7]~56                                                        ; out0             ;
+; |RAM_BLOCK|data[6]~57                                                        ; |RAM_BLOCK|data[6]~57                                                        ; out0             ;
+; |RAM_BLOCK|data[5]~58                                                        ; |RAM_BLOCK|data[5]~58                                                        ; out0             ;
+; |RAM_BLOCK|data[4]~59                                                        ; |RAM_BLOCK|data[4]~59                                                        ; out0             ;
+; |RAM_BLOCK|data[3]~60                                                        ; |RAM_BLOCK|data[3]~60                                                        ; out0             ;
+; |RAM_BLOCK|data[2]~61                                                        ; |RAM_BLOCK|data[2]~61                                                        ; out0             ;
+; |RAM_BLOCK|data[1]~62                                                        ; |RAM_BLOCK|data[1]~62                                                        ; out0             ;
+; |RAM_BLOCK|data[0]~63                                                        ; |RAM_BLOCK|data[0]~63                                                        ; out0             ;
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a0  ; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a0  ; portbdataout0    ;
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a1  ; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a1  ; portbdataout0    ;
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a2  ; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a2  ; portbdataout0    ;
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a3  ; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a3  ; portbdataout0    ;
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a4  ; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a4  ; portbdataout0    ;
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a5  ; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a5  ; portbdataout0    ;
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a6  ; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a6  ; portbdataout0    ;
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a7  ; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a7  ; portbdataout0    ;
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a8  ; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a8  ; portbdataout0    ;
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a9  ; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a9  ; portbdataout0    ;
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a10 ; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a10 ; portbdataout0    ;
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a11 ; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a11 ; portbdataout0    ;
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a12 ; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a12 ; portbdataout0    ;
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a13 ; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a13 ; portbdataout0    ;
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a14 ; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a14 ; portbdataout0    ;
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a15 ; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a15 ; portbdataout0    ;
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a16 ; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a16 ; portbdataout0    ;
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a17 ; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a17 ; portbdataout0    ;
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a18 ; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a18 ; portbdataout0    ;
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a19 ; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a19 ; portbdataout0    ;
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a20 ; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a20 ; portbdataout0    ;
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a21 ; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a21 ; portbdataout0    ;
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a22 ; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a22 ; portbdataout0    ;
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a23 ; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a23 ; portbdataout0    ;
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a24 ; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a24 ; portbdataout0    ;
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a25 ; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a25 ; portbdataout0    ;
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a26 ; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a26 ; portbdataout0    ;
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a27 ; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a27 ; portbdataout0    ;
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a28 ; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a28 ; portbdataout0    ;
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a29 ; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a29 ; portbdataout0    ;
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a30 ; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a30 ; portbdataout0    ;
+; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a31 ; |RAM_BLOCK|altsyncram:ram_rtl_0|altsyncram_qqg1:auto_generated|ram_block1a31 ; portbdataout0    ;
++------------------------------------------------------------------------------+------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------+
+; Missing 1-Value Coverage                                         ;
++-----------------------+-----------------------+------------------+
+; Node Name             ; Output Port Name      ; Output Port Type ;
++-----------------------+-----------------------+------------------+
+; |RAM_BLOCK|address[4] ; |RAM_BLOCK|address[4] ; out              ;
+; |RAM_BLOCK|address[5] ; |RAM_BLOCK|address[5] ; out              ;
+; |RAM_BLOCK|address[6] ; |RAM_BLOCK|address[6] ; out              ;
+; |RAM_BLOCK|we         ; |RAM_BLOCK|we         ; out              ;
++-----------------------+-----------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------+
+; Missing 0-Value Coverage                                           ;
++------------------------+------------------------+------------------+
+; Node Name              ; Output Port Name       ; Output Port Type ;
++------------------------+------------------------+------------------+
+; |RAM_BLOCK|data[2]~en  ; |RAM_BLOCK|data[2]~en  ; regout           ;
+; |RAM_BLOCK|data[1]~en  ; |RAM_BLOCK|data[1]~en  ; regout           ;
+; |RAM_BLOCK|data[0]~en  ; |RAM_BLOCK|data[0]~en  ; regout           ;
+; |RAM_BLOCK|data[3]~en  ; |RAM_BLOCK|data[3]~en  ; regout           ;
+; |RAM_BLOCK|data[4]~en  ; |RAM_BLOCK|data[4]~en  ; regout           ;
+; |RAM_BLOCK|data[5]~en  ; |RAM_BLOCK|data[5]~en  ; regout           ;
+; |RAM_BLOCK|data[6]~en  ; |RAM_BLOCK|data[6]~en  ; regout           ;
+; |RAM_BLOCK|data[7]~en  ; |RAM_BLOCK|data[7]~en  ; regout           ;
+; |RAM_BLOCK|data[8]~en  ; |RAM_BLOCK|data[8]~en  ; regout           ;
+; |RAM_BLOCK|data[9]~en  ; |RAM_BLOCK|data[9]~en  ; regout           ;
+; |RAM_BLOCK|data[10]~en ; |RAM_BLOCK|data[10]~en ; regout           ;
+; |RAM_BLOCK|data[11]~en ; |RAM_BLOCK|data[11]~en ; regout           ;
+; |RAM_BLOCK|data[12]~en ; |RAM_BLOCK|data[12]~en ; regout           ;
+; |RAM_BLOCK|data[13]~en ; |RAM_BLOCK|data[13]~en ; regout           ;
+; |RAM_BLOCK|data[14]~en ; |RAM_BLOCK|data[14]~en ; regout           ;
+; |RAM_BLOCK|data[15]~en ; |RAM_BLOCK|data[15]~en ; regout           ;
+; |RAM_BLOCK|data[16]~en ; |RAM_BLOCK|data[16]~en ; regout           ;
+; |RAM_BLOCK|data[17]~en ; |RAM_BLOCK|data[17]~en ; regout           ;
+; |RAM_BLOCK|data[18]~en ; |RAM_BLOCK|data[18]~en ; regout           ;
+; |RAM_BLOCK|data[19]~en ; |RAM_BLOCK|data[19]~en ; regout           ;
+; |RAM_BLOCK|data[20]~en ; |RAM_BLOCK|data[20]~en ; regout           ;
+; |RAM_BLOCK|data[21]~en ; |RAM_BLOCK|data[21]~en ; regout           ;
+; |RAM_BLOCK|data[22]~en ; |RAM_BLOCK|data[22]~en ; regout           ;
+; |RAM_BLOCK|data[23]~en ; |RAM_BLOCK|data[23]~en ; regout           ;
+; |RAM_BLOCK|data[24]~en ; |RAM_BLOCK|data[24]~en ; regout           ;
+; |RAM_BLOCK|data[25]~en ; |RAM_BLOCK|data[25]~en ; regout           ;
+; |RAM_BLOCK|data[26]~en ; |RAM_BLOCK|data[26]~en ; regout           ;
+; |RAM_BLOCK|data[27]~en ; |RAM_BLOCK|data[27]~en ; regout           ;
+; |RAM_BLOCK|data[28]~en ; |RAM_BLOCK|data[28]~en ; regout           ;
+; |RAM_BLOCK|data[29]~en ; |RAM_BLOCK|data[29]~en ; regout           ;
+; |RAM_BLOCK|data[30]~en ; |RAM_BLOCK|data[30]~en ; regout           ;
+; |RAM_BLOCK|data[31]~en ; |RAM_BLOCK|data[31]~en ; regout           ;
+; |RAM_BLOCK|address[4]  ; |RAM_BLOCK|address[4]  ; out              ;
+; |RAM_BLOCK|address[5]  ; |RAM_BLOCK|address[5]  ; out              ;
+; |RAM_BLOCK|address[6]  ; |RAM_BLOCK|address[6]  ; out              ;
++------------------------+------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Fri Apr 08 17:15:08 2016
+Info: Command: quartus_sim --simulation_results_format=VWF RAM_BLOCK -c RAM_BLOCK
+Info (324025): Using vector source file "C:/Users/manuel/Documents/ITESM/VI semestre/Arquitectura de computadoras/Micro ARM 32b/Memoria de datos/RAM_BLOCK.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      82.09 %
+Info (328052): Number of transitions in simulation is 1560
+Info (324045): Vector file RAM_BLOCK.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 329 megabytes
+    Info: Processing ended: Fri Apr 08 17:15:09 2016
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

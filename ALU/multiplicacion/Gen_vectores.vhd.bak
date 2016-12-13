@@ -1,0 +1,31 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity GenVectores is
+	port ( 	CLK: in std_logic;
+				A,B: in STD_LOGIC_vector(31 downto 0);
+				Av,Sv,Pv: out STD_LOGIC_vector(64 downto 0) );
+
+end GenVectores;
+
+architecture RTL of GenVectores is
+	
+
+signal An_s:std_logic_vector(31 downto 0);
+
+begin
+
+	
+process(clk)
+begin
+if (rising_edge(CLK)) then
+	Av<=A & (32 downto 0 =>'0');
+	An_s<=NOT(A)+'1'
+	Sv<=An_s & (32 downto 0 =>'0');
+	Pv<=(63 downto 32 =>'0')&B&"0";
+else null;
+end if;
+end process;
+	
+end RTL;
+

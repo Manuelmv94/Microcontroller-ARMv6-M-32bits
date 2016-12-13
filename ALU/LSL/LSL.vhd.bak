@@ -1,0 +1,61 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity LSL is
+port (CLK: in std_logic;
+		A: in std_logic_vector(31 downto 0);
+		B: in std_logic_vector(31 downto 0);
+		
+		S: out std_logic_vector(31 downto 0);
+		);
+end LSL;
+	
+architecture rtl of LSL is
+ 
+begin
+Process(CLK) begin
+	if CLK'EVENT AND CLK='1'THEN
+		WITH B(7 DOWNTO 0) SELECT
+			S<=A													when "00000000",
+			S<=A(30 downto 0)&'0'							when "00000001",
+			S<=A(29 downto 0)&(1 downto 0 =>'0')		when "00000010",
+			S<=A(28 downto 0)&(2 downto 0 =>'0')		when "00000011",
+			S<=A(27 downto 0)&(3 downto 0 =>'0')		when "00000100",
+			S<=A(26 downto 0)&(4 downto 0 =>'0')		when "00000101",
+			S<=A(25 downto 0)&(5 downto 0 =>'0')		when "00000110",
+			S<=A(24 downto 0)&(6 downto 0 =>'0')		when "00000111",
+			S<=A(23 downto 0)&(7 downto 0 =>'0')		when "00001000",
+			S<=A(22 downto 0)&(8 downto 0 =>'0')		when "00001001",
+			S<=A(21 downto 0)&(9 downto 0 =>'0')		when "00001010",
+			S<=A(20 downto 0)&(10 downto 0 =>'0')		when "00001011",
+			S<=A(19 downto 0)&(11 downto 0 =>'0')		when "00001100",
+			S<=A(18 downto 0)&(12 downto 0 =>'0')		when "00001101",
+			S<=A(17 downto 0)&(13 downto 0 =>'0')		when "00001110",
+			S<=A(16 downto 0)&(14 downto 0 =>'0')		when "00001111",
+			S<=A(15 downto 0)&(15 downto 0 =>'0')		when "00010000",
+			S<=A(14 downto 0)&(16 downto 0 =>'0')		when "00010001",
+			S<=A(13 downto 0)&(17 downto 0 =>'0')		when "00010010",
+			S<=A(12 downto 0)&(18 downto 0 =>'0')		when "00010011",
+			S<=A(11 downto 0)&(19 downto 0 =>'0')		when "00010100",
+			S<=A(10 downto 0)&(20 downto 0 =>'0')		when "00010101",
+			S<=A(9 downto 0)&(21 downto 0 =>'0')		when "00010110",
+			S<=A(8 downto 0)&(22 downto 0 =>'0')		when "00010111",
+			S<=A(7 downto 0)&(23 downto 0 =>'0')		when "00011000",
+			S<=A(6 downto 0)&(24 downto 0 =>'0')		when "00011001",
+			S<=A(5 downto 0)&(25 downto 0 =>'0')		when "00011010",
+			S<=A(4 downto 0)&(26 downto 0 =>'0')		when "00011011",
+			S<=A(3 downto 0)&(27 downto 0 =>'0')		when "00011100",
+			S<=A(2 downto 0)&(28 downto 0 =>'0')		when "00011101",
+			S<=A(1 downto 0)&(29 downto 0 =>'0')		when "00011110",
+			S<=A(0)&(30 downto 0 =>'0')					when "00011111",
+			S<=(others >='0')									when others;
+			
+	else 
+		S<=S;
+	end if;
+end process;
+
+
+end RTL;

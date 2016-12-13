@@ -1,0 +1,20 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use ieee.numeric_std.all;
+
+entity ZTEMP_BIDIR is
+port (BIDIR_PORT : inOUT std_logic_vector(31 DOWNTO 0);
+      IN_PORT : in std_logic_vector(31 downto 0);
+      OUT_PORT : out std_logic_vector(31 DOWNTO 0);
+      WR : IN std_logic
+     );
+end ROM_BLOCK;
+
+architecture Behavioral of ROM_BLOCK is
+
+begin
+
+	bidir_PORT<=in_PORT when wr='1' else "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ";
+	OUT_PORT<=bidir_PORT;
+
+end Behavioral;

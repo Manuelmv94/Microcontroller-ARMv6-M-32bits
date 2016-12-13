@@ -1,0 +1,914 @@
+Simulator report for AGU
+Sun Apr 03 04:19:55 2016
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 100.0 us     ;
+; Simulation Netlist Size     ; 429 nodes    ;
+; Simulation Coverage         ;      23.08 % ;
+; Total Number of Transitions ; 995          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                                              ;
++--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                                                            ; Default Value ;
++--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                                                         ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                                               ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                                                ;               ;
+; Vector input source                                                                        ; C:/Users/manuel/Documents/ITESM/VI semestre/Arquitectura de computadoras/Micro ARM 32b/AGU/AGU.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                                                 ; On            ;
+; Check outputs                                                                              ; Off                                                                                                ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                                                 ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                                                 ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                                                 ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                                                 ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                                                ; Off           ;
+; Detect glitches                                                                            ; Off                                                                                                ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                                                ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                                                ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                                                ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                                                ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                                                 ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                                                         ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                                                ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                                                ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                                               ; Auto          ;
++--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      23.08 % ;
+; Total nodes checked                                 ; 429          ;
+; Total output ports checked                          ; 429          ;
+; Total output ports with complete 1/0-value coverage ; 99           ;
+; Total output ports with no 1/0-value coverage       ; 323          ;
+; Total output ports with no 1-value coverage         ; 323          ;
+; Total output ports with no 0-value coverage         ; 330          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                    ;
++----------------------------------------------------------------------+----------------------------------------------------------------------+------------------+
+; Node Name                                                            ; Output Port Name                                                     ; Output Port Type ;
++----------------------------------------------------------------------+----------------------------------------------------------------------+------------------+
+; |AGU|CLK                                                             ; |AGU|CLK                                                             ; out              ;
+; |AGU|Rdn[1]                                                          ; |AGU|Rdn[1]                                                          ; out              ;
+; |AGU|Rdn[2]                                                          ; |AGU|Rdn[2]                                                          ; out              ;
+; |AGU|Rdn[3]                                                          ; |AGU|Rdn[3]                                                          ; out              ;
+; |AGU|Rdn[4]                                                          ; |AGU|Rdn[4]                                                          ; out              ;
+; |AGU|Rdn[5]                                                          ; |AGU|Rdn[5]                                                          ; out              ;
+; |AGU|Rdn[6]                                                          ; |AGU|Rdn[6]                                                          ; out              ;
+; |AGU|Rm[0]                                                           ; |AGU|Rm[0]                                                           ; out              ;
+; |AGU|Rm[1]                                                           ; |AGU|Rm[1]                                                           ; out              ;
+; |AGU|Rm[2]                                                           ; |AGU|Rm[2]                                                           ; out              ;
+; |AGU|Rm[3]                                                           ; |AGU|Rm[3]                                                           ; out              ;
+; |AGU|Rm[4]                                                           ; |AGU|Rm[4]                                                           ; out              ;
+; |AGU|Rm[5]                                                           ; |AGU|Rm[5]                                                           ; out              ;
+; |AGU|Rm[6]                                                           ; |AGU|Rm[6]                                                           ; out              ;
+; |AGU|Rm[7]                                                           ; |AGU|Rm[7]                                                           ; out              ;
+; |AGU|Rd[0]                                                           ; |AGU|Rd[0]                                                           ; pin_out          ;
+; |AGU|Rd[1]                                                           ; |AGU|Rd[1]                                                           ; pin_out          ;
+; |AGU|Rd[2]                                                           ; |AGU|Rd[2]                                                           ; pin_out          ;
+; |AGU|Rd[3]                                                           ; |AGU|Rd[3]                                                           ; pin_out          ;
+; |AGU|Rd[4]                                                           ; |AGU|Rd[4]                                                           ; pin_out          ;
+; |AGU|Rd[5]                                                           ; |AGU|Rd[5]                                                           ; pin_out          ;
+; |AGU|Rd[6]                                                           ; |AGU|Rd[6]                                                           ; pin_out          ;
+; |AGU|Rd[7]                                                           ; |AGU|Rd[7]                                                           ; pin_out          ;
+; |AGU|Rd[8]                                                           ; |AGU|Rd[8]                                                           ; pin_out          ;
+; |AGU|Rd[9]                                                           ; |AGU|Rd[9]                                                           ; pin_out          ;
+; |AGU|Sumador_32b:elemento_5|Btemp[0]                                 ; |AGU|Sumador_32b:elemento_5|Btemp[0]                                 ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[1]                                 ; |AGU|Sumador_32b:elemento_5|Btemp[1]                                 ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[2]                                 ; |AGU|Sumador_32b:elemento_5|Btemp[2]                                 ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[3]                                 ; |AGU|Sumador_32b:elemento_5|Btemp[3]                                 ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[4]                                 ; |AGU|Sumador_32b:elemento_5|Btemp[4]                                 ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[5]                                 ; |AGU|Sumador_32b:elemento_5|Btemp[5]                                 ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[6]                                 ; |AGU|Sumador_32b:elemento_5|Btemp[6]                                 ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[7]                                 ; |AGU|Sumador_32b:elemento_5|Btemp[7]                                 ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[1]                                 ; |AGU|Sumador_32b:elemento_5|Atemp[1]                                 ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[2]                                 ; |AGU|Sumador_32b:elemento_5|Atemp[2]                                 ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[3]                                 ; |AGU|Sumador_32b:elemento_5|Atemp[3]                                 ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[4]                                 ; |AGU|Sumador_32b:elemento_5|Atemp[4]                                 ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[5]                                 ; |AGU|Sumador_32b:elemento_5|Atemp[5]                                 ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[6]                                 ; |AGU|Sumador_32b:elemento_5|Atemp[6]                                 ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c1     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c1     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3~5   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3~5   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|S[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|S[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|S[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|S[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|g[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|g[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|g[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|g[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|g[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|g[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|g[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|g[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|p[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|p[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|p[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|p[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|p[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|p[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|c1     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|c1     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|c2~0   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|c2~0   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|c2     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|c2     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|c3~0   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|c3~0   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|c3~1   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|c3~1   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|c3~2   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|c3~2   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|c3~3   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|c3~3   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|c3~4   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|c3~4   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|c3~5   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|c3~5   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|c3~6   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|c3~6   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|c3~7   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|c3~7   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|c3     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|c3     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|Cout~1 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|Cout~1 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|Cout~2 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|Cout~2 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|Cout~3 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|Cout~3 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|Cout~4 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|Cout~4 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|Cout~5 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|Cout~5 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|Cout~6 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|Cout~6 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|Cout   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|Cout   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|S~0    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|S~0    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|S[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|S[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|S~2    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|S~2    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|S[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|S[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|S~4    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|S~4    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|S[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|S[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|S~6    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|S~6    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|S[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|S[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|g[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|g[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|g[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|g[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|g[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|g[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|p[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|p[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|p[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|p[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|p[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|p[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|c2~0   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|c2~0   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|c3~0   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|c3~0   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|c3~1   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|c3~1   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|c3~4   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|c3~4   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|Cout~0 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|Cout~0 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|Cout~1 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|Cout~1 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|Cout~2 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|Cout~2 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|Cout~3 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|Cout~3 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|Cout~5 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|Cout~5 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|S~0    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|S~0    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|S~2    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|S~2    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|S[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|S[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|S~4    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|S~4    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|S[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|S[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|S~6    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|S~6    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|S[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|S[3]   ; out0             ;
++----------------------------------------------------------------------+----------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                       ;
++----------------------------------------------------------------------+----------------------------------------------------------------------+------------------+
+; Node Name                                                            ; Output Port Name                                                     ; Output Port Type ;
++----------------------------------------------------------------------+----------------------------------------------------------------------+------------------+
+; |AGU|Rdn[0]                                                          ; |AGU|Rdn[0]                                                          ; out              ;
+; |AGU|Rdn[8]                                                          ; |AGU|Rdn[8]                                                          ; out              ;
+; |AGU|Rdn[9]                                                          ; |AGU|Rdn[9]                                                          ; out              ;
+; |AGU|Rdn[10]                                                         ; |AGU|Rdn[10]                                                         ; out              ;
+; |AGU|Rdn[11]                                                         ; |AGU|Rdn[11]                                                         ; out              ;
+; |AGU|Rdn[12]                                                         ; |AGU|Rdn[12]                                                         ; out              ;
+; |AGU|Rdn[13]                                                         ; |AGU|Rdn[13]                                                         ; out              ;
+; |AGU|Rdn[14]                                                         ; |AGU|Rdn[14]                                                         ; out              ;
+; |AGU|Rdn[15]                                                         ; |AGU|Rdn[15]                                                         ; out              ;
+; |AGU|Rdn[16]                                                         ; |AGU|Rdn[16]                                                         ; out              ;
+; |AGU|Rdn[17]                                                         ; |AGU|Rdn[17]                                                         ; out              ;
+; |AGU|Rdn[18]                                                         ; |AGU|Rdn[18]                                                         ; out              ;
+; |AGU|Rdn[19]                                                         ; |AGU|Rdn[19]                                                         ; out              ;
+; |AGU|Rdn[20]                                                         ; |AGU|Rdn[20]                                                         ; out              ;
+; |AGU|Rdn[21]                                                         ; |AGU|Rdn[21]                                                         ; out              ;
+; |AGU|Rdn[22]                                                         ; |AGU|Rdn[22]                                                         ; out              ;
+; |AGU|Rdn[23]                                                         ; |AGU|Rdn[23]                                                         ; out              ;
+; |AGU|Rdn[24]                                                         ; |AGU|Rdn[24]                                                         ; out              ;
+; |AGU|Rdn[25]                                                         ; |AGU|Rdn[25]                                                         ; out              ;
+; |AGU|Rdn[26]                                                         ; |AGU|Rdn[26]                                                         ; out              ;
+; |AGU|Rdn[27]                                                         ; |AGU|Rdn[27]                                                         ; out              ;
+; |AGU|Rdn[28]                                                         ; |AGU|Rdn[28]                                                         ; out              ;
+; |AGU|Rdn[29]                                                         ; |AGU|Rdn[29]                                                         ; out              ;
+; |AGU|Rdn[30]                                                         ; |AGU|Rdn[30]                                                         ; out              ;
+; |AGU|Rdn[31]                                                         ; |AGU|Rdn[31]                                                         ; out              ;
+; |AGU|Rm[9]                                                           ; |AGU|Rm[9]                                                           ; out              ;
+; |AGU|Rm[10]                                                          ; |AGU|Rm[10]                                                          ; out              ;
+; |AGU|Rm[11]                                                          ; |AGU|Rm[11]                                                          ; out              ;
+; |AGU|Rm[12]                                                          ; |AGU|Rm[12]                                                          ; out              ;
+; |AGU|Rm[13]                                                          ; |AGU|Rm[13]                                                          ; out              ;
+; |AGU|Rm[14]                                                          ; |AGU|Rm[14]                                                          ; out              ;
+; |AGU|Rm[15]                                                          ; |AGU|Rm[15]                                                          ; out              ;
+; |AGU|Rm[16]                                                          ; |AGU|Rm[16]                                                          ; out              ;
+; |AGU|Rm[17]                                                          ; |AGU|Rm[17]                                                          ; out              ;
+; |AGU|Rm[18]                                                          ; |AGU|Rm[18]                                                          ; out              ;
+; |AGU|Rm[19]                                                          ; |AGU|Rm[19]                                                          ; out              ;
+; |AGU|Rm[20]                                                          ; |AGU|Rm[20]                                                          ; out              ;
+; |AGU|Rm[21]                                                          ; |AGU|Rm[21]                                                          ; out              ;
+; |AGU|Rm[22]                                                          ; |AGU|Rm[22]                                                          ; out              ;
+; |AGU|Rm[23]                                                          ; |AGU|Rm[23]                                                          ; out              ;
+; |AGU|Rm[24]                                                          ; |AGU|Rm[24]                                                          ; out              ;
+; |AGU|Rm[25]                                                          ; |AGU|Rm[25]                                                          ; out              ;
+; |AGU|Rm[26]                                                          ; |AGU|Rm[26]                                                          ; out              ;
+; |AGU|Rm[27]                                                          ; |AGU|Rm[27]                                                          ; out              ;
+; |AGU|Rm[28]                                                          ; |AGU|Rm[28]                                                          ; out              ;
+; |AGU|Rm[29]                                                          ; |AGU|Rm[29]                                                          ; out              ;
+; |AGU|Rm[30]                                                          ; |AGU|Rm[30]                                                          ; out              ;
+; |AGU|Rm[31]                                                          ; |AGU|Rm[31]                                                          ; out              ;
+; |AGU|Rd[10]                                                          ; |AGU|Rd[10]                                                          ; pin_out          ;
+; |AGU|Rd[11]                                                          ; |AGU|Rd[11]                                                          ; pin_out          ;
+; |AGU|Rd[12]                                                          ; |AGU|Rd[12]                                                          ; pin_out          ;
+; |AGU|Rd[13]                                                          ; |AGU|Rd[13]                                                          ; pin_out          ;
+; |AGU|Rd[14]                                                          ; |AGU|Rd[14]                                                          ; pin_out          ;
+; |AGU|Rd[15]                                                          ; |AGU|Rd[15]                                                          ; pin_out          ;
+; |AGU|Rd[16]                                                          ; |AGU|Rd[16]                                                          ; pin_out          ;
+; |AGU|Rd[17]                                                          ; |AGU|Rd[17]                                                          ; pin_out          ;
+; |AGU|Rd[18]                                                          ; |AGU|Rd[18]                                                          ; pin_out          ;
+; |AGU|Rd[19]                                                          ; |AGU|Rd[19]                                                          ; pin_out          ;
+; |AGU|Rd[20]                                                          ; |AGU|Rd[20]                                                          ; pin_out          ;
+; |AGU|Rd[21]                                                          ; |AGU|Rd[21]                                                          ; pin_out          ;
+; |AGU|Rd[22]                                                          ; |AGU|Rd[22]                                                          ; pin_out          ;
+; |AGU|Rd[23]                                                          ; |AGU|Rd[23]                                                          ; pin_out          ;
+; |AGU|Rd[24]                                                          ; |AGU|Rd[24]                                                          ; pin_out          ;
+; |AGU|Rd[25]                                                          ; |AGU|Rd[25]                                                          ; pin_out          ;
+; |AGU|Rd[26]                                                          ; |AGU|Rd[26]                                                          ; pin_out          ;
+; |AGU|Rd[27]                                                          ; |AGU|Rd[27]                                                          ; pin_out          ;
+; |AGU|Rd[28]                                                          ; |AGU|Rd[28]                                                          ; pin_out          ;
+; |AGU|Rd[29]                                                          ; |AGU|Rd[29]                                                          ; pin_out          ;
+; |AGU|Rd[30]                                                          ; |AGU|Rd[30]                                                          ; pin_out          ;
+; |AGU|Rd[31]                                                          ; |AGU|Rd[31]                                                          ; pin_out          ;
+; |AGU|Sumador_32b:elemento_5|Btemp[9]                                 ; |AGU|Sumador_32b:elemento_5|Btemp[9]                                 ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[10]                                ; |AGU|Sumador_32b:elemento_5|Btemp[10]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[11]                                ; |AGU|Sumador_32b:elemento_5|Btemp[11]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[12]                                ; |AGU|Sumador_32b:elemento_5|Btemp[12]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[13]                                ; |AGU|Sumador_32b:elemento_5|Btemp[13]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[14]                                ; |AGU|Sumador_32b:elemento_5|Btemp[14]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[15]                                ; |AGU|Sumador_32b:elemento_5|Btemp[15]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[16]                                ; |AGU|Sumador_32b:elemento_5|Btemp[16]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[17]                                ; |AGU|Sumador_32b:elemento_5|Btemp[17]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[18]                                ; |AGU|Sumador_32b:elemento_5|Btemp[18]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[19]                                ; |AGU|Sumador_32b:elemento_5|Btemp[19]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[20]                                ; |AGU|Sumador_32b:elemento_5|Btemp[20]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[21]                                ; |AGU|Sumador_32b:elemento_5|Btemp[21]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[22]                                ; |AGU|Sumador_32b:elemento_5|Btemp[22]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[23]                                ; |AGU|Sumador_32b:elemento_5|Btemp[23]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[24]                                ; |AGU|Sumador_32b:elemento_5|Btemp[24]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[25]                                ; |AGU|Sumador_32b:elemento_5|Btemp[25]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[26]                                ; |AGU|Sumador_32b:elemento_5|Btemp[26]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[27]                                ; |AGU|Sumador_32b:elemento_5|Btemp[27]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[28]                                ; |AGU|Sumador_32b:elemento_5|Btemp[28]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[29]                                ; |AGU|Sumador_32b:elemento_5|Btemp[29]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[30]                                ; |AGU|Sumador_32b:elemento_5|Btemp[30]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[31]                                ; |AGU|Sumador_32b:elemento_5|Btemp[31]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[0]                                 ; |AGU|Sumador_32b:elemento_5|Atemp[0]                                 ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[8]                                 ; |AGU|Sumador_32b:elemento_5|Atemp[8]                                 ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[9]                                 ; |AGU|Sumador_32b:elemento_5|Atemp[9]                                 ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[10]                                ; |AGU|Sumador_32b:elemento_5|Atemp[10]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[11]                                ; |AGU|Sumador_32b:elemento_5|Atemp[11]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[12]                                ; |AGU|Sumador_32b:elemento_5|Atemp[12]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[13]                                ; |AGU|Sumador_32b:elemento_5|Atemp[13]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[14]                                ; |AGU|Sumador_32b:elemento_5|Atemp[14]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[15]                                ; |AGU|Sumador_32b:elemento_5|Atemp[15]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[16]                                ; |AGU|Sumador_32b:elemento_5|Atemp[16]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[17]                                ; |AGU|Sumador_32b:elemento_5|Atemp[17]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[18]                                ; |AGU|Sumador_32b:elemento_5|Atemp[18]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[19]                                ; |AGU|Sumador_32b:elemento_5|Atemp[19]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[20]                                ; |AGU|Sumador_32b:elemento_5|Atemp[20]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[21]                                ; |AGU|Sumador_32b:elemento_5|Atemp[21]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[22]                                ; |AGU|Sumador_32b:elemento_5|Atemp[22]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[23]                                ; |AGU|Sumador_32b:elemento_5|Atemp[23]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[24]                                ; |AGU|Sumador_32b:elemento_5|Atemp[24]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[25]                                ; |AGU|Sumador_32b:elemento_5|Atemp[25]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[26]                                ; |AGU|Sumador_32b:elemento_5|Atemp[26]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[27]                                ; |AGU|Sumador_32b:elemento_5|Atemp[27]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[28]                                ; |AGU|Sumador_32b:elemento_5|Atemp[28]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[29]                                ; |AGU|Sumador_32b:elemento_5|Atemp[29]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[30]                                ; |AGU|Sumador_32b:elemento_5|Atemp[30]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[31]                                ; |AGU|Sumador_32b:elemento_5|Atemp[31]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|g[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|g[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|g[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|g[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|g[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|g[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|p[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|p[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|p[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|p[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|p[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|p[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c1     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c1     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c2~0   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c2~0   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c2     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c2     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3~0   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3~0   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3~1   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3~1   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3~2   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3~2   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3~3   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3~3   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3~4   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3~4   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3~5   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3~5   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3~6   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3~6   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3~7   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3~7   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|S~0    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|S~0    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|S[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|S[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|S~2    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|S~2    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|S[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|S[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|S~4    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|S~4    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|S[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|S[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|S~6    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|S~6    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|S[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|S[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|g[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|g[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|g[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|g[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|g[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|g[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|g[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|g[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|p[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|p[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|p[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|p[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|p[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|p[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|p[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|p[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c1     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c1     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c2~0   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c2~0   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c2     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c2     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3~0   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3~0   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3~1   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3~1   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3~2   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3~2   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3~3   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3~3   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3~4   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3~4   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3~5   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3~5   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3~6   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3~6   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3~7   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3~7   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|Cout~0 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|Cout~0 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|Cout~1 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|Cout~1 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|Cout~2 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|Cout~2 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|Cout~3 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|Cout~3 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|Cout~4 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|Cout~4 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|Cout~5 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|Cout~5 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|Cout~6 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|Cout~6 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|Cout   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|Cout   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|S~0    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|S~0    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|S[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|S[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|S~2    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|S~2    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|S[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|S[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|S~4    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|S~4    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|S[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|S[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|S~6    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|S~6    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|S[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|S[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|g[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|g[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|g[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|g[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|g[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|g[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|g[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|g[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|p[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|p[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|p[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|p[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|p[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|p[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|p[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|p[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c1     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c1     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c2~0   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c2~0   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c2     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c2     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3~0   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3~0   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3~1   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3~1   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3~2   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3~2   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3~3   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3~3   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3~4   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3~4   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3~5   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3~5   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3~6   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3~6   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3~7   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3~7   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|Cout~0 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|Cout~0 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|Cout~1 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|Cout~1 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|Cout~2 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|Cout~2 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|Cout~3 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|Cout~3 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|Cout~4 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|Cout~4 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|Cout~5 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|Cout~5 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|Cout~6 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|Cout~6 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|Cout   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|Cout   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|S~0    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|S~0    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|S[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|S[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|S~2    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|S~2    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|S[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|S[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|S~4    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|S~4    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|S[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|S[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|S~6    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|S~6    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|S[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|S[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|g[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|g[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|g[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|g[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|g[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|g[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|g[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|g[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|p[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|p[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|p[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|p[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|p[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|p[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|p[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|p[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c1     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c1     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c2~0   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c2~0   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c2     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c2     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3~0   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3~0   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3~1   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3~1   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3~2   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3~2   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3~3   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3~3   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3~4   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3~4   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3~5   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3~5   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3~6   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3~6   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3~7   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3~7   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|Cout~0 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|Cout~0 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|Cout~1 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|Cout~1 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|Cout~2 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|Cout~2 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|Cout~3 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|Cout~3 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|Cout~4 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|Cout~4 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|Cout~5 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|Cout~5 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|Cout~6 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|Cout~6 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|Cout   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|Cout   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|S~0    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|S~0    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|S[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|S[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|S~2    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|S~2    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|S[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|S[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|S~4    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|S~4    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|S[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|S[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|S~6    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|S~6    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|S[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|S[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|g[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|g[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|g[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|g[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|g[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|g[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|g[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|g[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|p[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|p[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|p[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|p[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|p[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|p[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|p[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|p[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c1     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c1     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c2~0   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c2~0   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c2     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c2     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3~0   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3~0   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3~1   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3~1   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3~2   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3~2   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3~3   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3~3   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3~4   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3~4   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3~5   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3~5   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3~6   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3~6   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3~7   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3~7   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|Cout~0 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|Cout~0 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|Cout~1 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|Cout~1 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|Cout~2 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|Cout~2 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|Cout~3 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|Cout~3 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|Cout~4 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|Cout~4 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|Cout~5 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|Cout~5 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|Cout~6 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|Cout~6 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|Cout   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|Cout   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|S~0    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|S~0    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|S[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|S[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|S~2    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|S~2    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|S[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|S[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|S~4    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|S~4    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|S[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|S[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|S~6    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|S~6    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|S[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|S[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|g[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|g[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|g[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|g[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|g[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|g[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|g[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|g[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|p[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|p[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|p[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|p[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|p[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|p[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c2~0   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c2~0   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c2     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c2     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3~0   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3~0   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3~1   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3~1   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3~2   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3~2   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3~3   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3~3   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3~4   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3~4   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3~6   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3~6   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3~7   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3~7   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|Cout~0 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|Cout~0 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|Cout~1 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|Cout~1 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|Cout~2 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|Cout~2 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|Cout~3 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|Cout~3 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|Cout~4 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|Cout~4 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|Cout~5 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|Cout~5 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|Cout~6 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|Cout~6 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|Cout   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|Cout   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|S~2    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|S~2    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|S~4    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|S~4    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|S[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|S[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|S~6    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|S~6    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|S[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|S[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|Cout~0 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|Cout~0 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|g[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|g[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|c3~2   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|c3~2   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|c3~3   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|c3~3   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|Cout~4 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|Cout~4 ; out0             ;
++----------------------------------------------------------------------+----------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                       ;
++----------------------------------------------------------------------+----------------------------------------------------------------------+------------------+
+; Node Name                                                            ; Output Port Name                                                     ; Output Port Type ;
++----------------------------------------------------------------------+----------------------------------------------------------------------+------------------+
+; |AGU|Rdn[0]                                                          ; |AGU|Rdn[0]                                                          ; out              ;
+; |AGU|Rdn[7]                                                          ; |AGU|Rdn[7]                                                          ; out              ;
+; |AGU|Rdn[8]                                                          ; |AGU|Rdn[8]                                                          ; out              ;
+; |AGU|Rdn[9]                                                          ; |AGU|Rdn[9]                                                          ; out              ;
+; |AGU|Rdn[10]                                                         ; |AGU|Rdn[10]                                                         ; out              ;
+; |AGU|Rdn[11]                                                         ; |AGU|Rdn[11]                                                         ; out              ;
+; |AGU|Rdn[12]                                                         ; |AGU|Rdn[12]                                                         ; out              ;
+; |AGU|Rdn[13]                                                         ; |AGU|Rdn[13]                                                         ; out              ;
+; |AGU|Rdn[14]                                                         ; |AGU|Rdn[14]                                                         ; out              ;
+; |AGU|Rdn[15]                                                         ; |AGU|Rdn[15]                                                         ; out              ;
+; |AGU|Rdn[16]                                                         ; |AGU|Rdn[16]                                                         ; out              ;
+; |AGU|Rdn[17]                                                         ; |AGU|Rdn[17]                                                         ; out              ;
+; |AGU|Rdn[18]                                                         ; |AGU|Rdn[18]                                                         ; out              ;
+; |AGU|Rdn[19]                                                         ; |AGU|Rdn[19]                                                         ; out              ;
+; |AGU|Rdn[20]                                                         ; |AGU|Rdn[20]                                                         ; out              ;
+; |AGU|Rdn[21]                                                         ; |AGU|Rdn[21]                                                         ; out              ;
+; |AGU|Rdn[22]                                                         ; |AGU|Rdn[22]                                                         ; out              ;
+; |AGU|Rdn[23]                                                         ; |AGU|Rdn[23]                                                         ; out              ;
+; |AGU|Rdn[24]                                                         ; |AGU|Rdn[24]                                                         ; out              ;
+; |AGU|Rdn[25]                                                         ; |AGU|Rdn[25]                                                         ; out              ;
+; |AGU|Rdn[26]                                                         ; |AGU|Rdn[26]                                                         ; out              ;
+; |AGU|Rdn[27]                                                         ; |AGU|Rdn[27]                                                         ; out              ;
+; |AGU|Rdn[28]                                                         ; |AGU|Rdn[28]                                                         ; out              ;
+; |AGU|Rdn[29]                                                         ; |AGU|Rdn[29]                                                         ; out              ;
+; |AGU|Rdn[30]                                                         ; |AGU|Rdn[30]                                                         ; out              ;
+; |AGU|Rdn[31]                                                         ; |AGU|Rdn[31]                                                         ; out              ;
+; |AGU|Rm[8]                                                           ; |AGU|Rm[8]                                                           ; out              ;
+; |AGU|Rm[9]                                                           ; |AGU|Rm[9]                                                           ; out              ;
+; |AGU|Rm[10]                                                          ; |AGU|Rm[10]                                                          ; out              ;
+; |AGU|Rm[11]                                                          ; |AGU|Rm[11]                                                          ; out              ;
+; |AGU|Rm[12]                                                          ; |AGU|Rm[12]                                                          ; out              ;
+; |AGU|Rm[13]                                                          ; |AGU|Rm[13]                                                          ; out              ;
+; |AGU|Rm[14]                                                          ; |AGU|Rm[14]                                                          ; out              ;
+; |AGU|Rm[15]                                                          ; |AGU|Rm[15]                                                          ; out              ;
+; |AGU|Rm[16]                                                          ; |AGU|Rm[16]                                                          ; out              ;
+; |AGU|Rm[17]                                                          ; |AGU|Rm[17]                                                          ; out              ;
+; |AGU|Rm[18]                                                          ; |AGU|Rm[18]                                                          ; out              ;
+; |AGU|Rm[19]                                                          ; |AGU|Rm[19]                                                          ; out              ;
+; |AGU|Rm[20]                                                          ; |AGU|Rm[20]                                                          ; out              ;
+; |AGU|Rm[21]                                                          ; |AGU|Rm[21]                                                          ; out              ;
+; |AGU|Rm[22]                                                          ; |AGU|Rm[22]                                                          ; out              ;
+; |AGU|Rm[23]                                                          ; |AGU|Rm[23]                                                          ; out              ;
+; |AGU|Rm[24]                                                          ; |AGU|Rm[24]                                                          ; out              ;
+; |AGU|Rm[25]                                                          ; |AGU|Rm[25]                                                          ; out              ;
+; |AGU|Rm[26]                                                          ; |AGU|Rm[26]                                                          ; out              ;
+; |AGU|Rm[27]                                                          ; |AGU|Rm[27]                                                          ; out              ;
+; |AGU|Rm[28]                                                          ; |AGU|Rm[28]                                                          ; out              ;
+; |AGU|Rm[29]                                                          ; |AGU|Rm[29]                                                          ; out              ;
+; |AGU|Rm[30]                                                          ; |AGU|Rm[30]                                                          ; out              ;
+; |AGU|Rm[31]                                                          ; |AGU|Rm[31]                                                          ; out              ;
+; |AGU|Rd[10]                                                          ; |AGU|Rd[10]                                                          ; pin_out          ;
+; |AGU|Rd[11]                                                          ; |AGU|Rd[11]                                                          ; pin_out          ;
+; |AGU|Rd[12]                                                          ; |AGU|Rd[12]                                                          ; pin_out          ;
+; |AGU|Rd[13]                                                          ; |AGU|Rd[13]                                                          ; pin_out          ;
+; |AGU|Rd[14]                                                          ; |AGU|Rd[14]                                                          ; pin_out          ;
+; |AGU|Rd[15]                                                          ; |AGU|Rd[15]                                                          ; pin_out          ;
+; |AGU|Rd[16]                                                          ; |AGU|Rd[16]                                                          ; pin_out          ;
+; |AGU|Rd[17]                                                          ; |AGU|Rd[17]                                                          ; pin_out          ;
+; |AGU|Rd[18]                                                          ; |AGU|Rd[18]                                                          ; pin_out          ;
+; |AGU|Rd[19]                                                          ; |AGU|Rd[19]                                                          ; pin_out          ;
+; |AGU|Rd[20]                                                          ; |AGU|Rd[20]                                                          ; pin_out          ;
+; |AGU|Rd[21]                                                          ; |AGU|Rd[21]                                                          ; pin_out          ;
+; |AGU|Rd[22]                                                          ; |AGU|Rd[22]                                                          ; pin_out          ;
+; |AGU|Rd[23]                                                          ; |AGU|Rd[23]                                                          ; pin_out          ;
+; |AGU|Rd[24]                                                          ; |AGU|Rd[24]                                                          ; pin_out          ;
+; |AGU|Rd[25]                                                          ; |AGU|Rd[25]                                                          ; pin_out          ;
+; |AGU|Rd[26]                                                          ; |AGU|Rd[26]                                                          ; pin_out          ;
+; |AGU|Rd[27]                                                          ; |AGU|Rd[27]                                                          ; pin_out          ;
+; |AGU|Rd[28]                                                          ; |AGU|Rd[28]                                                          ; pin_out          ;
+; |AGU|Rd[29]                                                          ; |AGU|Rd[29]                                                          ; pin_out          ;
+; |AGU|Rd[30]                                                          ; |AGU|Rd[30]                                                          ; pin_out          ;
+; |AGU|Rd[31]                                                          ; |AGU|Rd[31]                                                          ; pin_out          ;
+; |AGU|Sumador_32b:elemento_5|Btemp[8]                                 ; |AGU|Sumador_32b:elemento_5|Btemp[8]                                 ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[9]                                 ; |AGU|Sumador_32b:elemento_5|Btemp[9]                                 ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[10]                                ; |AGU|Sumador_32b:elemento_5|Btemp[10]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[11]                                ; |AGU|Sumador_32b:elemento_5|Btemp[11]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[12]                                ; |AGU|Sumador_32b:elemento_5|Btemp[12]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[13]                                ; |AGU|Sumador_32b:elemento_5|Btemp[13]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[14]                                ; |AGU|Sumador_32b:elemento_5|Btemp[14]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[15]                                ; |AGU|Sumador_32b:elemento_5|Btemp[15]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[16]                                ; |AGU|Sumador_32b:elemento_5|Btemp[16]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[17]                                ; |AGU|Sumador_32b:elemento_5|Btemp[17]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[18]                                ; |AGU|Sumador_32b:elemento_5|Btemp[18]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[19]                                ; |AGU|Sumador_32b:elemento_5|Btemp[19]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[20]                                ; |AGU|Sumador_32b:elemento_5|Btemp[20]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[21]                                ; |AGU|Sumador_32b:elemento_5|Btemp[21]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[22]                                ; |AGU|Sumador_32b:elemento_5|Btemp[22]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[23]                                ; |AGU|Sumador_32b:elemento_5|Btemp[23]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[24]                                ; |AGU|Sumador_32b:elemento_5|Btemp[24]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[25]                                ; |AGU|Sumador_32b:elemento_5|Btemp[25]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[26]                                ; |AGU|Sumador_32b:elemento_5|Btemp[26]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[27]                                ; |AGU|Sumador_32b:elemento_5|Btemp[27]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[28]                                ; |AGU|Sumador_32b:elemento_5|Btemp[28]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[29]                                ; |AGU|Sumador_32b:elemento_5|Btemp[29]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[30]                                ; |AGU|Sumador_32b:elemento_5|Btemp[30]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Btemp[31]                                ; |AGU|Sumador_32b:elemento_5|Btemp[31]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[0]                                 ; |AGU|Sumador_32b:elemento_5|Atemp[0]                                 ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[7]                                 ; |AGU|Sumador_32b:elemento_5|Atemp[7]                                 ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[8]                                 ; |AGU|Sumador_32b:elemento_5|Atemp[8]                                 ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[9]                                 ; |AGU|Sumador_32b:elemento_5|Atemp[9]                                 ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[10]                                ; |AGU|Sumador_32b:elemento_5|Atemp[10]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[11]                                ; |AGU|Sumador_32b:elemento_5|Atemp[11]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[12]                                ; |AGU|Sumador_32b:elemento_5|Atemp[12]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[13]                                ; |AGU|Sumador_32b:elemento_5|Atemp[13]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[14]                                ; |AGU|Sumador_32b:elemento_5|Atemp[14]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[15]                                ; |AGU|Sumador_32b:elemento_5|Atemp[15]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[16]                                ; |AGU|Sumador_32b:elemento_5|Atemp[16]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[17]                                ; |AGU|Sumador_32b:elemento_5|Atemp[17]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[18]                                ; |AGU|Sumador_32b:elemento_5|Atemp[18]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[19]                                ; |AGU|Sumador_32b:elemento_5|Atemp[19]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[20]                                ; |AGU|Sumador_32b:elemento_5|Atemp[20]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[21]                                ; |AGU|Sumador_32b:elemento_5|Atemp[21]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[22]                                ; |AGU|Sumador_32b:elemento_5|Atemp[22]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[23]                                ; |AGU|Sumador_32b:elemento_5|Atemp[23]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[24]                                ; |AGU|Sumador_32b:elemento_5|Atemp[24]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[25]                                ; |AGU|Sumador_32b:elemento_5|Atemp[25]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[26]                                ; |AGU|Sumador_32b:elemento_5|Atemp[26]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[27]                                ; |AGU|Sumador_32b:elemento_5|Atemp[27]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[28]                                ; |AGU|Sumador_32b:elemento_5|Atemp[28]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[29]                                ; |AGU|Sumador_32b:elemento_5|Atemp[29]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[30]                                ; |AGU|Sumador_32b:elemento_5|Atemp[30]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Atemp[31]                                ; |AGU|Sumador_32b:elemento_5|Atemp[31]                                ; regout           ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|g[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|g[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|g[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|g[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|g[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|g[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|p[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|p[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|p[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|p[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|p[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|p[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c1     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c1     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c2~0   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c2~0   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c2     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c2     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3~0   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3~0   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3~1   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3~1   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3~2   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3~2   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3~3   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3~3   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3~4   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3~4   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3~5   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3~5   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3~6   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3~6   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3~7   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3~7   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|c3     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|S~0    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|S~0    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|S[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|S[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|S~2    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|S~2    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|S[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|S[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|S~4    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|S~4    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|S[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|S[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|S~6    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|S~6    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|S[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_8|S[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|g[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|g[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|g[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|g[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|g[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|g[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|g[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|g[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|p[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|p[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|p[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|p[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|p[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|p[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|p[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|p[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c1     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c1     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c2~0   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c2~0   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c2     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c2     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3~0   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3~0   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3~1   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3~1   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3~2   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3~2   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3~3   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3~3   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3~4   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3~4   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3~5   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3~5   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3~6   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3~6   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3~7   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3~7   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|c3     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|Cout~0 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|Cout~0 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|Cout~1 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|Cout~1 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|Cout~2 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|Cout~2 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|Cout~3 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|Cout~3 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|Cout~4 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|Cout~4 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|Cout~5 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|Cout~5 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|Cout~6 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|Cout~6 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|Cout   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|Cout   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|S~0    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|S~0    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|S[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|S[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|S~2    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|S~2    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|S[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|S[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|S~4    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|S~4    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|S[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|S[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|S~6    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|S~6    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|S[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_7|S[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|g[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|g[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|g[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|g[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|g[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|g[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|g[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|g[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|p[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|p[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|p[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|p[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|p[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|p[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|p[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|p[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c1     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c1     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c2~0   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c2~0   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c2     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c2     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3~0   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3~0   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3~1   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3~1   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3~2   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3~2   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3~3   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3~3   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3~4   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3~4   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3~5   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3~5   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3~6   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3~6   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3~7   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3~7   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|c3     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|Cout~0 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|Cout~0 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|Cout~1 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|Cout~1 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|Cout~2 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|Cout~2 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|Cout~3 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|Cout~3 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|Cout~4 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|Cout~4 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|Cout~5 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|Cout~5 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|Cout~6 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|Cout~6 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|Cout   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|Cout   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|S~0    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|S~0    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|S[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|S[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|S~2    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|S~2    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|S[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|S[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|S~4    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|S~4    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|S[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|S[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|S~6    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|S~6    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|S[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_6|S[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|g[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|g[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|g[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|g[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|g[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|g[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|g[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|g[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|p[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|p[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|p[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|p[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|p[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|p[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|p[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|p[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c1     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c1     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c2~0   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c2~0   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c2     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c2     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3~0   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3~0   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3~1   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3~1   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3~2   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3~2   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3~3   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3~3   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3~4   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3~4   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3~5   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3~5   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3~6   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3~6   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3~7   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3~7   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|c3     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|Cout~0 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|Cout~0 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|Cout~1 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|Cout~1 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|Cout~2 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|Cout~2 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|Cout~3 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|Cout~3 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|Cout~4 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|Cout~4 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|Cout~5 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|Cout~5 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|Cout~6 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|Cout~6 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|Cout   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|Cout   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|S~0    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|S~0    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|S[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|S[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|S~2    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|S~2    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|S[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|S[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|S~4    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|S~4    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|S[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|S[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|S~6    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|S~6    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|S[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_5|S[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|g[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|g[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|g[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|g[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|g[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|g[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|g[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|g[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|p[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|p[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|p[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|p[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|p[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|p[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|p[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|p[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c1     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c1     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c2~0   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c2~0   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c2     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c2     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3~0   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3~0   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3~1   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3~1   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3~2   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3~2   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3~3   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3~3   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3~4   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3~4   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3~5   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3~5   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3~6   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3~6   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3~7   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3~7   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|c3     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|Cout~0 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|Cout~0 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|Cout~1 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|Cout~1 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|Cout~2 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|Cout~2 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|Cout~3 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|Cout~3 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|Cout~4 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|Cout~4 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|Cout~5 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|Cout~5 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|Cout~6 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|Cout~6 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|Cout   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|Cout   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|S~0    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|S~0    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|S[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|S[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|S~2    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|S~2    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|S[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|S[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|S~4    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|S~4    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|S[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|S[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|S~6    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|S~6    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|S[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_4|S[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|g[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|g[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|g[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|g[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|g[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|g[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|g[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|g[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|p[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|p[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|p[1]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|p[1]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|p[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|p[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|p[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|p[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c2~0   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c2~0   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c2     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c2     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3~0   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3~0   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3~1   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3~1   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3~2   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3~2   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3~3   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3~3   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3~4   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3~4   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3~6   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3~6   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3~7   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3~7   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3     ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|c3     ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|Cout~0 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|Cout~0 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|Cout~1 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|Cout~1 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|Cout~2 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|Cout~2 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|Cout~3 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|Cout~3 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|Cout~4 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|Cout~4 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|Cout~5 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|Cout~5 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|Cout~6 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|Cout~6 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|Cout   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|Cout   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|S~0    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|S~0    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|S~2    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|S~2    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|S~4    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|S~4    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|S[2]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|S[2]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|S~6    ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|S~6    ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|S[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_3|S[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|p[3]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|p[3]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|Cout~0 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_2|Cout~0 ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|g[0]   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|g[0]   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|c3~2   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|c3~2   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|c3~3   ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|c3~3   ; out0             ;
+; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|Cout~4 ; |AGU|Sumador_32b:elemento_5|Sumador_CarryLookahead:elemento_1|Cout~4 ; out0             ;
++----------------------------------------------------------------------+----------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sun Apr 03 04:19:54 2016
+Info: Command: quartus_sim --simulation_results_format=VWF AGU -c AGU
+Info (324025): Using vector source file "C:/Users/manuel/Documents/ITESM/VI semestre/Arquitectura de computadoras/Micro ARM 32b/AGU/AGU.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      23.08 %
+Info (328052): Number of transitions in simulation is 995
+Info (324045): Vector file AGU.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 329 megabytes
+    Info: Processing ended: Sun Apr 03 04:19:55 2016
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

@@ -1,0 +1,125 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'CLK'
+Slack : -13.768
+TNS   : -11866.835
+
+Type  : Slow Model Setup 'Micro_ARM:elemento_micro|ControlUnit:elemento_UC|SEL[0]$latch'
+Slack : -8.014
+TNS   : -8.014
+
+Type  : Slow Model Setup 'Micro_ARM:elemento_micro|ControlUnit:elemento_UC|IR[10]'
+Slack : -7.179
+TNS   : -158.958
+
+Type  : Slow Model Setup 'Micro_ARM:elemento_micro|ControlUnit:elemento_UC|COUNTER[0]'
+Slack : -5.636
+TNS   : -147.467
+
+Type  : Slow Model Setup 'Micro_ARM:elemento_micro|ControlUnit:elemento_UC|FLAGS'
+Slack : -3.643
+TNS   : -3.643
+
+Type  : Slow Model Hold 'Micro_ARM:elemento_micro|ControlUnit:elemento_UC|COUNTER[0]'
+Slack : -8.398
+TNS   : -194.889
+
+Type  : Slow Model Hold 'Micro_ARM:elemento_micro|ControlUnit:elemento_UC|IR[10]'
+Slack : -4.666
+TNS   : -122.685
+
+Type  : Slow Model Hold 'CLK'
+Slack : -1.941
+TNS   : -60.527
+
+Type  : Slow Model Hold 'Micro_ARM:elemento_micro|ControlUnit:elemento_UC|SEL[0]$latch'
+Slack : -0.471
+TNS   : -0.471
+
+Type  : Slow Model Hold 'Micro_ARM:elemento_micro|ControlUnit:elemento_UC|FLAGS'
+Slack : 3.536
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'Micro_ARM:elemento_micro|ControlUnit:elemento_UC|COUNTER[0]'
+Slack : -2.327
+TNS   : -397.678
+
+Type  : Slow Model Minimum Pulse Width 'CLK'
+Slack : -1.627
+TNS   : -2611.368
+
+Type  : Slow Model Minimum Pulse Width 'Micro_ARM:elemento_micro|ControlUnit:elemento_UC|IR[10]'
+Slack : -0.582
+TNS   : -61.692
+
+Type  : Slow Model Minimum Pulse Width 'Micro_ARM:elemento_micro|ControlUnit:elemento_UC|FLAGS'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'Micro_ARM:elemento_micro|ControlUnit:elemento_UC|SEL[0]$latch'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Setup 'CLK'
+Slack : -5.724
+TNS   : -4552.304
+
+Type  : Fast Model Setup 'Micro_ARM:elemento_micro|ControlUnit:elemento_UC|SEL[0]$latch'
+Slack : -3.393
+TNS   : -3.393
+
+Type  : Fast Model Setup 'Micro_ARM:elemento_micro|ControlUnit:elemento_UC|IR[10]'
+Slack : -3.185
+TNS   : -53.748
+
+Type  : Fast Model Setup 'Micro_ARM:elemento_micro|ControlUnit:elemento_UC|COUNTER[0]'
+Slack : -2.427
+TNS   : -46.556
+
+Type  : Fast Model Setup 'Micro_ARM:elemento_micro|ControlUnit:elemento_UC|FLAGS'
+Slack : -1.301
+TNS   : -1.301
+
+Type  : Fast Model Hold 'Micro_ARM:elemento_micro|ControlUnit:elemento_UC|COUNTER[0]'
+Slack : -4.181
+TNS   : -95.939
+
+Type  : Fast Model Hold 'Micro_ARM:elemento_micro|ControlUnit:elemento_UC|IR[10]'
+Slack : -2.473
+TNS   : -63.679
+
+Type  : Fast Model Hold 'CLK'
+Slack : -1.413
+TNS   : -89.805
+
+Type  : Fast Model Hold 'Micro_ARM:elemento_micro|ControlUnit:elemento_UC|SEL[0]$latch'
+Slack : 0.049
+TNS   : 0.000
+
+Type  : Fast Model Hold 'Micro_ARM:elemento_micro|ControlUnit:elemento_UC|FLAGS'
+Slack : 1.824
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'CLK'
+Slack : -1.627
+TNS   : -2611.368
+
+Type  : Fast Model Minimum Pulse Width 'Micro_ARM:elemento_micro|ControlUnit:elemento_UC|COUNTER[0]'
+Slack : -0.741
+TNS   : -109.636
+
+Type  : Fast Model Minimum Pulse Width 'Micro_ARM:elemento_micro|ControlUnit:elemento_UC|IR[10]'
+Slack : 0.011
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'Micro_ARM:elemento_micro|ControlUnit:elemento_UC|FLAGS'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'Micro_ARM:elemento_micro|ControlUnit:elemento_UC|SEL[0]$latch'
+Slack : 0.500
+TNS   : 0.000
+
+------------------------------------------------------------
